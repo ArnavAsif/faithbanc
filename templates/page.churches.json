@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "churches_section_01": {
+      "type": "churches-section-01",
+      "settings": {}
+    },
+    "churches_section_02": {
+      "type": "churches-section-02",
+      "settings": {}
+    },
+    "churches_section_03": {
+      "type": "churches-section-03",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "churches_section_01",
+    "churches_section_02",
+    "churches_section_03"
+  ]
+}

@@ -1,0 +1,237 @@
+{% schema %}
+{
+  "name": "Churches Calls to Action",
+  "tag": "section",
+  "class": "section-churches-cta",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Three Calls to Action"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Where <span>would you </span>like to start?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cta_card",
+      "name": "Action Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon / Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "Become a Church Partner \u2192"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Churches Calls to Action",
+      "blocks": [
+        {
+          "type": "cta_card",
+          "settings": {
+            "title": "Become a Church Partner \u2192"
+          }
+        },
+        {
+          "type": "cta_card",
+          "settings": {
+            "title": "Refer a Business \u2192"
+          }
+        },
+        {
+          "type": "cta_card",
+          "settings": {
+            "title": "Schedule Pastor Consultation \u2192"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section 3 Scoped Rules */
+.elementor-8684 .elementor-element.elementor-element-5421918{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8684 .elementor-element.elementor-element-5421918:not(.elementor-motion-effects-element-type-background), .elementor-8684 .elementor-element.elementor-element-5421918 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(180deg, #FF572212 0%, #F2295B0A 100%);}
+.elementor-8684 .elementor-element.elementor-element-9204672 .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-secondary );color:var( --e-global-color-secondary );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-8684 .elementor-element.elementor-element-e4416d8{width:auto;max-width:auto;text-align:center;}
+.elementor-8684 .elementor-element.elementor-element-e4416d8.elementor-element{--align-self:center;}
+.elementor-8684 .elementor-element.elementor-element-e4416d8 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:45px;font-weight:700;text-transform:capitalize;line-height:52px;letter-spacing:-1.8px;color:var( --e-global-color-text );}
+.elementor-8684 .elementor-element.elementor-element-83fda56{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:10px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8684 .elementor-element.elementor-element-2a81661{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8684 .elementor-element.elementor-element-2a81661:not(.elementor-motion-effects-element-type-background), .elementor-8684 .elementor-element.elementor-element-2a81661 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8684 .elementor-element.elementor-element-2a81661.e-con{--flex-grow:0;--flex-shrink:1;}
+.elementor-8684 .elementor-element.elementor-element-da91361{text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-da91361 img{width:65px;}
+.elementor-8684 .elementor-element.elementor-element-f7cabf9{width:100%;max-width:100%;text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-f7cabf9 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:16px;font-weight:600;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8684 .elementor-element.elementor-element-ae63085{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8684 .elementor-element.elementor-element-ae63085:not(.elementor-motion-effects-element-type-background), .elementor-8684 .elementor-element.elementor-element-ae63085 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8684 .elementor-element.elementor-element-b71f470{text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-b71f470 img{width:65px;}
+.elementor-8684 .elementor-element.elementor-element-63b1f61{width:100%;max-width:100%;text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-63b1f61 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:16px;font-weight:600;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8684 .elementor-element.elementor-element-415d349{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8684 .elementor-element.elementor-element-415d349:not(.elementor-motion-effects-element-type-background), .elementor-8684 .elementor-element.elementor-element-415d349 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8684 .elementor-element.elementor-element-ce9e797{text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-ce9e797 img{width:65px;}
+.elementor-8684 .elementor-element.elementor-element-6ca43ef{width:100%;max-width:100%;text-align:start;}
+.elementor-8684 .elementor-element.elementor-element-6ca43ef .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:16px;font-weight:600;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+@media(max-width:1024px){
+  .elementor-8684 .elementor-element.elementor-element-e4416d8{width:100%;max-width:100%;}
+  .elementor-8684 .elementor-element.elementor-element-e4416d8 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8684 .elementor-element.elementor-element-f7cabf9{width:100%;max-width:100%;}
+  .elementor-8684 .elementor-element.elementor-element-f7cabf9 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8684 .elementor-element.elementor-element-63b1f61{width:100%;max-width:100%;}
+  .elementor-8684 .elementor-element.elementor-element-63b1f61 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8684 .elementor-element.elementor-element-6ca43ef{width:100%;max-width:100%;}
+  .elementor-8684 .elementor-element.elementor-element-6ca43ef .elementor-heading-title{font-size:32px;line-height:1.3em;}
+}
+@media(min-width:768px){
+  .elementor-8684 .elementor-element.elementor-element-2a81661{--width:30%;}
+  .elementor-8684 .elementor-element.elementor-element-ae63085{--width:30%;}
+  .elementor-8684 .elementor-element.elementor-element-415d349{--width:30%;}
+}
+@media(max-width:767px){
+  .elementor-8684 .elementor-element.elementor-element-5421918{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-8684 .elementor-element.elementor-element-9204672 .elementor-button{font-size:10px;}
+  .elementor-8684 .elementor-element.elementor-element-e4416d8{text-align:center;}
+  .elementor-8684 .elementor-element.elementor-element-e4416d8 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8684 .elementor-element.elementor-element-da91361 img{width:44px;}
+  .elementor-8684 .elementor-element.elementor-element-f7cabf9{width:auto;max-width:auto;text-align:start;}
+  .elementor-8684 .elementor-element.elementor-element-f7cabf9 .elementor-heading-title{font-size:15px;line-height:1.3em;letter-spacing:-0.4px;}
+  .elementor-8684 .elementor-element.elementor-element-b71f470 img{width:44px;}
+  .elementor-8684 .elementor-element.elementor-element-63b1f61{width:auto;max-width:auto;text-align:start;}
+  .elementor-8684 .elementor-element.elementor-element-63b1f61 .elementor-heading-title{font-size:15px;line-height:1.3em;letter-spacing:-0.4px;}
+  .elementor-8684 .elementor-element.elementor-element-ce9e797 img{width:44px;}
+  .elementor-8684 .elementor-element.elementor-element-6ca43ef{width:auto;max-width:auto;text-align:start;}
+  .elementor-8684 .elementor-element.elementor-element-6ca43ef .elementor-heading-title{font-size:15px;line-height:1.3em;letter-spacing:-0.4px;}
+}
+</style>
+
+<div class="elementor elementor-8684">
+  <div class="elementor-element elementor-element-5421918 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="5421918" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+    <div class="e-con-inner">
+      {% if section.settings.badge_text != blank %}
+        <div class="elementor-element elementor-element-9204672 elementor-align-center elementor-widget elementor-widget-button" data-id="9204672" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+          <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+            </span>
+          </a>
+        </div>
+      {% endif %}
+
+      <div class="elementor-element elementor-element-e4416d8 elementor-widget__width-auto elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible" data-id="e4416d8" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+        <h2 class="elementor-heading-title elementor-size-default">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+
+      <div class="elementor-element elementor-element-83fda56 e-con-full e-flex e-con e-child" data-id="83fda56" data-element_type="container" data-e-type="container">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            {% assign card_idx = forloop.index0 %}
+            {% case card_idx %}
+              {% when 0 %}
+                {% assign card_id = "2a81661" %}
+                {% assign img_id = "da91361" %}
+                {% assign title_id = "f7cabf9" %}
+                {% assign anim_name = "fadeInLeft" %}
+                {% assign default_img_name = "churches-step-1.webp" %}
+              {% when 1 %}
+                {% assign card_id = "ae63085" %}
+                {% assign img_id = "b71f470" %}
+                {% assign title_id = "63b1f61" %}
+                {% assign anim_name = "fadeInUp" %}
+                {% assign default_img_name = "churches-step-2.webp" %}
+              {% when 2 %}
+                {% assign card_id = "415d349" %}
+                {% assign img_id = "ce9e797" %}
+                {% assign title_id = "6ca43ef" %}
+                {% assign anim_name = "fadeInUp" %}
+                {% assign default_img_name = "churches-step-3.webp" %}
+              {% else %}
+                {% assign card_id = "card-" | append: forloop.index %}
+                {% assign img_id = "img-" | append: forloop.index %}
+                {% assign title_id = "title-" | append: forloop.index %}
+                {% assign anim_name = "fadeInUp" %}
+                {% assign default_img_name = "churches-step-1.webp" %}
+            {% endcase %}
+
+            <div class="elementor-element elementor-element-{{ card_id }} e-con-full e-flex e-con e-child elementor-invisible" data-id="{{ card_id }}" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;{{ anim_name }}&quot;}" {{ block.shopify_attributes }}>
+              <div class="elementor-element elementor-element-{{ img_id }} elementor-widget elementor-widget-image" data-id="{{ img_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{ block.settings.title | escape }}" width="65" height="65" class="attachment-full size-full" loading="lazy" decoding="async">
+                {% else %}
+                  <img src="{{ default_img_name | asset_url }}" alt="{{ block.settings.title | escape }}" width="65" height="65" class="attachment-full size-full" loading="lazy" decoding="async">
+                {% endif %}
+              </div>
+              <div class="elementor-element elementor-element-{{ title_id }} elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="{{ title_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  <a href="{{ block.settings.link | default: '/contact-us' }}" style="color: inherit; text-decoration: none;">{{ block.settings.title }}</a>
+                </h2>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="elementor-element elementor-element-2a81661 e-con-full e-flex e-con e-child elementor-invisible" data-id="2a81661" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+            <div class="elementor-element elementor-element-da91361 elementor-widget elementor-widget-image" data-id="da91361" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+              <img decoding="async" width="65" height="65" src="{{ 'churches-step-1.webp' | asset_url }}" class="attachment-full size-full wp-image-8492" alt="Become a Church Partner" loading="lazy">
+            </div>
+            <div class="elementor-element elementor-element-f7cabf9 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="f7cabf9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="/contact-us" style="color: inherit; text-decoration: none;">Become a Church Partner →</a>
+              </h2>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-ae63085 e-con-full e-flex e-con e-child elementor-invisible" data-id="ae63085" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+            <div class="elementor-element elementor-element-b71f470 elementor-widget elementor-widget-image" data-id="b71f470" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+              <img loading="lazy" decoding="async" width="65" height="65" src="{{ 'churches-step-2.webp' | asset_url }}" class="attachment-full size-full wp-image-8488" alt="Refer a Business">
+            </div>
+            <div class="elementor-element elementor-element-63b1f61 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="63b1f61" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="/contact-us" style="color: inherit; text-decoration: none;">Refer a Business →</a>
+              </h2>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-415d349 e-con-full e-flex e-con e-child elementor-invisible" data-id="415d349" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+            <div class="elementor-element elementor-element-ce9e797 elementor-widget elementor-widget-image" data-id="ce9e797" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+              <img loading="lazy" decoding="async" width="65" height="65" src="{{ 'churches-step-3.webp' | asset_url }}" class="attachment-full size-full wp-image-8493" alt="Schedule Pastor Consultation">
+            </div>
+            <div class="elementor-element elementor-element-6ca43ef elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="6ca43ef" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="/contact-us" style="color: inherit; text-decoration: none;">Schedule Pastor Consultation →</a>
+              </h2>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
