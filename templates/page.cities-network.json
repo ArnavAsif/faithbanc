@@ -18,7 +18,7 @@
           "type": "solution_card",
           "settings": {
             "fallback_asset": "cities-network-sol-1.webp",
-            "title": "BECOME A<br><br>PROCESSOR<br><br>PROGRAM",
+            "title": "BECOME A PROCESSOR PROGRAM",
             "description": "Partner with FaithBanc™ and offer payment processing solutions to businesses in your community.",
             "features": "Earn Residual Income\nLow Start-Up Cost\nSimple & Transparent\nDedicated Support"
           }
@@ -27,7 +27,7 @@
           "type": "solution_card",
           "settings": {
             "fallback_asset": "cities-network-sol-2.webp",
-            "title": "FAITHBANC<br><br>CHECKING ACCOUNT",
+            "title": "FAITHBANC CHECKING ACCOUNT",
             "description": "Bank with purpose.\n\nBank with power.",
             "features": "No Monthly Fees\nMobile Banking\nDirect Deposit\nOverdraft Protection\nFDIC Insured*"
           }
@@ -36,7 +36,7 @@
           "type": "solution_card",
           "settings": {
             "fallback_asset": "cities-network-sol-3.webp",
-            "title": "FAITHBANC<br><br>DIGITAL WALLET",
+            "title": "FAITHBANC DIGITAL WALLET",
             "description": "Bank anytime, anywhere.\n\nYour money. Your way.",
             "features": "Send & Receive Money\nPay Bills Instantly\nSecure & Encrypted\nTrack Spending\nApple Pay® | Google Pay™ Compatible"
           }
