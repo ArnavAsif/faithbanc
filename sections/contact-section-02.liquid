@@ -1,0 +1,198 @@
+{% schema %}
+{
+  "name": "Contact Form",
+  "tag": "section",
+  "class": "section-contact-form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "name_label",
+      "label": "Name Field Label",
+      "default": "Full Name"
+    },
+    {
+      "type": "text",
+      "id": "name_placeholder",
+      "label": "Name Placeholder",
+      "default": "Start typing..."
+    },
+    {
+      "type": "text",
+      "id": "company_label",
+      "label": "Company Field Label",
+      "default": "Company Name"
+    },
+    {
+      "type": "text",
+      "id": "company_placeholder",
+      "label": "Company Placeholder",
+      "default": "Start typing..."
+    },
+    {
+      "type": "text",
+      "id": "city_label",
+      "label": "City Field Label",
+      "default": "City"
+    },
+    {
+      "type": "textarea",
+      "id": "city_options",
+      "label": "City Dropdown Options (one per line)",
+      "default": "New York\nLos Angeles\nChicago\nHouston\nPhoenix\nPhiladelphia\nSan Antonio\nSan Diego\nDallas\nSan Jose"
+    },
+    {
+      "type": "text",
+      "id": "message_label",
+      "label": "Message Field Label",
+      "default": "Additional Information"
+    },
+    {
+      "type": "text",
+      "id": "message_placeholder",
+      "label": "Message Placeholder",
+      "default": "Start typing..."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Submit Button Text",
+      "default": "Pay 2.22$ membership to join"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Form"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Contact Section 02 Scoped Rules */
+
+.elementor-8415 .elementor-element.elementor-element-63d52c3{--display:flex;--min-height:0px;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:-73px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8415 .elementor-element.elementor-element-63d52c3{--content-width:1200px;}
+.elementor-8415 .elementor-element.elementor-element-63d52c3{--min-height:580px;--padding-top:150px;--padding-bottom:50px;--padding-left:0px;--padding-right:0px;}
+.elementor-8415 .elementor-element.elementor-element-63d52c3{--padding-top:150px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+
+.elementor-8415 .elementor-element.elementor-element-bd31ec2{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--flex-wrap:wrap;--padding-top:10px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8415 .elementor-element.elementor-element-bd31ec2.e-con{--align-self:center;}
+.elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:80%;}
+
+.elementor-8415 .elementor-element.elementor-element-9af91f7{--display:flex;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572252;--border-color:#FF572252;--border-radius:15px 15px 15px 15px;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}
+.elementor-8415 .elementor-element.elementor-element-9af91f7:not(.elementor-motion-effects-element-type-background), .elementor-8415 .elementor-element.elementor-element-9af91f7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8415 .elementor-element.elementor-element-9af91f7.e-con{--flex-grow:1;--flex-shrink:0;}
+.elementor-8415 .elementor-element.elementor-element-9af91f7{--width:100%;}
+.elementor-8415 .elementor-element.elementor-element-9af91f7{--padding-top:40px;--padding-bottom:40px;--padding-left:40px;--padding-right:40px;}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a{width:100%;max-width:100%;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group{padding-right:calc( 20px/2 );padding-left:calc( 20px/2 );margin-bottom:20px;box-sizing:border-box;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-form-fields-wrapper{margin-left:calc( -20px/2 );margin-right:calc( -20px/2 );margin-bottom:-20px;display:flex;flex-wrap:wrap;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-1.1px;display:block;padding-bottom:13px;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-field{color:var( --e-global-color-secondary );font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;width:100%;border-color:#FF572245;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;border-style:solid;padding:12px 14px;box-sizing:border-box;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-select-wrapper select{border-color:#FF572245;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;width:100%;padding:12px 14px;background:transparent;border-style:solid;appearance:none;-webkit-appearance:none;box-sizing:border-box;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-select-wrapper{position:relative;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper{position:absolute;top:50%;right:15px;transform:translateY(-50%);pointer-events:none;width:12px;height:12px;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper svg{width:100%;height:100%;fill:#777;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50{width:50%;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-100{width:100%;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-0.4px;border-radius:45px 45px 45px 45px;background-color:var( --e-global-color-832bc31 );color:#FFFFFF;width:100%;border:none;padding:16px 30px;cursor:pointer;transition:all 0.3s;}
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button:hover{opacity:0.9;}
+
+@media(max-width:1024px){
+  .elementor-8415 .elementor-element.elementor-element-63d52c3{--min-height:580px;--padding-top:150px;--padding-bottom:50px;--padding-left:0px;--padding-right:0px;}
+}
+@media(min-width:768px){
+  .elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:80%;}
+}
+@media(max-width:767px){
+  .elementor-8415 .elementor-element.elementor-element-63d52c3{--padding-top:100px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:100%;}
+  .elementor-8415 .elementor-element.elementor-element-9af91f7{--padding-top:40px;--padding-bottom:40px;--padding-left:20px;--padding-right:20px;}
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label{font-size:14px;}
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button{font-size:13px;}
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50{width:100%;}
+}
+</style>
+
+<div class="elementor elementor-8415">
+  <div class="elementor-element elementor-element-63d52c3 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="63d52c3" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-bd31ec2 e-con-full e-flex e-con e-child" data-id="bd31ec2" data-element_type="container" data-e-type="container">
+        <div class="elementor-element elementor-element-9af91f7 e-con-full e-flex e-con e-child animated fadeInUp" data-id="9af91f7" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic","_animation":"fadeInUp"}'>
+          <div class="elementor-element elementor-element-db95a2a elementor-widget__width-inherit elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="db95a2a" data-element_type="widget" data-e-type="widget" data-widget_type="form.default">
+            {%- form 'contact', id: 'ContactUsForm', class: 'elementor-form' -%}
+              {%- if form.posted_successfully? -%}
+                <div class="elementor-message elementor-message-success" role="status" style="margin-bottom: 20px; padding: 14px 20px; border-radius: 4px; background: #e8f5e9; color: #2e7d32; font-family: 'Poppins', sans-serif; font-size: 14px;">
+                  {{ 'templates.contact.form.post_success' | t | default: 'Thanks for contacting us. We will get back to you as soon as possible.' }}
+                </div>
+              {%- elsif form.errors -%}
+                <div class="elementor-message elementor-message-danger" role="alert" style="margin-bottom: 20px; padding: 14px 20px; border-radius: 4px; background: #ffebee; color: #c62828; font-family: 'Poppins', sans-serif; font-size: 14px;">
+                  {{ form.errors | default_errors }}
+                </div>
+              {%- endif -%}
+
+              <div class="elementor-form-fields-wrapper elementor-labels-above">
+                <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
+                  <label for="form-field-name" class="elementor-field-label">
+                    {{ section.settings.name_label | default: 'Full Name' }}
+                  </label>
+                  <input size="1" type="text" name="contact[name]" id="form-field-name" class="elementor-field elementor-size-md elementor-field-textual" placeholder="{{ section.settings.name_placeholder | default: 'Start typing...' }}" required="required">
+                </div>
+
+                <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_ed52397 elementor-col-50">
+                  <label for="form-field-field_ed52397" class="elementor-field-label">
+                    {{ section.settings.company_label | default: 'Company Name' }}
+                  </label>
+                  <input size="1" type="text" name="contact[company]" id="form-field-field_ed52397" class="elementor-field elementor-size-md elementor-field-textual" placeholder="{{ section.settings.company_placeholder | default: 'Start typing...' }}">
+                </div>
+
+                <div class="elementor-field-type-email elementor-field-group elementor-column elementor-col-50 elementor-field-required">
+                  <label for="form-field-email" class="elementor-field-label">
+                    Email
+                  </label>
+                  <input size="1" type="email" name="contact[email]" id="form-field-email" class="elementor-field elementor-size-md elementor-field-textual" placeholder="yourname@domain.com" required="required">
+                </div>
+
+                <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_d39b9c2 elementor-col-50">
+                  <label for="form-field-field_d39b9c2" class="elementor-field-label">
+                    {{ section.settings.city_label | default: 'City' }}
+                  </label>
+                  <div class="elementor-field elementor-select-wrapper remove-before">
+                    <div class="select-caret-down-wrapper">
+                      <svg aria-hidden="true" class="e-font-icon-svg e-eicon-caret-down" viewBox="0 0 571.4 571.4" xmlns="http://www.w3.org/2000/svg"><path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path></svg>
+                    </div>
+                    <select name="contact[city]" id="form-field-field_d39b9c2" class="elementor-field-textual elementor-size-md">
+                      {% assign city_list = section.settings.city_options | newline_to_br | split: '<br />' %}
+                      {% for city in city_list %}
+                        {% assign clean_city = city | strip %}
+                        {% if clean_city != blank %}
+                          <option value="{{ clean_city | escape }}">{{ clean_city }}</option>
+                        {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+                <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+                  <label for="form-field-message" class="elementor-field-label">
+                    {{ section.settings.message_label | default: 'Additional Information' }}
+                  </label>
+                  <textarea class="elementor-field-textual elementor-field elementor-size-md" name="contact[body]" id="form-field-message" rows="6" placeholder="{{ section.settings.message_placeholder | default: 'Start typing...' }}"></textarea>
+                </div>
+
+                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                  <button class="elementor-button elementor-size-md" type="submit">
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-text">{{ section.settings.button_text | default: 'Pay 2.22$ membership to join' }}</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            {%- endform -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
