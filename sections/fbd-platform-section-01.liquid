@@ -1,0 +1,164 @@
+{% schema %}
+{
+  "name": "FBD Platform Hero",
+  "tag": "section",
+  "class": "section-fbd-platform-hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "FBD Platform / Token"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Faith Wallet. <span>Faith Token.</span> Faith Dollar."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A digital finance concept positioning real-world asset education, custody, exchange, and crypto-backed lending — built with compliance at the center."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Request Invite"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FBD Platform Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section 01 Scoped Rules */
+
+
+/* Source: https://faithbanc.com/wp-content/uploads/elementor/css/post-8761.css?ver=1788773700 */
+.elementor-8761 .elementor-element.elementor-element-65765f0{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--padding-top:150px;--padding-bottom:100px;--padding-left:0px;--padding-right:0px;}
+.elementor-8761 .elementor-element.elementor-element-65765f0:not(.elementor-motion-effects-element-type-background), .elementor-8761 .elementor-element.elementor-element-65765f0 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("{{ "fbd-platform-hero-bg.webp" | asset_url }}");background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.elementor-8761 .elementor-element.elementor-element-65765f0{--content-width:1200px;}
+.elementor-8761 .elementor-element.elementor-element-65765f0{--padding-top:120px;--padding-bottom:80px;--padding-left:15px;--padding-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-c8787d6{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;}
+.elementor-8761 .elementor-element.elementor-element-c8787d6{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8761 .elementor-element.elementor-element-621613f .elementor-button{background-color:var( --e-global-color-0587ab8 );font-family:"Poppins", Sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;fill:var( --e-global-color-66d3c96 );color:var( --e-global-color-66d3c96 );border-radius:45px 45px 45px 45px;padding:9px 25px 9px 25px;}
+.elementor-8761 .elementor-element.elementor-element-621613f.elementor-element{--align-self:flex-start;}
+.elementor-8761 .elementor-element.elementor-element-621613f.elementor-element{--align-self:center;}
+.elementor-8761 .elementor-element.elementor-element-9ca953c{width:100%;max-width:100%;text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:53px;font-weight:600;text-transform:capitalize;line-height:67px;letter-spacing:-2.7px;color:var( --e-global-color-secondary );}
+.elementor-8761 .elementor-element.elementor-element-9ca953c{width:100%;max-width:100%;}
+.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-size:32px;line-height:1.3em;}
+.elementor-8761 .elementor-element.elementor-element-9ca953c{text-align:center;}
+.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+/* Start custom CSS for heading, class: .elementor-element-9ca953c */.gradient-text span{
+    background: linear-gradient(135deg,#FF5722 0%,#FF3366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.elementor-8761 .elementor-element.elementor-element-8619595{width:100%;max-width:100%;text-align:start;font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:29px;letter-spacing:-0.5px;color:var( --e-global-color-secondary );}
+.elementor-8761 .elementor-element.elementor-element-8619595.elementor-element{--align-self:center;}
+.elementor-8761 .elementor-element.elementor-element-8619595{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+.elementor-8761 .elementor-element.elementor-element-8619595{text-align:center;font-size:15px;}
+.elementor-8761 .elementor-element.elementor-element-d481b5d{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8761 .elementor-element.elementor-element-d481b5d{--justify-content:center;--gap:5px 5px;--row-gap:5px;--column-gap:5px;}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{background-color:transparent;font-family:"Poppins", Sans-serif;font-size:14px;font-weight:300;text-transform:uppercase;font-style:normal;line-height:14px;letter-spacing:-0.2px;fill:#FFFFFF;color:#FFFFFF;background-image:linear-gradient(148deg, #E42981 0%, #FEA035 100%);border-style:solid;border-width:1px 1px 1px 1px;border-color:var( --e-global-color-832bc31 );border-radius:32px 32px 32px 32px;padding:18px 35px 18px 35px;}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button:hover, .elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button:focus{background-color:var( --e-global-color-3d786e9 );color:var( --e-global-color-0587ab8 );}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button-content-wrapper{flex-direction:row;}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button:hover svg, .elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button:focus svg{fill:var( --e-global-color-0587ab8 );}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}
+.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}
+.elementor-8761 .elementor-element.elementor-element-51d9773{--display:flex;}
+.elementor-8761 .elementor-element.elementor-element-51d9773.e-con{--order:-99999 /* order start hack */;}
+.elementor-8761 .elementor-element.elementor-element-a59bcc5{text-align:end;}
+.elementor-8761 .elementor-element.elementor-element-a59bcc5 img{max-width:91%;}
+.elementor-8761 .elementor-element.elementor-element-a59bcc5{margin:-54px 0px calc(var(--kit-widget-spacing, 0px) + -24px) 0px;}
+.elementor-8761 .elementor-element.elementor-element-a59bcc5 img{max-width:100%;}
+
+@media(max-width:1024px){.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-8761 .elementor-element.elementor-element-9ca953c{width:100%;max-width:100%;}.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-size:32px;line-height:1.3em;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-8619595{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-widget-image-box .elementor-image-box-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-widget-image-box .elementor-image-box-description{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-1290b22{width:100%;max-width:100%;}.elementor-8761 .elementor-element.elementor-element-1290b22 .elementor-heading-title{font-size:32px;line-height:1.3em;}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-size:var( --e-global-typography-text-font-size );}}
+@media(min-width:768px){.elementor-8761 .elementor-element.elementor-element-65765f0{--content-width:1200px;}.elementor-8761 .elementor-element.elementor-element-d2b8341{--width:1200px;}}
+@media(max-width:767px){.elementor-8761 .elementor-element.elementor-element-65765f0{--padding-top:120px;--padding-bottom:80px;--padding-left:15px;--padding-right:15px;}.elementor-8761 .elementor-element.elementor-element-c8787d6{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-8761 .elementor-element.elementor-element-621613f.elementor-element{--align-self:center;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-8761 .elementor-element.elementor-element-9ca953c{text-align:center;}.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-8619595{text-align:center;font-size:15px;}.elementor-8761 .elementor-element.elementor-element-d481b5d{--justify-content:center;--gap:5px 5px;--row-gap:5px;--column-gap:5px;}.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}.elementor-8761 .elementor-element.elementor-element-51d9773.e-con{--order:-99999 /* order start hack */;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-a59bcc5{margin:-54px 0px calc(var(--kit-widget-spacing, 0px) + -24px) 0px;}.elementor-8761 .elementor-element.elementor-element-a59bcc5 img{max-width:100%;}.elementor-8761 .elementor-element.elementor-element-e3624e2{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-widget-image-box .elementor-image-box-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-widget-image-box .elementor-image-box-description{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-49224b4{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-d7bf516{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-1067cfb{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-5d3127e{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-35c72c3{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-d2b8341{--width:95%;--padding-top:20px;--padding-bottom:20px;--padding-left:20px;--padding-right:20px;}.elementor-8761 .elementor-element.elementor-element-fed3b93{--spacer-size:30px;}.elementor-8761 .elementor-element.elementor-element-1290b22{text-align:start;}.elementor-8761 .elementor-element.elementor-element-1290b22 .elementor-heading-title{font-size:24px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-a4d22d1{--container-widget-width:530px;--container-widget-flex-grow:0;width:var( --container-widget-width, 530px );max-width:530px;}}
+</style>
+
+<div class="elementor elementor-8761">
+  <div class="elementor-element elementor-element-65765f0 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="65765f0" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}' {% if section.settings.bg_image != blank %}style="background-image: url('{{ section.settings.bg_image | image_url: width: 2560 }}');"{% endif %}>
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-c8787d6 e-con-full e-flex e-con e-child" data-id="c8787d6" data-element_type="container" data-e-type="container">
+        {% if section.settings.badge_text != blank %}
+          <div class="elementor-element elementor-element-621613f elementor-align-center elementor-widget elementor-widget-button" data-id="621613f" data-element_type="widget" data-widget_type="button.default">
+            <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+              </span>
+            </a>
+          </div>
+        {% endif %}
+
+        {% if section.settings.heading != blank %}
+          <div class="elementor-element elementor-element-9ca953c elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading animated fadeInUp" data-id="9ca953c" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+            <h1 class="elementor-heading-title elementor-size-default">
+              {{ section.settings.heading }}
+            </h1>
+          </div>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="elementor-element elementor-element-8619595 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor animated fadeInUp" data-id="8619595" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="text-editor.default">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+
+        <div class="elementor-element elementor-element-d481b5d e-con-full e-flex e-con e-child" data-id="d481b5d" data-element_type="container" data-e-type="container">
+          {% if section.settings.btn_text != blank %}
+            <div class="elementor-element elementor-element-76b0060 elementor-align-left elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="76b0060" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":400}' data-widget_type="button.default">
+              <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.btn_url | default: '/contact-us' }}">
+                <span class="elementor-button-content-wrapper">
+                  <span class="elementor-button-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-far-user-circle" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path></svg>
+                  </span>
+                  <span class="elementor-button-text">{{ section.settings.btn_text }}</span>
+                </span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="elementor-element elementor-element-51d9773 e-con-full e-flex e-con e-child" data-id="51d9773" data-element_type="container" data-e-type="container">
+        <div class="elementor-element elementor-element-a59bcc5 elementor-widget elementor-widget-image animated fadeInRight" data-id="a59bcc5" data-element_type="widget" data-settings='{"_animation":"fadeInRight"}' data-widget_type="image.default">
+          {% if section.settings.hero_image != blank %}
+            <img decoding="async" width="1024" height="887" src="{{ section.settings.hero_image | image_url: width: 1024 }}" class="attachment-full size-full" alt="{{ section.settings.heading | escape }}" loading="eager">
+          {% else %}
+            <img decoding="async" width="1024" height="887" src="{{ 'fbd-platform-hero.webp' | asset_url }}" class="attachment-full size-full wp-image-8775" alt="{{ section.settings.heading | escape }}" loading="eager">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

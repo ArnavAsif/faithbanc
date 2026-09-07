@@ -6,8 +6,14 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "app_image",
-      "label": "App Preview Graphic"
+      "id": "card_image",
+      "label": "Debit Card Graphic"
+    },
+    {
+      "type": "text",
+      "id": "form_btn_text",
+      "label": "Form Button Text",
+      "default": "Join Waitlist"
     }
   ],
   "blocks": [
@@ -50,28 +56,28 @@
           "type": "feature",
           "settings": {
             "title": "Spend Anywhere",
-            "description": "Accepted anywhere major debit cards are honored worldwide."
+            "description": "Physical and virtual card use for stores, restaurants, online payments, travel, ATM withdrawals, and global spending where supported."
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Move Money",
-            "description": "P2P, wires, and transfers through partner banking rails."
+            "description": "Send funds to other users, external wallets, or local/international wires subject to region, compliance, partner availability, and KYC/AML approval."
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Stablecoin & Digital Dollar Education",
-            "description": "Educational guidance on safe digital asset and currency movements."
+            "description": "Stablecoins and digital dollars are virtual assets and are not the same as insured bank deposits unless held through qualifying partner accounts."
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Mobile App (iOS / Android)",
-            "description": "Track balances, view transaction history, lock/unlock card, manage profiles."
+            "description": "Deposits, withdrawals, card management, transfer history, account controls, freeze/unfreeze, notifications."
           }
         }
       ]
@@ -81,182 +87,438 @@
 {% endschema %}
 
 <style>
-/* Section Scoped Rules */
-.elementor-8734 .elementor-element.elementor-element-fe05b7b{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:40px 40px;--row-gap:40px;--column-gap:40px;--padding-top:80px;--padding-bottom:30px;--padding-left:0px;--padding-right:0px;}
-.elementor-8734 .elementor-element.elementor-element-b9dfc35{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885{padding:20px 20px 20px 20px;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-wrapper{text-align:start;}
-.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-right .elementor-image-box-img{margin-left:15px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-left .elementor-image-box-img{margin-right:15px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
-.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-img img{transition-duration:0.3s;}
-.elementor-8734 .elementor-element.elementor-element-34a4885:has(:hover) .elementor-image-box-title,
-					 .elementor-8734 .elementor-element.elementor-element-34a4885:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:21px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04{padding:20px 20px 20px 20px;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-wrapper{text-align:start;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-right .elementor-image-box-img{margin-left:15px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-left .elementor-image-box-img{margin-right:15px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-img img{transition-duration:0.3s;}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04:has(:hover) .elementor-image-box-title,
-					 .elementor-8734 .elementor-element.elementor-element-a9fcb04:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:21px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b{padding:20px 20px 20px 20px;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-wrapper{text-align:start;}
-.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-right .elementor-image-box-img{margin-left:15px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-left .elementor-image-box-img{margin-right:15px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
-.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-img img{transition-duration:0.3s;}
-.elementor-8734 .elementor-element.elementor-element-27b976b:has(:hover) .elementor-image-box-title,
-					 .elementor-8734 .elementor-element.elementor-element-27b976b:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:21px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3{padding:20px 20px 20px 20px;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-wrapper{text-align:start;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-right .elementor-image-box-img{margin-left:15px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-left .elementor-image-box-img{margin-right:15px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-img img{transition-duration:0.3s;}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3:has(:hover) .elementor-image-box-title,
-					 .elementor-8734 .elementor-element.elementor-element-b7ab2f3:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:21px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4{padding:20px 20px 20px 20px;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-wrapper{text-align:start;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-right .elementor-image-box-img{margin-left:15px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-left .elementor-image-box-img{margin-right:15px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-img img{transition-duration:0.3s;}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4:has(:hover) .elementor-image-box-title,
-					 .elementor-8734 .elementor-element.elementor-element-6cf34d4:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
-.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:21px;}
-.elementor-8734 .elementor-element.elementor-element-16eff2e{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
-.elementor-8734 .elementor-element.elementor-element-ce08c9b img{border-radius:25px 25px 25px 25px;}
-@media(min-width:768px){.elementor-8734 .elementor-element.elementor-element-b9dfc35{--width:50%;}.elementor-8734 .elementor-element.elementor-element-16eff2e{--width:50%;}}
-@media(max-width:767px){.elementor-8734 .elementor-element.elementor-element-fe05b7b{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-8734 .elementor-element.elementor-element-34a4885{padding:25px 25px 25px 25px;}.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-wrapper{text-align:start;}.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8734 .elementor-element.elementor-element-34a4885.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-title{margin-bottom:18px;}.elementor-8734 .elementor-element.elementor-element-34a4885 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04{padding:25px 25px 25px 25px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-wrapper{text-align:start;}.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-title{margin-bottom:18px;}.elementor-8734 .elementor-element.elementor-element-a9fcb04 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8734 .elementor-element.elementor-element-27b976b{padding:25px 25px 25px 25px;}.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-wrapper{text-align:start;}.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8734 .elementor-element.elementor-element-27b976b.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-title{margin-bottom:18px;}.elementor-8734 .elementor-element.elementor-element-27b976b .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3{padding:25px 25px 25px 25px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-wrapper{text-align:start;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-title{margin-bottom:18px;}.elementor-8734 .elementor-element.elementor-element-b7ab2f3 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4{padding:25px 25px 25px 25px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-wrapper{text-align:start;}.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-title{margin-bottom:18px;}.elementor-8734 .elementor-element.elementor-element-6cf34d4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}}
+/* Scoped Debit Card Section 02 Styles */
+.debit-sec2-wrapper {
+  padding: 40px 0 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.debit-sec2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+/* Left Column: 5 Feature Cards */
+.debit-sec2-features-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.debit-feature-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(242, 41, 91, 0.16);
+  border-radius: 12px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+.debit-feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 41, 91, 0.08);
+}
+
+.debit-feature-icon-wrap {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debit-feature-icon-wrap img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+
+.debit-feature-text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.debit-feature-title {
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #F2295B;
+  line-height: 1.3;
+  margin: 0 0 6px 0;
+}
+
+.debit-feature-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #1E1E1E;
+  margin: 0;
+}
+
+/* Right Column: Card Image & Waitlist Form */
+.debit-sec2-card-form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.debit-card-preview-box {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  background: #000000;
+}
+
+.debit-card-preview-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+
+.debit-waitlist-box {
+  background: linear-gradient(180deg, rgba(255, 87, 34, 0.06) 0%, rgba(242, 41, 91, 0.03) 100%), #FFFFFF;
+  border: 1px solid rgba(255, 87, 34, 0.35);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.04);
+  box-sizing: border-box;
+}
+
+.debit-form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.debit-form-group {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.debit-form-col-50 {
+  width: calc(50% - 8px);
+}
+
+.debit-form-col-100 {
+  width: 100%;
+}
+
+.debit-form-label {
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+  line-height: 1.2;
+}
+
+.debit-form-input,
+.debit-form-select,
+.debit-form-textarea {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #FFE4E4;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #1E1E1E;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.debit-form-input::placeholder,
+.debit-form-textarea::placeholder {
+  color: #9CA3AF;
+  opacity: 1;
+}
+
+.debit-form-input:focus,
+.debit-form-select:focus,
+.debit-form-textarea:focus {
+  outline: none;
+  border-color: #F2295B;
+  box-shadow: 0 0 0 3px rgba(242, 41, 91, 0.12);
+}
+
+.debit-select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.debit-form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.debit-select-caret {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 12px;
+  height: 12px;
+  fill: #000000;
+}
+
+.debit-form-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.debit-form-file {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #555555;
+  margin-top: 4px;
+}
+
+.debit-submit-btn {
+  width: 100%;
+  background: #F2295B;
+  color: #FFFFFF;
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(242, 41, 91, 0.25);
+  display: block;
+  text-align: center;
+}
+
+.debit-submit-btn:hover {
+  background-color: #d81b60;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(242, 41, 91, 0.35);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .debit-sec2-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .debit-form-col-50 {
+    width: 100%;
+  }
+  .debit-feature-card {
+    padding: 18px 16px;
+    gap: 14px;
+  }
+  .debit-feature-icon-wrap {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+  .debit-feature-icon-wrap img {
+    width: 48px;
+    height: 48px;
+  }
+  .debit-feature-title {
+    font-size: 16px;
+  }
+  .debit-feature-desc {
+    font-size: 13px;
+  }
+  .debit-waitlist-box {
+    padding: 24px 16px;
+  }
+}
 </style>
 
-<div class="elementor elementor-8734">
-  <div class="elementor-element elementor-element-fe05b7b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="fe05b7b" data-element_type="container" data-e-type="container">
-    <div class="e-con-inner">
-      <div class="elementor-element elementor-element-b9dfc35 e-con-full e-flex e-con e-child" data-id="b9dfc35" data-element_type="container" data-e-type="container">
-        {% if section.blocks.size > 0 %}
-          {% for block in section.blocks %}
-            {% assign idx = forloop.index0 %}
-            {% case idx %}
-              {% when 0 %}
-                {% assign box_id = "34a4885" %}
-                {% assign default_icon = "debit-card-feature-1.webp" %}
-              {% when 1 %}
-                {% assign box_id = "a9fcb04" %}
-                {% assign default_icon = "debit-card-feature-2.webp" %}
-              {% when 2 %}
-                {% assign box_id = "27b976b" %}
-                {% assign default_icon = "debit-card-feature-3.webp" %}
-              {% when 3 %}
-                {% assign box_id = "b7ab2f3" %}
-                {% assign default_icon = "debit-card-feature-4.webp" %}
-              {% when 4 %}
-                {% assign box_id = "6cf34d4" %}
-                {% assign default_icon = "debit-card-feature-5.webp" %}
-              {% else %}
-                {% assign box_id = "feature-box-" | append: forloop.index %}
-                {% assign default_icon = "debit-card-feature-1.webp" %}
-            {% endcase %}
+<div class="debit-sec2-wrapper">
+  <div class="debit-sec2-container">
 
-            <div class="elementor-element elementor-element-{{ box_id }} elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="{{ box_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default" {{ block.shopify_attributes }}>
-              <div class="elementor-image-box-wrapper">
-                <figure class="elementor-image-box-img">
-                  {% if block.settings.icon != blank %}
-                    <img decoding="async" width="1254" height="1254" src="{{ block.settings.icon | image_url: width: 300 }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
-                  {% else %}
-                    <img decoding="async" width="1254" height="1254" src="{{ default_icon | asset_url }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
-                  {% endif %}
-                </figure>
-                <div class="elementor-image-box-content">
-                  <h3 class="elementor-image-box-title">{{ block.settings.title }}</h3>
-                  <p class="elementor-image-box-description">{{ block.settings.description }}</p>
-                </div>
-              </div>
+    <!-- Left Column: 5 Feature Cards -->
+    <div class="debit-sec2-features-col">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          {% assign idx = forloop.index0 %}
+          {% case idx %}
+            {% when 0 %}
+              {% assign default_icon = "debit-card-feature-1.webp" %}
+            {% when 1 %}
+              {% assign default_icon = "debit-card-feature-2.webp" %}
+            {% when 2 %}
+              {% assign default_icon = "debit-card-feature-3.webp" %}
+            {% when 3 %}
+              {% assign default_icon = "debit-card-feature-4.webp" %}
+            {% when 4 %}
+              {% assign default_icon = "debit-card-feature-5.webp" %}
+            {% else %}
+              {% assign default_icon = "debit-card-feature-1.webp" %}
+          {% endcase %}
+
+          <div class="debit-feature-card" {{ block.shopify_attributes }}>
+            <div class="debit-feature-icon-wrap">
+              {% if block.settings.icon != blank %}
+                <img decoding="async" width="60" height="60" src="{{ block.settings.icon | image_url: width: 120 }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% else %}
+                <img decoding="async" width="60" height="60" src="{{ default_icon | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% endif %}
             </div>
-          {% endfor %}
+            <div class="debit-feature-text-wrap">
+              <h3 class="debit-feature-title">{{ block.settings.title }}</h3>
+              <p class="debit-feature-desc">{{ block.settings.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="debit-feature-card">
+          <div class="debit-feature-icon-wrap">
+            <img decoding="async" width="60" height="60" src="{{ 'debit-card-feature-1.webp' | asset_url }}" alt="Global Account" loading="lazy">
+          </div>
+          <div class="debit-feature-text-wrap">
+            <h3 class="debit-feature-title">Global Account</h3>
+            <p class="debit-feature-desc">Fund with USD, MXN, stablecoins, or crypto depending on program availability, jurisdiction, partner support, and compliance approval.</p>
+          </div>
+        </div>
+        <div class="debit-feature-card">
+          <div class="debit-feature-icon-wrap">
+            <img decoding="async" width="60" height="60" src="{{ 'debit-card-feature-2.webp' | asset_url }}" alt="Spend Anywhere" loading="lazy">
+          </div>
+          <div class="debit-feature-text-wrap">
+            <h3 class="debit-feature-title">Spend Anywhere</h3>
+            <p class="debit-feature-desc">Physical and virtual card use for stores, restaurants, online payments, travel, ATM withdrawals, and global spending where supported.</p>
+          </div>
+        </div>
+        <div class="debit-feature-card">
+          <div class="debit-feature-icon-wrap">
+            <img decoding="async" width="60" height="60" src="{{ 'debit-card-feature-3.webp' | asset_url }}" alt="Move Money" loading="lazy">
+          </div>
+          <div class="debit-feature-text-wrap">
+            <h3 class="debit-feature-title">Move Money</h3>
+            <p class="debit-feature-desc">Send funds to other users, external wallets, or local/international wires subject to region, compliance, partner availability, and KYC/AML approval.</p>
+          </div>
+        </div>
+        <div class="debit-feature-card">
+          <div class="debit-feature-icon-wrap">
+            <img decoding="async" width="60" height="60" src="{{ 'debit-card-feature-4.webp' | asset_url }}" alt="Stablecoin &amp; Digital Dollar Education" loading="lazy">
+          </div>
+          <div class="debit-feature-text-wrap">
+            <h3 class="debit-feature-title">Stablecoin &amp; Digital Dollar Education</h3>
+            <p class="debit-feature-desc">Stablecoins and digital dollars are virtual assets and are not the same as insured bank deposits unless held through qualifying partner accounts.</p>
+          </div>
+        </div>
+        <div class="debit-feature-card">
+          <div class="debit-feature-icon-wrap">
+            <img decoding="async" width="60" height="60" src="{{ 'debit-card-feature-5.webp' | asset_url }}" alt="Mobile App (iOS / Android)" loading="lazy">
+          </div>
+          <div class="debit-feature-text-wrap">
+            <h3 class="debit-feature-title">Mobile App (iOS / Android)</h3>
+            <p class="debit-feature-desc">Deposits, withdrawals, card management, transfer history, account controls, freeze/unfreeze, notifications.</p>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Right Column: Card Graphic & Waitlist Form -->
+    <div class="debit-sec2-card-form-col">
+      <!-- Top: Debit Card Graphic -->
+      <div class="debit-card-preview-box">
+        {% if section.settings.card_image != blank %}
+          <img loading="lazy" decoding="async" width="1067" height="677" src="{{ section.settings.card_image | image_url: width: 1100 }}" alt="{{ section.settings.card_image.alt | default: 'FaithBanc Debit Card' | escape }}">
         {% else %}
-          <div class="elementor-element elementor-element-34a4885 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="34a4885" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-            <div class="elementor-image-box-wrapper">
-              <figure class="elementor-image-box-img">
-                <img decoding="async" width="1254" height="1254" src="{{ 'debit-card-feature-1.webp' | asset_url }}" class="attachment-full size-full wp-image-8491" alt="Global Account" loading="lazy">
-              </figure>
-              <div class="elementor-image-box-content">
-                <h3 class="elementor-image-box-title">Global Account</h3>
-                <p class="elementor-image-box-description">Fund with USD, MXN, stablecoins, or crypto depending on program availability, jurisdiction, partner support, and compliance approval.</p>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-element elementor-element-a9fcb04 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="a9fcb04" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-            <div class="elementor-image-box-wrapper">
-              <figure class="elementor-image-box-img">
-                <img decoding="async" width="1254" height="1254" src="{{ 'debit-card-feature-2.webp' | asset_url }}" class="attachment-full size-full wp-image-8492" alt="Spend Anywhere" loading="lazy">
-              </figure>
-              <div class="elementor-image-box-content">
-                <h3 class="elementor-image-box-title">Spend Anywhere</h3>
-                <p class="elementor-image-box-description">Accepted anywhere major debit cards are honored worldwide.</p>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-element elementor-element-27b976b elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="27b976b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-            <div class="elementor-image-box-wrapper">
-              <figure class="elementor-image-box-img">
-                <img decoding="async" width="1254" height="1254" src="{{ 'debit-card-feature-3.webp' | asset_url }}" class="attachment-full size-full wp-image-8490" alt="Move Money" loading="lazy">
-              </figure>
-              <div class="elementor-image-box-content">
-                <h3 class="elementor-image-box-title">Move Money</h3>
-                <p class="elementor-image-box-description">P2P, wires, and transfers through partner banking rails.</p>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-element elementor-element-b7ab2f3 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="b7ab2f3" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-            <div class="elementor-image-box-wrapper">
-              <figure class="elementor-image-box-img">
-                <img decoding="async" width="1254" height="1254" src="{{ 'debit-card-feature-4.webp' | asset_url }}" class="attachment-full size-full wp-image-8489" alt="Stablecoin &amp; Digital Dollar Education" loading="lazy">
-              </figure>
-              <div class="elementor-image-box-content">
-                <h3 class="elementor-image-box-title">Stablecoin &amp; Digital Dollar Education</h3>
-                <p class="elementor-image-box-description">Educational guidance on safe digital asset and currency movements.</p>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-element elementor-element-6cf34d4 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="6cf34d4" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-            <div class="elementor-image-box-wrapper">
-              <figure class="elementor-image-box-img">
-                <img decoding="async" width="1254" height="1254" src="{{ 'debit-card-feature-5.webp' | asset_url }}" class="attachment-full size-full wp-image-8485" alt="Mobile App (iOS / Android)" loading="lazy">
-              </figure>
-              <div class="elementor-image-box-content">
-                <h3 class="elementor-image-box-title">Mobile App (iOS / Android)</h3>
-                <p class="elementor-image-box-description">Track balances, view transaction history, lock/unlock card, manage profiles.</p>
-              </div>
-            </div>
-          </div>
+          <img loading="lazy" decoding="async" width="1067" height="677" src="{{ 'debit-card-app-preview.webp' | asset_url }}" alt="FaithBanc Debit Card">
         {% endif %}
       </div>
 
-      <div class="elementor-element elementor-element-16eff2e e-con-full e-flex e-con e-child" data-id="16eff2e" data-element_type="container" data-e-type="container">
-        <div class="elementor-element elementor-element-ce08c9b elementor-widget elementor-widget-image" data-id="ce08c9b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-          {% if section.settings.app_image != blank %}
-            <img loading="lazy" decoding="async" width="1067" height="677" src="{{ section.settings.app_image | image_url: width: 1100 }}" class="attachment-full size-full" alt="{{ section.settings.app_image.alt | default: 'Mobile App' | escape }}">
-          {% else %}
-            <img loading="lazy" decoding="async" width="1067" height="677" src="{{ 'debit-card-app-preview.webp' | asset_url }}" class="attachment-full size-full wp-image-8751" alt="Mobile App">
+      <!-- Bottom: Waitlist Form Container -->
+      <div class="debit-waitlist-box" id="debit-card-waitlist">
+        {% form 'contact', class: 'debit-waitlist-form', id: 'debit-waitlist-form' %}
+          {% if form.posted_successfully? %}
+            <div class="elementor-message elementor-message-success" role="alert" style="color: #46b450; padding: 12px 15px; margin-bottom: 16px; border: 1px solid #46b450; border-radius: 8px; width: 100%; font-size: 14px;">
+              Thank you! You have been successfully added to the card waitlist.
+            </div>
+          {% elsif form.errors %}
+            <div class="elementor-message elementor-message-danger" role="alert" style="color: #dc3232; padding: 12px 15px; margin-bottom: 16px; border: 1px solid #dc3232; border-radius: 8px; width: 100%; font-size: 14px;">
+              {{ form.errors | default_errors }}
+            </div>
           {% endif %}
-        </div>
+
+          <div class="debit-form-grid">
+            <div class="debit-form-group debit-form-col-50">
+              <label for="waitlist-name-{{ section.id }}" class="debit-form-label">Full Name</label>
+              <input type="text" name="contact[name]" id="waitlist-name-{{ section.id }}" class="debit-form-input" placeholder="Start typing..." required="required">
+            </div>
+
+            <div class="debit-form-group debit-form-col-50">
+              <label for="waitlist-company-{{ section.id }}" class="debit-form-label">Company Name</label>
+              <input type="text" name="contact[company]" id="waitlist-company-{{ section.id }}" class="debit-form-input" placeholder="Start typing...">
+            </div>
+
+            <div class="debit-form-group debit-form-col-100">
+              <label for="waitlist-city-{{ section.id }}" class="debit-form-label">City</label>
+              <div class="debit-select-wrap">
+                <select name="contact[city]" id="waitlist-city-{{ section.id }}" class="debit-form-select">
+                  <option value="New York">New York</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Phoenix">Phoenix</option>
+                  <option value="Philadelphia">Philadelphia</option>
+                  <option value="San Antonio">San Antonio</option>
+                  <option value="San Diego">San Diego</option>
+                  <option value="Dallas">Dallas</option>
+                  <option value="San Jose">San Jose</option>
+                </select>
+                <svg aria-hidden="true" class="debit-select-caret" viewBox="0 0 571.4 571.4" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="debit-form-group debit-form-col-100">
+              <label for="waitlist-message-{{ section.id }}" class="debit-form-label">Additional Information</label>
+              <textarea name="contact[body]" id="waitlist-message-{{ section.id }}" rows="5" class="debit-form-textarea" placeholder="Start typing..."></textarea>
+            </div>
+
+            <div class="debit-form-group debit-form-col-100">
+              <input type="file" name="contact[file]" id="waitlist-file-{{ section.id }}" class="debit-form-file">
+            </div>
+
+            <div class="debit-form-group debit-form-col-100">
+              <button type="submit" class="debit-submit-btn">
+                {{ section.settings.form_btn_text | default: 'Join Waitlist' }}
+              </button>
+            </div>
+          </div>
+        {% endform %}
       </div>
     </div>
+
   </div>
 </div>

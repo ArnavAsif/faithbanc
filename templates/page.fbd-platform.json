@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "fbd_platform_section_01": {
+      "type": "fbd-platform-section-01",
+      "settings": {}
+    },
+    "fbd_platform_section_02": {
+      "type": "fbd-platform-section-02",
+      "blocks": {
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Token Dashboard",
+            "description": "Live price updates, market cap, 24-hour volume, price chart timeframes, and transaction history."
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "title": "RWA Backing & Education",
+            "description": "Real-world asset tokenization education with a backing verification panel."
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "title": "KYC Onboarding",
+            "description": "User account dashboard with balances, transactions, and status indicators."
+          }
+        },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "title": "Faith Wallet",
+            "description": "Multi-asset wallet for fiat and digital assets where supported."
+          }
+        },
+        "feature_5": {
+          "type": "feature",
+          "settings": {
+            "title": "Faith Exchange",
+            "description": "Custody services and crypto trading positioning where partner-supported."
+          }
+        },
+        "feature_6": {
+          "type": "feature",
+          "settings": {
+            "title": "Crypto-Backed Loans",
+            "description": "Lending concepts that integrate fiat and digital-asset accounts where allowed."
+          }
+        }
+      },
+      "block_order": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6"
+      ],
+      "settings": {}
+    },
+    "fbd_platform_section_03": {
+      "type": "fbd-platform-section-03",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "fbd_platform_section_01",
+    "fbd_platform_section_02",
+    "fbd_platform_section_03"
+  ]
+}

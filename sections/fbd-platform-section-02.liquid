@@ -1,0 +1,431 @@
+{% schema %}
+{
+  "name": "FBD Platform Features",
+  "tag": "section",
+  "class": "section-fbd-platform-features",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Feature Description",
+          "default": "Feature description text."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FBD Platform Features",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Token Dashboard",
+            "description": "Live price updates, market cap, 24-hour volume, price chart timeframes, and transaction history."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "RWA Backing & Education",
+            "description": "Real-world asset tokenization education with a backing verification panel."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "KYC Onboarding",
+            "description": "User account dashboard with balances, transactions, and status indicators."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Faith Wallet",
+            "description": "Multi-asset wallet for fiat and digital assets where supported."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Faith Exchange",
+            "description": "Custody services and crypto trading positioning where partner-supported."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Crypto-Backed Loans",
+            "description": "Lending concepts that integrate fiat and digital-asset accounts where allowed."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section 02 Scoped Rules */
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,
+.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+  display: flex;
+}
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper {
+  flex-direction: row;
+  text-align: start;
+  align-items: center;
+}
+.elementor-8761 .elementor-element.elementor-element-e3624e2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 20px 20px;
+  box-sizing: border-box;
+}
+.elementor-8761 .elementor-element.elementor-element-e3624e2 > .e-con-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.elementor-8761 .elementor-widget-image-box {
+  width: calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  flex: 1 1 calc(50% - 10px);
+  background: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(242, 41, 91, 0.16);
+  border-radius: 12px;
+  padding: 22px 24px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.elementor-8761 .elementor-widget-image-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 41, 91, 0.08);
+}
+.elementor-8761 .elementor-widget-image-box .elementor-image-box-img {
+  width: 64px;
+  min-width: 64px;
+  margin-right: 18px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elementor-8761 .elementor-widget-image-box .elementor-image-box-img img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+.elementor-8761 .elementor-widget-image-box .elementor-image-box-content {
+  flex: 1;
+  min-width: 0;
+}
+.elementor-8761 .elementor-widget-image-box .elementor-image-box-title {
+  font-family: "Poppins", "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #F2295B;
+  line-height: 1.3;
+  margin: 0 0 6px 0;
+}
+.elementor-8761 .elementor-widget-image-box .elementor-image-box-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .elementor-8761 .elementor-element.elementor-element-e3624e2 {
+    padding: 40px 15px 15px 15px;
+  }
+  .elementor-8761 .elementor-widget-image-box {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 18px 16px;
+  }
+  .elementor-8761 .elementor-widget-image-box .elementor-image-box-img {
+    width: 50px;
+    min-width: 50px;
+    margin-right: 14px;
+  }
+  .elementor-8761 .elementor-widget-image-box .elementor-image-box-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .elementor-8761 .elementor-widget-image-box .elementor-image-box-title {
+    font-size: 16px;
+  }
+  .elementor-8761 .elementor-widget-image-box .elementor-image-box-description {
+    font-size: 13.5px;
+    line-height: 21px;
+  }
+}
+.elementor-8761 .elementor-element.elementor-element-e3624e2{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--flex-wrap:wrap;--padding-top:80px;--padding-bottom:20px;--padding-left:0px;--padding-right:0px;}
+.elementor-8761 .elementor-element.elementor-element-e3624e2{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-49224b4:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-49224b4:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-d7bf516:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-e9d0f10:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-1067cfb:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-5d3127e:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3:has(:hover) .elementor-image-box-title,
+					 .elementor-8761 .elementor-element.elementor-element-35c72c3:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+
+@media(max-width:767px){.elementor-8761 .elementor-element.elementor-element-65765f0{--padding-top:120px;--padding-bottom:80px;--padding-left:15px;--padding-right:15px;}.elementor-8761 .elementor-element.elementor-element-c8787d6{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-8761 .elementor-element.elementor-element-621613f.elementor-element{--align-self:center;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-8761 .elementor-element.elementor-element-9ca953c{text-align:center;}.elementor-8761 .elementor-element.elementor-element-9ca953c .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-8619595{text-align:center;font-size:15px;}.elementor-8761 .elementor-element.elementor-element-d481b5d{--justify-content:center;--gap:5px 5px;--row-gap:5px;--column-gap:5px;}.elementor-8761 .elementor-element.elementor-element-76b0060 .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}.elementor-8761 .elementor-element.elementor-element-51d9773.e-con{--order:-99999 /* order start hack */;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-a59bcc5{margin:-54px 0px calc(var(--kit-widget-spacing, 0px) + -24px) 0px;}.elementor-8761 .elementor-element.elementor-element-a59bcc5 img{max-width:100%;}.elementor-8761 .elementor-element.elementor-element-e3624e2{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-widget-image-box .elementor-image-box-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-widget-image-box .elementor-image-box-description{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-49224b4{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-49224b4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-d7bf516{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-d7bf516 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-e9d0f10 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-1067cfb{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-1067cfb .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-5d3127e{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-5d3127e .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-35c72c3{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper{text-align:start;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-title{margin-bottom:18px;}.elementor-8761 .elementor-element.elementor-element-35c72c3 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8761 .elementor-element.elementor-element-d2b8341{--width:95%;--padding-top:20px;--padding-bottom:20px;--padding-left:20px;--padding-right:20px;}.elementor-8761 .elementor-element.elementor-element-fed3b93{--spacer-size:30px;}.elementor-8761 .elementor-element.elementor-element-1290b22{text-align:start;}.elementor-8761 .elementor-element.elementor-element-1290b22 .elementor-heading-title{font-size:24px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-size:var( --e-global-typography-text-font-size );}.elementor-8761 .elementor-element.elementor-element-a4d22d1{--container-widget-width:530px;--container-widget-flex-grow:0;width:var( --container-widget-width, 530px );max-width:530px;}}
+</style>
+
+<div class="elementor elementor-8761">
+  <div class="elementor-element elementor-element-e3624e2 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="e3624e2" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          {% assign idx = forloop.index0 %}
+          {% case idx %}
+            {% when 0 %}
+              {% assign box_id = "49224b4" %}
+              {% assign default_icon = "fbd-platform-feature-1.webp" %}
+            {% when 1 %}
+              {% assign box_id = "d7bf516" %}
+              {% assign default_icon = "fbd-platform-feature-2.webp" %}
+            {% when 2 %}
+              {% assign box_id = "e9d0f10" %}
+              {% assign default_icon = "fbd-platform-feature-3.webp" %}
+            {% when 3 %}
+              {% assign box_id = "1067cfb" %}
+              {% assign default_icon = "fbd-platform-feature-4.webp" %}
+            {% when 4 %}
+              {% assign box_id = "5d3127e" %}
+              {% assign default_icon = "fbd-platform-feature-5.webp" %}
+            {% when 5 %}
+              {% assign box_id = "35c72c3" %}
+              {% assign default_icon = "fbd-platform-feature-6.webp" %}
+            {% else %}
+              {% assign box_id = "fbd-box-" | append: forloop.index %}
+              {% assign default_icon = "fbd-platform-feature-1.webp" %}
+          {% endcase %}
+
+          <div class="elementor-element elementor-element-{{ box_id }} elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="{{ box_id }}" data-element_type="widget" data-widget_type="image-box.default" {{ block.shopify_attributes }}>
+            <div class="elementor-image-box-wrapper">
+              <figure class="elementor-image-box-img">
+                {% if block.settings.icon != blank %}
+                  <img decoding="async" width="1254" height="1254" src="{{ block.settings.icon | image_url: width: 200 }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% else %}
+                  <img decoding="async" width="1254" height="1254" src="{{ default_icon | asset_url }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% endif %}
+              </figure>
+              <div class="elementor-image-box-content">
+                <h3 class="elementor-image-box-title">{{ block.settings.title }}</h3>
+                <p class="elementor-image-box-description">{{ block.settings.description }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="elementor-element elementor-element-49224b4 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="49224b4" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-1.webp' | asset_url }}" class="attachment-full size-full" alt="Token Dashboard" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">Token Dashboard</h3>
+              <p class="elementor-image-box-description">Live price updates, market cap, 24-hour volume, price chart timeframes, and transaction history.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-d7bf516 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="d7bf516" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-2.webp' | asset_url }}" class="attachment-full size-full" alt="RWA Backing &amp; Education" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">RWA Backing &amp; Education</h3>
+              <p class="elementor-image-box-description">Real-world asset tokenization education with a backing verification panel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-e9d0f10 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="e9d0f10" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-3.webp' | asset_url }}" class="attachment-full size-full" alt="KYC Onboarding" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">KYC Onboarding</h3>
+              <p class="elementor-image-box-description">User account dashboard with balances, transactions, and status indicators.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-1067cfb elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="1067cfb" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-4.webp' | asset_url }}" class="attachment-full size-full" alt="Faith Wallet" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">Faith Wallet</h3>
+              <p class="elementor-image-box-description">Multi-asset wallet for fiat and digital assets where supported.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-5d3127e elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="5d3127e" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-5.webp' | asset_url }}" class="attachment-full size-full" alt="Faith Exchange" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">Faith Exchange</h3>
+              <p class="elementor-image-box-description">Custody services and crypto trading positioning where partner-supported.</p>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-35c72c3 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="35c72c3" data-element_type="widget" data-widget_type="image-box.default">
+          <div class="elementor-image-box-wrapper">
+            <figure class="elementor-image-box-img">
+              <img decoding="async" width="1254" height="1254" src="{{ 'fbd-platform-feature-6.webp' | asset_url }}" class="attachment-full size-full" alt="Crypto-Backed Loans" loading="lazy">
+            </figure>
+            <div class="elementor-image-box-content">
+              <h3 class="elementor-image-box-title">Crypto-Backed Loans</h3>
+              <p class="elementor-image-box-description">Lending concepts that integrate fiat and digital-asset accounts where allowed.</p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

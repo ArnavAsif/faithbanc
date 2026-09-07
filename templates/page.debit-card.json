@@ -13,6 +13,50 @@
     },
     "debit_card_section_02": {
       "type": "debit-card-section-02",
+      "blocks": {
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Global Account",
+            "description": "Fund with USD, MXN, stablecoins, or crypto depending on program availability, jurisdiction, partner support, and compliance approval."
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Spend Anywhere",
+            "description": "Physical and virtual card use for stores, restaurants, online payments, travel, ATM withdrawals, and global spending where supported."
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Move Money",
+            "description": "Send funds to other users, external wallets, or local/international wires subject to region, compliance, partner availability, and KYC/AML approval."
+          }
+        },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "title": "Stablecoin & Digital Dollar Education",
+            "description": "Stablecoins and digital dollars are virtual assets and are not the same as insured bank deposits unless held through qualifying partner accounts."
+          }
+        },
+        "feature_5": {
+          "type": "feature",
+          "settings": {
+            "title": "Mobile App (iOS / Android)",
+            "description": "Deposits, withdrawals, card management, transfer history, account controls, freeze/unfreeze, notifications."
+          }
+        }
+      },
+      "block_order": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5"
+      ],
       "settings": {}
     },
     "debit_card_section_03": {
