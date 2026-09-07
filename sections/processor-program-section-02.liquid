@@ -1,0 +1,300 @@
+{% schema %}
+{
+  "name": "Processor Economics",
+  "tag": "section",
+  "class": "section-processor-economics",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Program Economics"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Simple. <span>Recurring. </span>Transparent."
+    },
+    {
+      "type": "text",
+      "id": "card_title",
+      "label": "Card Title",
+      "default": "Flat Monthly Rate"
+    },
+    {
+      "type": "text",
+      "id": "card_price",
+      "label": "Card Price",
+      "default": "$99.95"
+    },
+    {
+      "type": "text",
+      "id": "card_period",
+      "label": "Card Period",
+      "default": "per month"
+    },
+    {
+      "type": "text",
+      "id": "card_referral_label",
+      "label": "Referral Label",
+      "default": "Per approved referral"
+    },
+    {
+      "type": "text",
+      "id": "card_referral_value",
+      "label": "Referral Value",
+      "default": "$20 / mo"
+    },
+    {
+      "type": "text",
+      "id": "card_volume_label",
+      "label": "Volume Participation Label",
+      "default": "Volume participation*"
+    },
+    {
+      "type": "text",
+      "id": "card_volume_value",
+      "label": "Volume Participation Value",
+      "default": "0.5%"
+    },
+    {
+      "type": "text",
+      "id": "card_btn_text",
+      "label": "Card Button Text",
+      "default": "Apply Now"
+    },
+    {
+      "type": "url",
+      "id": "card_btn_url",
+      "label": "Card Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Benefit Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Processor Economics",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "text": "$99.95 flat rate per month — shown in red across hero, calculator, comparison, and CTA."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "text": "Approved affiliates, churches, or organizations may earn $20 per month for each approved organization that joins via their referral link or portal."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "text": "Approved partners may also participate in 0.5% of transaction volume processed through their portal, subject to program terms, payment network rules, underwriting, and partner approval."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "text": "Referral tracking captures affiliate code, church code, UTM parameters, landing page URL, and source campaign."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section 02 Scoped Rules */
+.elementor-8581 .elementor-element.elementor-element-ade581a{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:40px 40px;--row-gap:40px;--column-gap:40px;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8581 .elementor-element.elementor-element-c55fbfd{--display:flex;--justify-content:center;}
+.elementor-8581 .elementor-element.elementor-element-b11bfe6 .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-66d3c96 );color:var( --e-global-color-66d3c96 );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-8581 .elementor-element.elementor-element-8fe7763{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-8fe7763 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:46px;font-weight:700;text-transform:capitalize;line-height:55px;letter-spacing:-2.7px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(10px/2);}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(10px/2);}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(10px/2);}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-10px/2);}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-10px/2);}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-icon i{color:var( --e-global-color-66d3c96 );transition:color 0.3s;}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-icon svg{fill:var( --e-global-color-66d3c96 );transition:fill 0.3s;}
+.elementor-8581 .elementor-element.elementor-element-dd232bd{--e-icon-list-icon-size:17px;--icon-vertical-align:flex-start;--icon-vertical-offset:5px;}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-item > a{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:25px;}
+.elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-text{transition:color 0.3s;}
+.elementor-8581 .elementor-element.elementor-element-68b8dbd{--display:flex;--justify-content:center;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:12px 12px 12px 12px;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}
+.elementor-8581 .elementor-element.elementor-element-68b8dbd:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-68b8dbd > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(180deg, #FF572212 0%, #F2295B0A 100%);}
+.elementor-8581 .elementor-element.elementor-element-68b8dbd.e-con{--order:-99999 /* order start hack */;}
+.elementor-8581 .elementor-element.elementor-element-58c3be1 .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;text-transform:uppercase;color:var( --e-global-color-91f3e4c );}
+.elementor-8581 .elementor-element.elementor-element-b1a82f7{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-b1a82f7 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:56px;font-weight:700;text-transform:capitalize;line-height:55px;letter-spacing:-2.7px;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-e703172{margin:-11px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;}
+.elementor-8581 .elementor-element.elementor-element-e703172 .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-0773ddb{--divider-border-style:solid;--divider-color:#FF572259;--divider-border-width:1px;}
+.elementor-8581 .elementor-element.elementor-element-0773ddb .elementor-divider-separator{width:100%;}
+.elementor-8581 .elementor-element.elementor-element-0773ddb .elementor-divider{padding-block-start:11px;padding-block-end:11px;}
+.elementor-8581 .elementor-element.elementor-element-30f4819{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8581 .elementor-element.elementor-element-4ea7f14 .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;color:var( --e-global-color-91f3e4c );}
+.elementor-8581 .elementor-element.elementor-element-1da58bd .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:700;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-108f023{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8581 .elementor-element.elementor-element-7b3ef0c .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;color:var( --e-global-color-91f3e4c );}
+.elementor-8581 .elementor-element.elementor-element-3ea6944 .elementor-heading-title{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:700;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-748e54e{--divider-border-style:solid;--divider-color:#FF572259;--divider-border-width:1px;}
+.elementor-8581 .elementor-element.elementor-element-748e54e .elementor-divider-separator{width:100%;}
+.elementor-8581 .elementor-element.elementor-element-748e54e .elementor-divider{padding-block-start:11px;padding-block-end:11px;}
+.elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button{background-color:transparent;font-family:"Poppins", Sans-serif;font-size:14px;font-weight:300;text-transform:uppercase;font-style:normal;line-height:14px;letter-spacing:-0.2px;fill:#FFFFFF;color:#FFFFFF;background-image:linear-gradient(148deg, #E42981 0%, #FEA035 100%);border-style:solid;border-width:1px 1px 1px 1px;border-color:var( --e-global-color-832bc31 );border-radius:32px 32px 32px 32px;padding:18px 35px 18px 35px;}
+.elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button:hover, .elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button:focus{background-color:var( --e-global-color-3d786e9 );color:var( --e-global-color-0587ab8 );}
+.elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button-content-wrapper{flex-direction:row;}
+.elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button:hover svg, .elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button:focus svg{fill:var( --e-global-color-0587ab8 );}
+@media(max-width:1024px){
+  .elementor-8581 .elementor-element.elementor-element-8fe7763{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-8fe7763 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-b1a82f7{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-b1a82f7 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}
+}
+@media(min-width:768px){
+  .elementor-8581 .elementor-element.elementor-element-c55fbfd{--width:60%;}
+  .elementor-8581 .elementor-element.elementor-element-68b8dbd{--width:40%;}
+}
+@media(max-width:767px){
+  .elementor-8581 .elementor-element.elementor-element-ade581a{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-8581 .elementor-element.elementor-element-c55fbfd{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+  .elementor-8581 .elementor-element.elementor-element-b11bfe6 .elementor-button{font-size:10px;}
+  .elementor-8581 .elementor-element.elementor-element-8fe7763{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-8fe7763 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8581 .elementor-element.elementor-element-dd232bd .elementor-icon-list-item > a{font-size:14px;}
+  .elementor-8581 .elementor-element.elementor-element-68b8dbd{--padding-top:40px;--padding-bottom:40px;--padding-left:20px;--padding-right:20px;}
+  .elementor-8581 .elementor-element.elementor-element-b1a82f7{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-b1a82f7 .elementor-heading-title{font-size:37px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-bfd39bc .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}
+}
+</style>
+
+<div class="elementor elementor-8581">
+  <div class="elementor-element elementor-element-ade581a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="ade581a" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-c55fbfd e-con-full e-flex e-con e-child" data-id="c55fbfd" data-element_type="container" data-e-type="container">
+        {% if section.settings.badge_text != blank %}
+          <div class="elementor-element elementor-element-b11bfe6 elementor-align-left elementor-widget elementor-widget-button elementor-invisible" data-id="b11bfe6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+            <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+              </span>
+            </a>
+          </div>
+        {% endif %}
+        <div class="elementor-element elementor-element-8fe7763 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible" data-id="8fe7763" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+        <div class="elementor-element elementor-element-dd232bd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list elementor-invisible" data-id="dd232bd" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+          <ul class="elementor-icon-list-items">
+            {% if section.blocks.size > 0 %}
+              {% for block in section.blocks %}
+                <li class="elementor-icon-list-item" {{ block.shopify_attributes }}>
+                  <span class="elementor-icon-list-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                  </span>
+                  <span class="elementor-icon-list-text">{{ block.settings.text }}</span>
+                </li>
+              {% endfor %}
+            {% else %}
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">$99.95 flat rate per month — shown in red across hero, calculator, comparison, and CTA.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Approved affiliates, churches, or organizations may earn $20 per month for each approved organization that joins via their referral link or portal.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Approved partners may also participate in 0.5% of transaction volume processed through their portal, subject to program terms, payment network rules, underwriting, and partner approval.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Referral tracking captures affiliate code, church code, UTM parameters, landing page URL, and source campaign.</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      <div class="elementor-element elementor-element-68b8dbd e-con-full e-flex e-con e-child elementor-invisible" data-id="68b8dbd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+        <div class="elementor-element elementor-element-58c3be1 elementor-widget elementor-widget-heading" data-id="58c3be1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_title }}</h2>
+        </div>
+        <div class="elementor-element elementor-element-b1a82f7 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="b1a82f7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_price }}</h2>
+        </div>
+        <div class="elementor-element elementor-element-e703172 elementor-widget elementor-widget-heading" data-id="e703172" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_period }}</h2>
+        </div>
+        <div class="elementor-element elementor-element-0773ddb elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0773ddb" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+          <div class="elementor-divider">
+            <span class="elementor-divider-separator"></span>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-30f4819 e-con-full e-flex e-con e-child" data-id="30f4819" data-element_type="container" data-e-type="container">
+          <div class="elementor-element elementor-element-4ea7f14 elementor-widget elementor-widget-heading" data-id="4ea7f14" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_referral_label }}</h2>
+          </div>
+          <div class="elementor-element elementor-element-1da58bd elementor-widget elementor-widget-heading" data-id="1da58bd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_referral_value }}</h2>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-108f023 e-con-full e-flex e-con e-child" data-id="108f023" data-element_type="container" data-e-type="container">
+          <div class="elementor-element elementor-element-7b3ef0c elementor-widget elementor-widget-heading" data-id="7b3ef0c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_volume_label }}</h2>
+          </div>
+          <div class="elementor-element elementor-element-3ea6944 elementor-widget elementor-widget-heading" data-id="3ea6944" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h2 class="elementor-heading-title elementor-size-default">{{ section.settings.card_volume_value }}</h2>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-748e54e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="748e54e" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+          <div class="elementor-divider">
+            <span class="elementor-divider-separator"></span>
+          </div>
+        </div>
+        {% if section.settings.card_btn_text != blank %}
+          <div class="elementor-element elementor-element-bfd39bc elementor-align-justify elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="bfd39bc" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+            <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.card_btn_url | default: '/contact-us' }}">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-paper-plane" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>
+                </span>
+                <span class="elementor-button-text">{{ section.settings.card_btn_text }}</span>
+              </span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

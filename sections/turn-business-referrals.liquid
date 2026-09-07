@@ -1,0 +1,423 @@
+{% schema %}
+{
+  "name": "Turn Business Referrals",
+  "tag": "section",
+  "class": "section-turn-business-referrals",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Become a Processor"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Turn Business Referrals Into Monthly Residual Revenue"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Earn substantial recurring income by introducing businesses to FaithBanc\u2019s transparent payment processing solutions."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Become a Processor"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Card Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Turn Business Referrals"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Turn Business Referrals Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-258510a {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --gap: 50px 50px;
+  --row-gap: 50px;
+  --column-gap: 50px;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-b813fc8 {
+  --display: flex;
+  --flex-direction: row;
+  --container-widget-width: initial;
+  --container-widget-height: 100%;
+  --container-widget-flex-grow: 1;
+  --container-widget-align-self: stretch;
+  --flex-wrap-mobile: wrap;
+  --gap: 30px 30px;
+  --row-gap: 30px;
+  --column-gap: 30px;
+  --overflow: hidden;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: #CFCFCF75;
+  --border-color: #CFCFCF75;
+  --border-radius: 12px 12px 12px 12px;
+  --padding-top: 50px;
+  --padding-bottom: 50px;
+  --padding-left: 50px;
+  --padding-right: 50px;
+}
+.elementor-8440 .elementor-element.elementor-element-b813fc8:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-b813fc8>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: #FAFAFA;
+}
+.elementor-8440 .elementor-element.elementor-element-6891173 {
+  --display: flex;
+  --justify-content: center;
+}
+.elementor-8440 .elementor-element.elementor-element-5f7f039 .elementor-button {
+  background-color: #FF572230;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  border-radius: 45px 45px 45px 45px;
+  padding: 10px 25px 10px 25px;
+}
+.elementor-8440 .elementor-element.elementor-element-b30a4f8 {
+  width: var(--container-widget-width, 100%);
+  max-width: 100%;
+  --container-widget-width: 100%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-b30a4f8 .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 55px;
+  letter-spacing: -2.7px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-edf3832 {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-edf3832.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 {
+  width: 100%;
+  max-width: 100%;
+  --e-icon-list-icon-size: 16px;
+  --icon-vertical-align: flex-start;
+  --icon-vertical-offset: 4px;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+  padding-block-end: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+  margin-block-start: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+  margin-inline: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-items.elementor-inline-items {
+  margin-inline: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+  inset-inline-end: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-icon i {
+  color: var(--e-global-color-832bc31);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-icon svg {
+  fill: var(--e-global-color-832bc31);
+  transition: fill 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-item>.elementor-icon-list-text,
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-item>a {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.elementor-8440 .elementor-element.elementor-element-e713252 .elementor-icon-list-text {
+  color: var(--e-global-color-secondary);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button {
+  background-color: transparent;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-image: linear-gradient(148deg, #E42981 0%, #FEA035 100%);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-832bc31);
+  border-radius: 32px 32px 32px 32px;
+  padding: 18px 35px 18px 35px;
+}
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button:hover,
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button:focus {
+  background-color: var(--e-global-color-3d786e9);
+  color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button-content-wrapper {
+  flex-direction: row;
+}
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button:hover svg,
+.elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button:focus svg {
+  fill: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-98aba8b {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-4a794db {
+  margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-b30a4f8 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-b30a4f8 .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-edf3832 {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e713252 {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button {
+    font-size: 15px;
+    padding: 16px 35px 16px 35px;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-258510a {
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-b813fc8 {
+    --gap: 20px 20px;
+    --row-gap: 20px;
+    --column-gap: 20px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-6891173 {
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-5f7f039 .elementor-button {
+    font-size: 10px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-b30a4f8 {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-b30a4f8 .elementor-heading-title {
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-edf3832 {
+    text-align: start;
+    font-size: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-afe93cc .elementor-button {
+    font-size: 12px;
+    padding: 15px 15px 15px 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-98aba8b.e-con {
+    --order: -99999
+      /* order start hack */
+    ;
+  }
+  .elementor-8440 .elementor-element.elementor-element-4a794db {
+    margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+  }
+}
+</style>
+
+<div class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-258510a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="258510a" data-element_type="container">
+  <div class="e-con-inner">
+<div class="elementor-element elementor-element-b813fc8 e-con-full e-flex e-con e-child"
+					data-id="b813fc8" data-element_type="container" data-e-type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-6891173 e-con-full e-flex e-con e-child"
+						data-id="6891173" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-5f7f039 elementor-align-left elementor-widget elementor-widget-button"
+							data-id="5f7f039" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-size-sm" role="button">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">{{ section.settings.badge_text | default: "Become a Processor" }}</span>
+								</span>
+							</a>
+						</div>
+						<div class="elementor-element elementor-element-b30a4f8 elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="b30a4f8" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Turn <span>Business
+									Referrals</span> Into Monthly Residual Revenue</h2>
+						</div>
+						<div class="elementor-element elementor-element-edf3832 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="edf3832" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							FaithBanc™ allows approved affiliates, consultants, chambers, churches, nonprofits, and
+							business networks to refer merchants into the flat-rate processing program and earn
+							recurring income through the FaithBanc™ portal. </div>
+						<div class="elementor-element elementor-element-e713252 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="e713252" data-element_type="widget" data-e-type="widget"
+							data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Step 1: Become a Processor Partner.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Step 2: Refer businesses that want lower
+										processing costs.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Step 3: Earn recurring monthly revenue as
+										your network grows.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Featured economics: $20 per enrolled
+										organization per month plus 0.5% of approved transaction volume where
+										applicable.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="elementor-element elementor-element-afe93cc elementor-align-left elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button"
+							data-id="afe93cc" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact-us">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-paper-plane"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
+											</path>
+										</svg> </span>
+									<span class="elementor-button-text">{{ section.settings.btn_text | default: "Become a Processor" }}</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-98aba8b e-con-full e-flex e-con e-child"
+						data-id="98aba8b" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-4a794db elementor-widget elementor-widget-image"
+							data-id="4a794db" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							{% if section.settings.image != blank %}
+<img src="{{ section.settings.image | image_url: width: 1200 }}" class="attachment-full size-full" alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}" loading="lazy">
+{% else %}
+<img decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM.webp"
+								class="attachment-full size-full wp-image-8841" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-1-2026-08_52_13-AM-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+{% endif %}
+						</div>
+					</div>
+				</div>
+  </div>
+</div>
+</div>

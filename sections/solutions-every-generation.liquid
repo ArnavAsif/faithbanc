@@ -1,0 +1,1001 @@
+{% schema %}
+{
+  "name": "Generational Solutions",
+  "tag": "section",
+  "class": "section-solutions-every-generation",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "OUR SOLUTIONS"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Solutions for Every Generation & Community"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Generational Solutions",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "title": "Teen Banking",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "Islam Banking",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "Vision & Purpose of Initiative",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "National Rollout Cost",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "National Economic Impact",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "Church Impact Center Model",
+            "button_text": "Learn More \u2192"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Initiative Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon/Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Teen Banking"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Early financial literacy, controlled debit access, and interactive money management."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn More \u2192"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Solutions Every Generation Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-7af557c {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --padding-top: 80px;
+  --padding-bottom: 80px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-0e6b3b7 .elementor-button {
+  background-color: #FF572230;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  fill: var(--e-global-color-secondary);
+  color: var(--e-global-color-secondary);
+  border-radius: 45px 45px 45px 45px;
+  padding: 10px 25px 10px 25px;
+}
+.elementor-8440 .elementor-element.elementor-element-ac1e121 {
+  width: var(--container-widget-width, 49%);
+  max-width: 49%;
+  --container-widget-width: 49%;
+  --container-widget-flex-grow: 0;
+  text-align: center;
+}
+.elementor-8440 .elementor-element.elementor-element-ac1e121.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-ac1e121 .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 52px;
+  letter-spacing: -1.8px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-10b17ad {
+  --display: flex;
+  --flex-direction: row;
+  --container-widget-width: initial;
+  --container-widget-height: 100%;
+  --container-widget-flex-grow: 1;
+  --container-widget-align-self: stretch;
+  --flex-wrap-mobile: wrap;
+  --gap: 30px 30px;
+  --row-gap: 30px;
+  --column-gap: 30px;
+  --flex-wrap: wrap;
+  --padding-top: 10px;
+  --padding-bottom: 0px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-6a7b271 {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-6a7b271:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-6a7b271>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-6a7b271.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-ec15d6c {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-ec15d6c img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-e1ad8b9 {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-e1ad8b9 .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-9a836e7 {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-c692f7e .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-c692f7e {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-4151935 {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-4151935:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-4151935>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-4151935.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-c115627 {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-c115627 img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-1e66e5b {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-1e66e5b .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-8ed7901 {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-830f999 .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-830f999 {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-13664d6 {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-13664d6:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-13664d6>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-13664d6.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-29a4c43 {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-29a4c43 img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-a008d8e {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-a008d8e .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-a2f64e2 {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-4b79be6 .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-4b79be6 {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-89cbb1e {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-89cbb1e:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-89cbb1e>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-89cbb1e.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-9670d54 {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-9670d54 img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-2675d3a {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-2675d3a .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-8297c79 {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-2d20644 .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-2d20644 {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-0af1e8b {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-0af1e8b:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-0af1e8b>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-0af1e8b.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-80322c9 {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-80322c9 img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-7ca82de {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-7ca82de .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-b24750a {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-eb1099a .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-eb1099a {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-bac7601 {
+  --display: flex;
+  --gap: 15px 15px;
+  --row-gap: 15px;
+  --column-gap: 15px;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: var(--e-global-color-dfbe82c);
+  --border-color: var(--e-global-color-dfbe82c);
+  --border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.12);
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+  --padding-left: 30px;
+  --padding-right: 30px;
+}
+.elementor-8440 .elementor-element.elementor-element-bac7601:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-bac7601>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-bac7601.e-con {
+  --flex-grow: 1;
+  --flex-shrink: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-d7b7d15 {
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-d7b7d15 img {
+  width: 65px;
+}
+.elementor-8440 .elementor-element.elementor-element-816e4eb {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-816e4eb .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-5c8c8aa {
+  width: var(--container-widget-width, 98%);
+  max-width: 98%;
+  --container-widget-width: 98%;
+  --container-widget-flex-grow: 0;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #505050;
+}
+.elementor-8440 .elementor-element.elementor-element-a35b1e8 .elementor-button {
+  background-color: #CBA13500;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  padding: 0px 0px 0px 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-a35b1e8 {
+  margin: 10px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+
+@media(min-width:768px) {
+  .elementor-8440 .elementor-element.elementor-element-6a7b271 {
+    --width: 30%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-4151935 {
+    --width: 30%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-13664d6 {
+    --width: 30%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-89cbb1e {
+    --width: 30%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0af1e8b {
+    --width: 30%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-bac7601 {
+    --width: 30%;
+  }
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-ac1e121 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ac1e121 .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e1ad8b9 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e1ad8b9 .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-1e66e5b {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-1e66e5b .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-a008d8e {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-a008d8e .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2675d3a {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2675d3a .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-7ca82de {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-7ca82de .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-816e4eb {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-816e4eb .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-7af557c {
+    --padding-top: 50px;
+    --padding-bottom: 50px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0e6b3b7 .elementor-button {
+    font-size: 10px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ac1e121 {
+    text-align: center;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ac1e121 .elementor-heading-title {
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ec15d6c img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e1ad8b9 {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e1ad8b9 .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-c115627 img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-1e66e5b {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-1e66e5b .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-29a4c43 img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-a008d8e {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-a008d8e .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-9670d54 img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2675d3a {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2675d3a .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-80322c9 img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-7ca82de {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-7ca82de .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-d7b7d15 img {
+    width: 44px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-816e4eb {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-816e4eb .elementor-heading-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+}
+</style>
+
+<div id="section-{{ section.id }}" class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-7af557c e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="7af557c" data-element_type="container" data-e-type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0e6b3b7 elementor-align-center elementor-widget elementor-widget-button"
+					data-id="0e6b3b7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-text">{{ section.settings.badge_text | default: "OUR SOLUTIONS" }}</span>
+						</span>
+					</a>
+				</div>
+				<div class="elementor-element elementor-element-ac1e121 elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible"
+					data-id="ac1e121" data-element_type="widget" data-e-type="widget"
+					data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Solutions for Every <span>Generation
+							&amp;</span> Community</h2>
+				</div>
+				<div class="elementor-element elementor-element-10b17ad e-con-full e-flex e-con e-child"
+					data-id="10b17ad" data-element_type="container" data-e-type="container">
+					<div class="elementor-element elementor-element-6a7b271 e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="6a7b271" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-element elementor-element-ec15d6c elementor-widget elementor-widget-image"
+							data-id="ec15d6c" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4.webp"
+								class="attachment-full size-full wp-image-8488" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_03-PM-4-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-e1ad8b9 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="e1ad8b9" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Teen Banking</h2>
+						</div>
+						<div class="elementor-element elementor-element-9a836e7 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="9a836e7" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							Empowering the next generation with smart financial tools. </div>
+						<div class="elementor-element elementor-element-c692f7e elementor-widget elementor-widget-button"
+							data-id="c692f7e" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm"
+								href="https://faithbanc.com/parent-portal/">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-4151935 e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="4151935" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+						<div class="elementor-element elementor-element-c115627 elementor-widget elementor-widget-image"
+							data-id="c115627" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7.webp"
+								class="attachment-full size-full wp-image-8491" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-7-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-1e66e5b elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="1e66e5b" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Islam Banking</h2>
+						</div>
+						<div class="elementor-element elementor-element-8ed7901 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="8ed7901" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							Shariah-compliant banking solutions built on trust and value. </div>
+						<div class="elementor-element elementor-element-830f999 elementor-widget elementor-widget-button"
+							data-id="830f999" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm"
+								href="https://faithbanc.com/islamic-banking/">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-13664d6 e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="13664d6" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+						<div class="elementor-element elementor-element-29a4c43 elementor-widget elementor-widget-image"
+							data-id="29a4c43" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6.webp"
+								class="attachment-full size-full wp-image-8490" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_04-PM-6-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-a008d8e elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="a008d8e" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Vision &amp; Purpose of
+								Initiative</h2>
+						</div>
+						<div class="elementor-element elementor-element-a2f64e2 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="a2f64e2" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							Building initiatives that create meaningful and lasting change. </div>
+						<div class="elementor-element elementor-element-4b79be6 elementor-widget elementor-widget-button"
+							data-id="4b79be6" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm"
+								href="https://faithbanc.com/services/">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-89cbb1e e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="89cbb1e" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-element elementor-element-9670d54 elementor-widget elementor-widget-image"
+							data-id="9670d54" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2.webp"
+								class="attachment-full size-full wp-image-8486" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_59-PM-2-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-2675d3a elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="2675d3a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">National Rollout Cost</h2>
+						</div>
+						<div class="elementor-element elementor-element-8297c79 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="8297c79" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							Strategic investment for a scalable and sustainable rollout. </div>
+						<div class="elementor-element elementor-element-2d20644 elementor-widget elementor-widget-button"
+							data-id="2d20644" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-0af1e8b e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="0af1e8b" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-element elementor-element-80322c9 elementor-widget elementor-widget-image"
+							data-id="80322c9" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1.webp"
+								class="attachment-full size-full wp-image-8485" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_21_57-PM-1-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-7ca82de elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="7ca82de" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">National Economic Impact</h2>
+						</div>
+						<div class="elementor-element elementor-element-b24750a elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="b24750a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							Driving economic growth and creating opportunities nationwide. </div>
+						<div class="elementor-element elementor-element-eb1099a elementor-widget elementor-widget-button"
+							data-id="eb1099a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-bac7601 e-con-full e-flex e-con e-child elementor-invisible"
+						data-id="bac7601" data-element_type="container" data-e-type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+						<div class="elementor-element elementor-element-d7b7d15 elementor-widget elementor-widget-image"
+							data-id="d7b7d15" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9.webp"
+								class="attachment-full size-full wp-image-8493" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-03_22_05-PM-9-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+						</div>
+						<div class="elementor-element elementor-element-816e4eb elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="816e4eb" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Church Impact Center Model</h2>
+						</div>
+						<div class="elementor-element elementor-element-5c8c8aa elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="5c8c8aa" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							A model designed to empower churches and their communities. </div>
+						<div class="elementor-element elementor-element-a35b1e8 elementor-widget elementor-widget-button"
+							data-id="a35b1e8" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Learn More →</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

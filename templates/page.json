@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about_section_01": {
+      "type": "about-faithbanc-intro",
+      "settings": {}
+    },
+    "about_section_02": {
+      "type": "about-sharon-butler",
+      "settings": {}
+    },
+    "about_section_03": {
+      "type": "about-solves",
+      "settings": {}
+    },
+    "about_section_04": {
+      "type": "about-ecosystem",
+      "settings": {}
+    },
+    "about_section_05": {
+      "type": "about-cta-banner",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "about_section_01",
+    "about_section_02",
+    "about_section_03",
+    "about_section_04",
+    "about_section_05"
+  ]
+}

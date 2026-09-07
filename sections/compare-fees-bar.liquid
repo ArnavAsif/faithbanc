@@ -1,0 +1,358 @@
+{% schema %}
+{
+  "name": "Compare Fees Bar",
+  "tag": "section",
+  "class": "section-compare-fees-bar",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Compare Monthly Processing Fees"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Compare "
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Compare Fees Bar"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Compare Fees Bar Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-20db69d {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --padding-top: 70px;
+  --padding-bottom: 70px;
+  --padding-left: 15px;
+  --padding-right: 15px;
+  background-color: #FFFFFF;
+}
+.elementor-8440 .elementor-element.elementor-element-a3efb00 {
+  margin-bottom: 14px;
+}
+.elementor-8440 .elementor-element.elementor-element-a3efb00 .elementor-button {
+  background-color: #FEECE7 !important;
+  font-family: "Poppins", Sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #2F1E19 !important;
+  border-radius: 50px;
+  padding: 6px 22px;
+  display: inline-block;
+  line-height: 1.4;
+  text-decoration: none;
+  border: none;
+}
+.elementor-8440 .elementor-element.elementor-element-5a44586 {
+  width: var(--container-widget-width, 100%);
+  max-width: 100%;
+  --container-widget-width: 100%;
+  --container-widget-flex-grow: 0;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.elementor-8440 .elementor-element.elementor-element-5a44586.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-5a44586 .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  color: #111111;
+  margin: 0;
+}
+.elementor-8440 .elementor-element.elementor-element-5a44586 .elementor-heading-title span {
+  background: linear-gradient(90deg, #FF5B26 0%, #FF2A6D 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline;
+}
+.elementor-8440 .elementor-element.elementor-element-0892de5 {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto 36px auto;
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #444444;
+}
+.elementor-8440 .elementor-element.elementor-element-0892de5.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-c9d54ae {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Compare Table Styling */
+.fb-compare-table-wrap {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.fb-compare-table-box {
+  background: #FFFFFF;
+  border: 1px solid #F3CFD7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+.fb-compare-table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+}
+.fb-compare-table thead tr th {
+  padding: 18px 16px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: none;
+  letter-spacing: -0.2px;
+}
+.fb-compare-table thead tr th:first-child,
+.fb-compare-table thead tr th:nth-child(2),
+.fb-compare-table thead tr th:nth-child(3),
+.fb-compare-table thead tr th:nth-child(4) {
+  background-color: #840348;
+}
+.fb-compare-table thead tr th:nth-child(5) {
+  background: linear-gradient(90deg, #D4145A 0%, #FF5B26 100%);
+  border-right: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.fb-compare-table tbody tr td {
+  padding: 18px 16px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #F0DFE3;
+  border-bottom: 1px solid #F0DFE3;
+  background-color: #FFFFFF;
+}
+.fb-compare-table tbody tr td:first-child {
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+}
+.fb-compare-table .fb-volume-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.fb-compare-table .fb-volume-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.fb-compare-table tbody tr td:nth-child(2),
+.fb-compare-table tbody tr td:nth-child(3),
+.fb-compare-table tbody tr td:nth-child(4) {
+  color: #444444;
+}
+.fb-compare-table tbody tr td:nth-child(5) {
+  background-color: #FFF6F8;
+  color: #D81159;
+  font-weight: 800;
+  font-size: 17px;
+  border-right: none;
+}
+.fb-compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fb-table-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding-left: 2px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.4;
+  text-align: left;
+}
+.fb-table-note .fb-note-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FF2A6D;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-5a44586 .elementor-heading-title {
+    font-size: 34px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0892de5 {
+    max-width: 588px;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-20db69d {
+    --padding-top: 45px;
+    --padding-bottom: 45px;
+    --padding-left: 12px;
+    --padding-right: 12px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-a3efb00 .elementor-button {
+    font-size: 11px;
+    padding: 5px 18px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-5a44586 .elementor-heading-title {
+    font-size: 26px;
+    line-height: 1.25em;
+    letter-spacing: -0.8px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0892de5 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .fb-compare-table thead tr th {
+    padding: 14px 10px;
+    font-size: 13px;
+  }
+  .fb-compare-table tbody tr td {
+    padding: 14px 10px;
+    font-size: 13px;
+  }
+  .fb-compare-table tbody tr td:nth-child(5) {
+    font-size: 15px;
+  }
+  .fb-table-note {
+    font-size: 12px;
+  }
+}
+</style>
+
+<div id="section-{{ section.id }}" class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-20db69d e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="20db69d" data-element_type="container" data-e-type="container"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a3efb00 elementor-align-center elementor-widget elementor-widget-button"
+					data-id="a3efb00" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+					<a class="elementor-button elementor-size-sm" {% if section.settings.btn_url != blank %}href="{{ section.settings.btn_url }}"{% endif %} role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-text">{{ section.settings.btn_text | default: "COMPARE" }}</span>
+						</span>
+					</a>
+				</div>
+				<div class="elementor-element elementor-element-5a44586 elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible"
+					data-id="5a44586" data-element_type="widget" data-e-type="widget"
+					data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">{% if section.settings.heading != blank %}{{ section.settings.heading | replace: 'Monthly Processing', '<span>Monthly Processing</span>' }}{% else %}Compare <span>Monthly Processing</span> Fees{% endif %}</h2>
+				</div>
+				<div class="elementor-element elementor-element-0892de5 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor elementor-invisible"
+					data-id="0892de5" data-element_type="widget" data-e-type="widget"
+					data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+					data-widget_type="text-editor.default">
+					See how FaithBanc™’s $99.95 flat-rate processing can help qualified businesses reduce monthly
+					payment processing costs compared with percentage-based processors. </div>
+				<div class="elementor-element elementor-element-c9d54ae elementor-widget__width-inherit elementor-widget elementor-widget-text-editor elementor-invisible"
+					data-id="c9d54ae" data-element_type="widget" data-e-type="widget"
+					data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+					data-widget_type="text-editor.default">
+
+
+					<div class="fb-compare-table-wrap">
+						<div class="fb-compare-table-box">
+							<table class="fb-compare-table">
+								<thead>
+									<tr>
+										<th>Monthly Volume</th>
+										<th>Pushpay</th>
+										<th>Givelify</th>
+										<th>Stripe</th>
+										<th>FaithBanc™</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span class="fb-volume-icon"><svg width="12" height="15" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="3" r="2.5" fill="#FF2A6D"/><path d="M4 6.5h4l1 3.5H3L4 6.5z" fill="#FF2A6D"/><path d="M2.5 11h7l.5 2H2l.5-2z" fill="#FF2A6D"/><rect x="1" y="14" width="10" height="1.8" rx="0.9" fill="#FF2A6D"/></svg></span>$10,000</td>
+										<td>$300 – 400</td>
+										<td>$350 – 400</td>
+										<td>$290 – 320</td>
+										<td>$99.95</td>
+									</tr>
+									<tr>
+										<td><span class="fb-volume-icon"><svg width="12" height="15" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="3" r="2.5" fill="#FF2A6D"/><path d="M4 6.5h4l1 3.5H3L4 6.5z" fill="#FF2A6D"/><path d="M2.5 11h7l.5 2H2l.5-2z" fill="#FF2A6D"/><rect x="1" y="14" width="10" height="1.8" rx="0.9" fill="#FF2A6D"/></svg></span>$25,000</td>
+										<td>$800 – 1,000</td>
+										<td>$750 – 900</td>
+										<td>$725 – 800</td>
+										<td>$99.95</td>
+									</tr>
+									<tr>
+										<td><span class="fb-volume-icon"><svg width="12" height="15" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="3" r="2.5" fill="#FF2A6D"/><path d="M4 6.5h4l1 3.5H3L4 6.5z" fill="#FF2A6D"/><path d="M2.5 11h7l.5 2H2l.5-2z" fill="#FF2A6D"/><rect x="1" y="14" width="10" height="1.8" rx="0.9" fill="#FF2A6D"/></svg></span>$50,000</td>
+										<td>$1,500 – 2,000</td>
+										<td>$1,350 – 1,900</td>
+										<td>$1,450 – 1,600</td>
+										<td>$99.95</td>
+									</tr>
+									<tr>
+										<td><span class="fb-volume-icon"><svg width="12" height="15" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="3" r="2.5" fill="#FF2A6D"/><path d="M4 6.5h4l1 3.5H3L4 6.5z" fill="#FF2A6D"/><path d="M2.5 11h7l.5 2H2l.5-2z" fill="#FF2A6D"/><rect x="1" y="14" width="10" height="1.8" rx="0.9" fill="#FF2A6D"/></svg></span>$100,000</td>
+										<td>$2,700 – 3,350</td>
+										<td>$2,700 – 3,250</td>
+										<td>$2,900 – 3,200</td>
+										<td>$99.95</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="fb-table-note">
+							<span class="fb-note-dot"></span>
+							<span>Competitor pricing varies by account, card type, volume, plan, and service mix. Examples are illustrative.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

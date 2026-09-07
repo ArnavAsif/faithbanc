@@ -1,0 +1,316 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "image_behavior": "none",
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      },
+      "disabled": true
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "padding_top": 44,
+        "padding_bottom": 36
+      },
+      "disabled": true
+    },
+    "hero_payment_processing": {
+      "type": "hero-payment-processing",
+      "settings": {}
+    },
+    "compare_fees_bar": {
+      "type": "compare-fees-bar",
+      "settings": {}
+    },
+    "turn_business_referrals": {
+      "type": "turn-business-referrals",
+      "settings": {}
+    },
+    "merchant_revenue_faster": {
+      "type": "merchant-revenue-faster",
+      "settings": {}
+    },
+    "capital_growth_solutions": {
+      "type": "capital-growth-solutions",
+      "settings": {},
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "title": "Working Capital",
+            "button_text": "Request Review"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "title": "Merchant Funding",
+            "button_text": "Check Eligibility"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "title": "Equipment Financing",
+            "button_text": "Finance Equipment"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "title": "Receivable Financing",
+            "button_text": "Unlock Cash Flow"
+          }
+        },
+        "card_5": {
+          "type": "card",
+          "settings": {
+            "title": "Commercial Capital",
+            "button_text": "Speak With Capital Team"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4",
+        "card_5"
+      ]
+    },
+    "financing_solutions": {
+      "type": "financing-solutions",
+      "settings": {}
+    },
+    "global_debit_card": {
+      "type": "global-debit-card",
+      "settings": {}
+    },
+    "business_services_cards": {
+      "type": "business-services-cards",
+      "settings": {}
+    },
+    "solutions_every_generation": {
+      "type": "solutions-every-generation",
+      "settings": {},
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "title": "Teen Banking",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "title": "Islam Banking",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "title": "Vision & Purpose of Initiative",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "title": "National Rollout Cost",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        "card_5": {
+          "type": "card",
+          "settings": {
+            "title": "National Economic Impact",
+            "button_text": "Learn More \u2192"
+          }
+        },
+        "card_6": {
+          "type": "card",
+          "settings": {
+            "title": "Church Impact Center Model",
+            "button_text": "Learn More \u2192"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4",
+        "card_5",
+        "card_6"
+      ]
+    },
+    "church_nonprofit_placement": {
+      "type": "church-nonprofit-placement",
+      "settings": {}
+    },
+    "building_financial_ecosystem": {
+      "type": "building-financial-ecosystem",
+      "settings": {}
+    },
+    "mission_statement": {
+      "type": "mission-statement",
+      "settings": {}
+    },
+    "vision_statement": {
+      "type": "vision-statement",
+      "settings": {}
+    },
+    "teen_banking_details": {
+      "type": "teen-banking-details",
+      "settings": {}
+    },
+    "islam_banking_details": {
+      "type": "islam-banking-details",
+      "settings": {}
+    },
+    "why_faithbanc": {
+      "type": "why-faithbanc",
+      "settings": {}
+    },
+    "purpose_driven_communities": {
+      "type": "purpose-driven-communities",
+      "settings": {}
+    },
+    "faq_accordion": {
+      "type": "faq-accordion",
+      "settings": {},
+      "blocks": {
+        "faq_1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does FaithBanc\u2019s flat-fee membership work?",
+            "answer": "Unlike legacy processors that charge confusing percentage markups, FaithBanc charges one predictable monthly membership fee plus direct interchange at cost."
+          }
+        },
+        "faq_2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is FaithBanc compatible with my existing POS hardware?",
+            "answer": "Yes. FaithBanc supports all major smart terminals, POS terminals, wireless mobile readers, and virtual e-commerce gateways."
+          }
+        },
+        "faq_3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "When are daily merchant settlement funds deposited?",
+            "answer": "Standard deposits arrive next business day. Merchants using the FaithBanc Global Debit Mastercard receive real-time same-day access to settlements."
+          }
+        },
+        "faq_4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What makes FaithBanc\u2019s financing solutions different?",
+            "answer": "Our capital solutions are transparent, relationship-driven, and designed for business growth rather than trapping businesses in debt spirals."
+          }
+        },
+        "faq_5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I become an authorized FaithBanc processor or affiliate?",
+            "answer": "You can apply through our referral portal to partner with FaithBanc and earn substantial monthly residual income from businesses in your network."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ]
+    }
+  },
+  "order": [
+    "hero_payment_processing",
+    "compare_fees_bar",
+    "turn_business_referrals",
+    "merchant_revenue_faster",
+    "capital_growth_solutions",
+    "financing_solutions",
+    "global_debit_card",
+    "business_services_cards",
+    "solutions_every_generation",
+    "church_nonprofit_placement",
+    "building_financial_ecosystem",
+    "mission_statement",
+    "vision_statement",
+    "teen_banking_details",
+    "islam_banking_details",
+    "why_faithbanc",
+    "purpose_driven_communities",
+    "faq_accordion",
+    "image_banner",
+    "featured_collection"
+  ]
+}

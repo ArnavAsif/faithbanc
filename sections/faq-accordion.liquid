@@ -1,0 +1,898 @@
+{% schema %}
+{
+  "name": "FAQ Accordion",
+  "tag": "section",
+  "class": "section-faq-accordion",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Accordion",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does FaithBanc\u2019s flat-fee membership work?",
+            "answer": "Unlike legacy processors that charge confusing percentage markups, FaithBanc charges one predictable monthly membership fee plus direct interchange at cost."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is FaithBanc compatible with my existing POS hardware?",
+            "answer": "Yes. FaithBanc supports all major smart terminals, POS terminals, wireless mobile readers, and virtual e-commerce gateways."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "When are daily merchant settlement funds deposited?",
+            "answer": "Standard deposits arrive next business day. Merchants using the FaithBanc Global Debit Mastercard receive real-time same-day access to settlements."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What makes FaithBanc\u2019s financing solutions different?",
+            "answer": "Our capital solutions are transparent, relationship-driven, and designed for business growth rather than trapping businesses in debt spirals."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I become an authorized FaithBanc processor or affiliate?",
+            "answer": "You can apply through our referral portal to partner with FaithBanc and earn substantial monthly residual income from businesses in your network."
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "How does FaithBanc membership work?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "FaithBanc charges one transparent flat-rate membership fee plus direct interchange at cost."
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* widget-nested-accordion.min.css */
+
+.elementor-widget-n-accordion {
+  --n-accordion-title-font-size: 20px;
+  --n-accordion-title-flex-grow: initial;
+  --n-accordion-title-justify-content: initial;
+  --n-accordion-title-icon-order: -1;
+  --n-accordion-border-width: 1px;
+  --n-accordion-border-color: #d5d8dc;
+  --n-accordion-border-style: solid;
+  --n-accordion-item-title-flex-grow: initial;
+  --n-accordion-item-title-space-between: 0px;
+  --n-accordion-item-title-distance-from-content: 0px;
+  --n-accordion-padding: 10px;
+  --n-accordion-border-radius: 0px;
+  --n-accordion-icon-size: 15px;
+  --n-accordion-title-normal-color: #1f2124;
+  --n-accordion-title-hover-color: #1f2124;
+  --n-accordion-title-active-color: #1f2124;
+  --n-accordion-icon-normal-color: var(--n-accordion-title-normal-color);
+  --n-accordion-icon-hover-color: var(--n-accordion-title-hover-color);
+  --n-accordion-icon-active-color: var(--n-accordion-title-active-color);
+  --n-accordion-icon-gap: 0 10px;
+  width: 100%
+}
+
+.elementor-widget-n-accordion .e-n-accordion details>summary::-webkit-details-marker {
+  display: none
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item {
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item:not(:last-child) {
+  margin-block-end: var(--n-accordion-item-title-space-between)
+}
+
+:where(.elementor-widget-n-accordion .e-n-accordion-item>.e-con) {
+  border: var(--n-accordion-border-width) var(--n-accordion-border-style) var(--n-accordion-border-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title {
+  align-items: center;
+  border-color: var(--n-accordion-border-color);
+  border-radius: var(--n-accordion-border-radius);
+  border-style: var(--n-accordion-border-style);
+  border-width: var(--n-accordion-border-width);
+  color: var(--n-accordion-title-normal-color);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-grow: var(--n-menu-title-flex-grow);
+  gap: var(--n-accordion-icon-gap);
+  justify-content: var(--n-accordion-title-justify-content);
+  list-style: none;
+  padding: var(--n-accordion-padding)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-header {
+  display: flex
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h1,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h2,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h3,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h4,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h5,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header h6,
+.elementor-widget-n-accordion .e-n-accordion-item-title-header p {
+  margin-block-end: 0;
+  margin-block-start: 0
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-text {
+  align-items: center;
+  font-size: var(--n-accordion-title-font-size)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  order: var(--n-accordion-title-icon-order);
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-icon span {
+  height: var(--n-accordion-icon-size);
+  width: auto
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-icon span>i {
+  color: var(--n-accordion-icon-normal-color);
+  font-size: var(--n-accordion-icon-size)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title-icon span>svg {
+  fill: var(--n-accordion-icon-normal-color);
+  height: var(--n-accordion-icon-size)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item-title>span {
+  cursor: pointer
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title {
+  color: var(--n-accordion-title-active-color);
+  margin-block-end: var(--n-accordion-item-title-distance-from-content)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title .e-n-accordion-item-title-icon .e-opened {
+  display: flex
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title .e-n-accordion-item-title-icon .e-closed {
+  display: none
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title .e-n-accordion-item-title-icon span>i {
+  color: var(--n-accordion-icon-active-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title .e-n-accordion-item-title-icon span>svg {
+  fill: var(--n-accordion-icon-active-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item:not([open]) .e-con {
+  display: none
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item:not([open]):hover>.e-n-accordion-item-title {
+  color: var(--n-accordion-title-hover-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item:not([open]):hover>.e-n-accordion-item-title .e-n-accordion-item-title-icon span>i {
+  color: var(--n-accordion-icon-hover-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item:not([open]):hover>.e-n-accordion-item-title .e-n-accordion-item-title-icon span>svg {
+  fill: var(--n-accordion-icon-hover-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item .e-n-accordion-item-title-icon .e-opened {
+  display: none
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item .e-n-accordion-item-title-icon .e-closed {
+  display: flex
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item .e-n-accordion-item-title-icon span>svg {
+  fill: var(--n-accordion-icon-normal-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item .e-n-accordion-item-title-icon span>i {
+  color: var(--n-accordion-icon-normal-color)
+}
+
+.elementor-widget-n-accordion .e-n-accordion-item>span {
+  cursor: pointer
+}
+
+
+
+/* Section FAQ Accordion Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-079ee63 {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --padding-top: 80px;
+  --padding-bottom: 80px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-5a417dc {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --gap: 30px 30px;
+  --row-gap: 30px;
+  --column-gap: 30px;
+  --overflow: hidden;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: #CFCFCF75;
+  --border-color: #CFCFCF75;
+  --border-radius: 12px 12px 12px 12px;
+  --padding-top: 50px;
+  --padding-bottom: 50px;
+  --padding-left: 50px;
+  --padding-right: 50px;
+}
+.elementor-8440 .elementor-element.elementor-element-5a417dc:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-5a417dc>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: #FAFAFA;
+}
+.elementor-8440 .elementor-element.elementor-element-2840d7b {
+  width: var(--container-widget-width, 92%);
+  max-width: 92%;
+  --container-widget-width: 92%;
+  --container-widget-flex-grow: 0;
+  text-align: center;
+}
+.elementor-8440 .elementor-element.elementor-element-2840d7b .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 55px;
+  letter-spacing: -2.7px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-a538bf2 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-5ed3d39 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-1992c4b {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-2d04013 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-40ce80f {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-6bdec95 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-55448b5 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-d71f058 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-ec15bc8 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-325dcf4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-2dbe1f3 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-3f98959 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-f79abd6 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-d5de346 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-47516c4 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-f893947 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-649a555 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-096db6a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-3ae57ec {
+  --n-accordion-title-font-size: 17px;
+  --n-accordion-title-justify-content: space-between;
+  --n-accordion-title-flex-grow: 1;
+  --n-accordion-title-icon-order: initial;
+  --n-accordion-item-title-space-between: 10px;
+  --n-accordion-item-title-distance-from-content: 10px;
+  --n-accordion-border-radius: 4px 4px 4px 4px;
+  --n-accordion-title-normal-color: var(--e-global-color-text);
+  --n-accordion-title-hover-color: var(--e-global-color-secondary);
+  --n-accordion-title-active-color: var(--e-global-color-secondary);
+  --n-accordion-icon-size: 15px;
+}
+.elementor-8440 .elementor-element.elementor-element-3ae57ec>.e-n-accordion>.e-n-accordion-item>.e-n-accordion-item-title {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #0000001F;
+}
+.elementor-8440 .elementor-element.elementor-element-3ae57ec {
+  --n-accordion-padding: 18px 18px 18px 18px;
+}
+:where(.elementor-8440 .elementor-element.elementor-element-3ae57ec > .e-n-accordion > .e-n-accordion-item > .e-n-accordion-item-title > .e-n-accordion-item-title-header)>.e-n-accordion-item-title-text {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+:where(.elementor-8440 .elementor-element.elementor-element-3ae57ec > .e-n-accordion > .e-n-accordion-item)>.e-con {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #0000001F;
+  --border-radius: 4px 4px 4px 4px;
+  --padding-top: 18px;
+  --padding-right: 18px;
+  --padding-bottom: 18px;
+  --padding-left: 18px;
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+  .elementor-8440 .elementor-element.elementor-element-079ee63 {
+    --content-width: 700px;
+  }
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-2840d7b {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2840d7b .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-079ee63 {
+    --padding-top: 30px;
+    --padding-bottom: 30px;
+    --padding-left: 10px;
+    --padding-right: 10px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-5a417dc {
+    --gap: 20px 20px;
+    --row-gap: 20px;
+    --column-gap: 20px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2840d7b {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2840d7b .elementor-heading-title {
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-5ed3d39 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2d04013 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-6bdec95 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-d71f058 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-325dcf4 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-3f98959 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-d5de346 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-f893947 {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-096db6a {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-3ae57ec {
+    --n-accordion-padding: 15px 15px 15px 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-3ae57ec {
+    --n-accordion-title-font-size: 15px;
+  }
+  :where(.elementor-8440 .elementor-element.elementor-element-3ae57ec > .e-n-accordion > .e-n-accordion-item > .e-n-accordion-item-title > .e-n-accordion-item-title-header)>.e-n-accordion-item-title-text {
+    line-height: 1.3em;
+  }
+  :where(.elementor-8440 .elementor-element.elementor-element-3ae57ec > .e-n-accordion > .e-n-accordion-item)>.e-con {
+    --padding-top: 15px;
+    --padding-right: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+  }
+}
+</style>
+
+<div class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-079ee63 e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="079ee63" data-element_type="container" data-e-type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5a417dc e-con-full e-flex e-con e-child"
+					data-id="5a417dc" data-element_type="container" data-e-type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-2840d7b elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+						data-id="2840d7b" data-element_type="widget" data-e-type="widget"
+						data-widget_type="heading.default">
+						<h2 class="elementor-heading-title elementor-size-default">{% if section.settings.heading != blank %}{{ section.settings.heading }}{% else %}Frequently<span> Asked</span> Questions{% endif %}</h2>
+					</div>
+					<div class="elementor-element elementor-element-3ae57ec elementor-widget elementor-widget-n-accordion"
+						data-id="3ae57ec" data-element_type="widget" data-e-type="widget"
+						data-settings="{&quot;default_state&quot;:&quot;expanded&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}"
+						data-widget_type="nested-accordion.default">
+						<div class="e-n-accordion"
+							aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+							<details id="e-n-accordion-item-6170" class="e-n-accordion-item" open="">
+								<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0"
+									aria-expanded="true" aria-controls="e-n-accordion-item-6170">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> What is FaithBanc™? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6170"
+									class="elementor-element elementor-element-a538bf2 e-con-full e-flex e-con e-child"
+									data-id="a538bf2" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-5ed3d39 elementor-widget elementor-widget-text-editor"
+										data-id="5ed3d39" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										FaithBanc™ is a business-focused financial ecosystem offering payment
+										processing, capital access, debit card tools, lending pathways, and partnership
+										programs through direct and partner-supported services. </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6171" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6171">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> What is the $99.95 flat-rate
+											processing program? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6171"
+									class="elementor-element elementor-element-1992c4b e-con-full e-flex e-con e-child"
+									data-id="1992c4b" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-2d04013 elementor-widget elementor-widget-text-editor"
+										data-id="2d04013" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										It is a monthly flat-rate processing offer for qualified merchants. Eligibility,
+										pricing, and savings depend on underwriting, risk category, transaction mix,
+										partner approval, and applicable law. </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6172" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6172">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> What is Become a Processor? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6172"
+									class="elementor-element elementor-element-40ce80f e-con-full e-flex e-con e-child"
+									data-id="40ce80f" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-6bdec95 elementor-widget elementor-widget-text-editor"
+										data-id="6bdec95" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										Become a Processor allows approved partners to refer merchants to FaithBanc™ and
+										earn recurring monthly revenue through the FaithBanc™ partner portal. </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6173" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6173">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Can merchants get paid in minutes?
+										</div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6173"
+									class="elementor-element elementor-element-55448b5 e-con-full e-flex e-con e-child"
+									data-id="55448b5" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-d71f058 elementor-widget elementor-widget-text-editor"
+										data-id="d71f058" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										Eligible merchants may qualify for faster funding and Mastercard-supported
+										payout options through partner infrastructure, subject to approval </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6174" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="5" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6174">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Does FaithBanc™ offer business
+											funding? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6174"
+									class="elementor-element elementor-element-ec15bc8 e-con-full e-flex e-con e-child"
+									data-id="ec15bc8" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-325dcf4 elementor-widget elementor-widget-text-editor"
+										data-id="325dcf4" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										FaithBanc™ Capital connects qualified businesses with funding solutions for
+										working capital, equipment, receivables, expansion, and commercial growth.
+									</div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6175" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="6" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6175">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Does FaithBanc™ offer loans,
+											mortgages, and car loans? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6175"
+									class="elementor-element elementor-element-2dbe1f3 e-con-full e-flex e-con e-child"
+									data-id="2dbe1f3" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-3f98959 elementor-widget elementor-widget-text-editor"
+										data-id="3f98959" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										FaithBanc™ helps route qualified applicants to business loans, mortgage options,
+										auto loans, personal loans, and commercial financing through lending partners.
+									</div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6176" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="7" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6176">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Does FaithBanc™ offer a debit card?
+										</div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6176"
+									class="elementor-element elementor-element-f79abd6 e-con-full e-flex e-con e-child"
+									data-id="f79abd6" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-d5de346 elementor-widget elementor-widget-text-editor"
+										data-id="d5de346" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										Yes. The FaithBanc™ Debit Card is planned as a white-label Debiti-powered card
+										and wallet experience, subject to partner availability, compliance, and
+										approval. </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6177" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="8" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6177">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Can churches and nonprofits
+											participate? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6177"
+									class="elementor-element elementor-element-47516c4 e-con-full e-flex e-con e-child"
+									data-id="47516c4" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-f893947 elementor-widget elementor-widget-text-editor"
+										data-id="f893947" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										Yes. Churches and nonprofits can participate as merchants, community partners,
+										or referral partners while businesses remain the primary website focus. </div>
+								</div>
+							</details>
+							<details id="e-n-accordion-item-6178" class="e-n-accordion-item">
+								<summary class="e-n-accordion-item-title" data-accordion-index="9" tabindex="-1"
+									aria-expanded="false" aria-controls="e-n-accordion-item-6178">
+									<span class="e-n-accordion-item-title-header">
+										<div class="e-n-accordion-item-title-text"> Is approval guaranteed? </div>
+									</span>
+									<span class="e-n-accordion-item-title-icon">
+										<span class="e-opened"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+										<span class="e-closed"><svg aria-hidden="true"
+												class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg></span>
+									</span>
+
+								</summary>
+								<div role="region" aria-labelledby="e-n-accordion-item-6178"
+									class="elementor-element elementor-element-649a555 e-con-full e-flex e-con e-child"
+									data-id="649a555" data-element_type="container" data-e-type="container">
+									<div class="elementor-element elementor-element-096db6a elementor-widget elementor-widget-text-editor"
+										data-id="096db6a" data-element_type="widget" data-e-type="widget"
+										data-widget_type="text-editor.default">
+										No. All services are subject to eligibility, underwriting, KYC/AML review,
+										partner approval, jurisdiction, and applicable law. </div>
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<script>
+  (function() {
+    function initAccordion() {
+      var section = document.getElementById('shopify-section-{{ section.id }}');
+      if (!section) return;
+      var accordion = section.querySelector('.e-n-accordion');
+      if (!accordion) return;
+      var detailsList = accordion.querySelectorAll('details.e-n-accordion-item');
+      
+      detailsList.forEach(function(targetDetail) {
+        targetDetail.addEventListener('click', function(e) {
+          var summary = targetDetail.querySelector('summary');
+          if (e.target === summary || summary.contains(e.target)) {
+            setTimeout(function() {
+              if (targetDetail.open) {
+                detailsList.forEach(function(other) {
+                  if (other !== targetDetail && other.open) {
+                    other.removeAttribute('open');
+                  }
+                });
+              }
+            }, 10);
+          }
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAccordion);
+    } else {
+      initAccordion();
+    }
+  })();
+</script>

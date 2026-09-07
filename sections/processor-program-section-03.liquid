@@ -1,0 +1,289 @@
+{% schema %}
+{
+  "name": "Processor Funnel",
+  "tag": "section",
+  "class": "section-processor-funnel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Four-Step Funnel"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "From <span>application</span> to monthly residuals."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_number",
+          "label": "Step Number",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Apply"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Submit your processor partner application."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Processor Funnel",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "title": "Apply",
+            "description": "Submit your processor partner application and tell us whether you are a church, nonprofit, business network, affiliate, influencer, or community organization."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "title": "Invite",
+            "description": "Share your FaithBanc™ referral link with churches, businesses, ministries, and organizations."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "title": "Convert",
+            "description": "FaithBanc™ reviews processing statements, compares savings, and helps qualified organizations switch."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "04",
+            "title": "Earn",
+            "description": "Track approved accounts, $20 monthly partner income, volume-based participation, and activity inside the portal."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section 03 Scoped Rules */
+.elementor-8581 .elementor-element.elementor-element-dbb47a4{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8581 .elementor-element.elementor-element-dbb47a4:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-dbb47a4 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(180deg, #FF572212 0%, #F2295B0A 100%);}
+.elementor-8581 .elementor-element.elementor-element-bffbf4d .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-secondary );color:var( --e-global-color-secondary );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-8581 .elementor-element.elementor-element-c9b9143{width:var( --container-widget-width, 47% );max-width:47%;--container-widget-width:47%;--container-widget-flex-grow:0;text-align:center;}
+.elementor-8581 .elementor-element.elementor-element-c9b9143.elementor-element{--align-self:center;}
+.elementor-8581 .elementor-element.elementor-element-c9b9143 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:45px;font-weight:700;text-transform:capitalize;line-height:52px;letter-spacing:-1.8px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-74f611e{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:10px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8581 .elementor-element.elementor-element-bff98de{--display:flex;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8581 .elementor-element.elementor-element-bff98de:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-bff98de > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8581 .elementor-element.elementor-element-bff98de.e-con{--flex-grow:0;--flex-shrink:1;}
+.elementor-8581 .elementor-element.elementor-element-e030a91{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-e030a91 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:39px;font-weight:700;text-transform:capitalize;line-height:42px;letter-spacing:-2.7px;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-d8f596e{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-d8f596e .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:20px;font-weight:700;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-1c27188{width:var( --container-widget-width, 98% );max-width:98%;--container-widget-width:98%;--container-widget-flex-grow:0;text-align:start;font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;line-height:25px;letter-spacing:-0.5px;color:#505050;}
+.elementor-8581 .elementor-element.elementor-element-d1f7fc8{--display:flex;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8581 .elementor-element.elementor-element-d1f7fc8:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-d1f7fc8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8581 .elementor-element.elementor-element-3596713{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-3596713 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:39px;font-weight:700;text-transform:capitalize;line-height:42px;letter-spacing:-2.7px;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-0724faf{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-0724faf .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:20px;font-weight:700;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-fd3dc11{width:var( --container-widget-width, 98% );max-width:98%;--container-widget-width:98%;--container-widget-flex-grow:0;text-align:start;font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;line-height:25px;letter-spacing:-0.5px;color:#505050;}
+.elementor-8581 .elementor-element.elementor-element-a090a31{--display:flex;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8581 .elementor-element.elementor-element-a090a31:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-a090a31 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8581 .elementor-element.elementor-element-cb19b09{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-cb19b09 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:39px;font-weight:700;text-transform:capitalize;line-height:42px;letter-spacing:-2.7px;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-40c34c9{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-40c34c9 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:20px;font-weight:700;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-3196707{width:var( --container-widget-width, 98% );max-width:98%;--container-widget-width:98%;--container-widget-flex-grow:0;text-align:start;font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;line-height:25px;letter-spacing:-0.5px;color:#505050;}
+.elementor-8581 .elementor-element.elementor-element-99a50a2{--display:flex;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:25px;--padding-bottom:25px;--padding-left:25px;--padding-right:25px;}
+.elementor-8581 .elementor-element.elementor-element-99a50a2:not(.elementor-motion-effects-element-type-background), .elementor-8581 .elementor-element.elementor-element-99a50a2 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
+.elementor-8581 .elementor-element.elementor-element-7831106{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-7831106 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:39px;font-weight:700;text-transform:capitalize;line-height:42px;letter-spacing:-2.7px;color:var( --e-global-color-66d3c96 );}
+.elementor-8581 .elementor-element.elementor-element-9b5f964{width:100%;max-width:100%;text-align:start;}
+.elementor-8581 .elementor-element.elementor-element-9b5f964 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:20px;font-weight:700;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+.elementor-8581 .elementor-element.elementor-element-e568dab{width:var( --container-widget-width, 98% );max-width:98%;--container-widget-width:98%;--container-widget-flex-grow:0;text-align:start;font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;line-height:25px;letter-spacing:-0.5px;color:#505050;}
+@media(max-width:1024px){
+  .elementor-8581 .elementor-element.elementor-element-c9b9143{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-c9b9143 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-e030a91{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-e030a91 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-d8f596e{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-d8f596e .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-3596713{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-3596713 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-0724faf{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-0724faf .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-cb19b09{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-cb19b09 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-40c34c9{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-40c34c9 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-7831106{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-7831106 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-8581 .elementor-element.elementor-element-9b5f964{width:100%;max-width:100%;}
+  .elementor-8581 .elementor-element.elementor-element-9b5f964 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+}
+@media(min-width:768px){
+  .elementor-8581 .elementor-element.elementor-element-bff98de{--width:30%;}
+  .elementor-8581 .elementor-element.elementor-element-d1f7fc8{--width:30%;}
+  .elementor-8581 .elementor-element.elementor-element-a090a31{--width:30%;}
+  .elementor-8581 .elementor-element.elementor-element-99a50a2{--width:30%;}
+}
+@media(max-width:767px){
+  .elementor-8581 .elementor-element.elementor-element-dbb47a4{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-8581 .elementor-element.elementor-element-bffbf4d .elementor-button{font-size:10px;}
+  .elementor-8581 .elementor-element.elementor-element-c9b9143{text-align:center;}
+  .elementor-8581 .elementor-element.elementor-element-c9b9143 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-e030a91{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-e030a91 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-d8f596e{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-d8f596e .elementor-heading-title{font-size:20px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-3596713{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-3596713 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-0724faf{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-0724faf .elementor-heading-title{font-size:20px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-cb19b09{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-cb19b09 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-40c34c9{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-40c34c9 .elementor-heading-title{font-size:20px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-7831106{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-7831106 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-8581 .elementor-element.elementor-element-9b5f964{text-align:start;}
+  .elementor-8581 .elementor-element.elementor-element-9b5f964 .elementor-heading-title{font-size:20px;line-height:1.3em;letter-spacing:-1.5px;}
+}
+</style>
+
+<div class="elementor elementor-8581">
+  <div class="elementor-element elementor-element-dbb47a4 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="dbb47a4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+    <div class="e-con-inner">
+      {% if section.settings.badge_text != blank %}
+        <div class="elementor-element elementor-element-bffbf4d elementor-align-center elementor-widget elementor-widget-button" data-id="bffbf4d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+          <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+            </span>
+          </a>
+        </div>
+      {% endif %}
+      <div class="elementor-element elementor-element-c9b9143 elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible" data-id="c9b9143" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+        <h2 class="elementor-heading-title elementor-size-default">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+      <div class="elementor-element elementor-element-74f611e e-con-full e-flex e-con e-child" data-id="74f611e" data-element_type="container" data-e-type="container">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            {% assign mod_index = forloop.index0 | modulo: 4 %}
+            {% case mod_index %}
+              {% when 0 %}
+                {% assign card_id = "bff98de" %}
+                {% assign num_id = "e030a91" %}
+                {% assign title_id = "d8f596e" %}
+                {% assign desc_id = "1c27188" %}
+                {% assign anim_name = "fadeInLeft" %}
+              {% when 1 %}
+                {% assign card_id = "d1f7fc8" %}
+                {% assign num_id = "3596713" %}
+                {% assign title_id = "0724faf" %}
+                {% assign desc_id = "fd3dc11" %}
+                {% assign anim_name = "fadeInUp" %}
+              {% when 2 %}
+                {% assign card_id = "a090a31" %}
+                {% assign num_id = "cb19b09" %}
+                {% assign title_id = "40c34c9" %}
+                {% assign desc_id = "3196707" %}
+                {% assign anim_name = "fadeInUp" %}
+              {% when 3 %}
+                {% assign card_id = "99a50a2" %}
+                {% assign num_id = "7831106" %}
+                {% assign title_id = "9b5f964" %}
+                {% assign desc_id = "e568dab" %}
+                {% assign anim_name = "fadeInRight" %}
+            {% endcase %}
+            <div class="elementor-element elementor-element-{{ card_id }} e-con-full e-flex e-con e-child elementor-invisible" data-id="{{ card_id }}" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;{{ anim_name }}&quot;}" {{ block.shopify_attributes }}>
+              <div class="elementor-element elementor-element-{{ num_id }} elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="{{ num_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+                <h2 class="elementor-heading-title elementor-size-default">{{ block.settings.step_number }}</h2>
+              </div>
+              <div class="elementor-element elementor-element-{{ title_id }} elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="{{ title_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+                <h2 class="elementor-heading-title elementor-size-default">{{ block.settings.title }}</h2>
+              </div>
+              <div class="elementor-element elementor-element-{{ desc_id }} elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="{{ desc_id }}" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+                {{ block.settings.description }}
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="elementor-element elementor-element-bff98de e-con-full e-flex e-con e-child elementor-invisible" data-id="bff98de" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+            <div class="elementor-element elementor-element-e030a91 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="e030a91" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">01</h2>
+            </div>
+            <div class="elementor-element elementor-element-d8f596e elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="d8f596e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">Apply</h2>
+            </div>
+            <div class="elementor-element elementor-element-1c27188 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="1c27188" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              Submit your processor partner application and tell us whether you are a church, nonprofit, business network, affiliate, influencer, or community organization.
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-d1f7fc8 e-con-full e-flex e-con e-child elementor-invisible" data-id="d1f7fc8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+            <div class="elementor-element elementor-element-3596713 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="3596713" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">02</h2>
+            </div>
+            <div class="elementor-element elementor-element-0724faf elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="0724faf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">Invite</h2>
+            </div>
+            <div class="elementor-element elementor-element-fd3dc11 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="fd3dc11" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              Share your FaithBanc™ referral link with churches, businesses, ministries, and organizations.
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-a090a31 e-con-full e-flex e-con e-child elementor-invisible" data-id="a090a31" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+            <div class="elementor-element elementor-element-cb19b09 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="cb19b09" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">03</h2>
+            </div>
+            <div class="elementor-element elementor-element-40c34c9 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="40c34c9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">Convert</h2>
+            </div>
+            <div class="elementor-element elementor-element-3196707 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3196707" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              FaithBanc™ reviews processing statements, compares savings, and helps qualified organizations switch.
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-99a50a2 e-con-full e-flex e-con e-child elementor-invisible" data-id="99a50a2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+            <div class="elementor-element elementor-element-7831106 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="7831106" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">04</h2>
+            </div>
+            <div class="elementor-element elementor-element-9b5f964 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="9b5f964" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">Earn</h2>
+            </div>
+            <div class="elementor-element elementor-element-e568dab elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="e568dab" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              Track approved accounts, $20 monthly partner income, volume-based participation, and activity inside the portal.
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

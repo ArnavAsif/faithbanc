@@ -1,0 +1,535 @@
+{% schema %}
+{
+  "name": "Business Services Cards",
+  "tag": "section",
+  "class": "section-business-services-cards",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Cards"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Business Services Cards"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Custom corporate cards engineered for simplified expense management and automated financial clarity."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Find More"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Service Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Business Services Cards"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Business Services Cards Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-6b2dd3a {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --gap: 50px 50px;
+  --row-gap: 50px;
+  --column-gap: 50px;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-8ef83dd {
+  --display: flex;
+  --flex-direction: row;
+  --container-widget-width: initial;
+  --container-widget-height: 100%;
+  --container-widget-flex-grow: 1;
+  --container-widget-align-self: stretch;
+  --flex-wrap-mobile: wrap;
+  --gap: 30px 30px;
+  --row-gap: 30px;
+  --column-gap: 30px;
+  --overflow: hidden;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: #CFCFCF75;
+  --border-color: #CFCFCF75;
+  --border-radius: 12px 12px 12px 12px;
+  --padding-top: 50px;
+  --padding-bottom: 50px;
+  --padding-left: 50px;
+  --padding-right: 50px;
+}
+.elementor-8440 .elementor-element.elementor-element-8ef83dd:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-8ef83dd>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: #FAFAFA;
+}
+.elementor-8440 .elementor-element.elementor-element-204e986 {
+  --display: flex;
+  --justify-content: center;
+}
+.elementor-8440 .elementor-element.elementor-element-cd5e0e0 .elementor-button {
+  background-color: #FF572230;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  border-radius: 45px 45px 45px 45px;
+  padding: 10px 25px 10px 25px;
+}
+.elementor-8440 .elementor-element.elementor-element-2b8e30f {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-2b8e30f .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 55px;
+  letter-spacing: -2.7px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-a648994 {
+  --display: flex;
+  --flex-direction: row;
+  --container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+  --container-widget-height: 100%;
+  --container-widget-flex-grow: 1;
+  --container-widget-align-self: stretch;
+  --flex-wrap-mobile: wrap;
+  --align-items: flex-start;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+  padding-block-end: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+  margin-block-start: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+  margin-inline: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-items.elementor-inline-items {
+  margin-inline: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+  inset-inline-end: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-icon i {
+  color: var(--e-global-color-832bc31);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-icon svg {
+  fill: var(--e-global-color-832bc31);
+  transition: fill 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 {
+  --e-icon-list-icon-size: 16px;
+  --icon-vertical-align: flex-start;
+  --icon-vertical-offset: 4px;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-item>.elementor-icon-list-text,
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-item>a {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.elementor-8440 .elementor-element.elementor-element-8d2bd58 .elementor-icon-list-text {
+  color: var(--e-global-color-secondary);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+  padding-block-end: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+  margin-block-start: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+  margin-inline: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-items.elementor-inline-items {
+  margin-inline: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+  inset-inline-end: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-icon i {
+  color: var(--e-global-color-832bc31);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-icon svg {
+  fill: var(--e-global-color-832bc31);
+  transition: fill 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b {
+  --e-icon-list-icon-size: 16px;
+  --icon-vertical-align: flex-start;
+  --icon-vertical-offset: 4px;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-item>.elementor-icon-list-text,
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-item>a {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.elementor-8440 .elementor-element.elementor-element-642569b .elementor-icon-list-text {
+  color: var(--e-global-color-secondary);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button {
+  background-color: transparent;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-image: linear-gradient(148deg, #E42981 0%, #FEA035 100%);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-832bc31);
+  border-radius: 32px 32px 32px 32px;
+  padding: 18px 35px 18px 35px;
+}
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button:hover,
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button:focus {
+  background-color: var(--e-global-color-3d786e9);
+  color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button-content-wrapper {
+  flex-direction: row;
+}
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button:hover svg,
+.elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button:focus svg {
+  fill: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-b31b084 {
+  --display: flex;
+  --justify-content: center;
+}
+.elementor-8440 .elementor-element.elementor-element-082c3f3 {
+  margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-082c3f3 img {
+  width: 78%;
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-2b8e30f {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2b8e30f .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-8d2bd58 {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-642569b {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button {
+    font-size: 15px;
+    padding: 16px 35px 16px 35px;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-6b2dd3a {
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-8ef83dd {
+    --gap: 20px 20px;
+    --row-gap: 20px;
+    --column-gap: 20px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-204e986 {
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-cd5e0e0 .elementor-button {
+    font-size: 10px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2b8e30f {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2b8e30f .elementor-heading-title {
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-c8467d2 .elementor-button {
+    font-size: 12px;
+    padding: 15px 15px 15px 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-b31b084.e-con {
+    --order: -99999
+      /* order start hack */
+    ;
+  }
+  .elementor-8440 .elementor-element.elementor-element-082c3f3 {
+    margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+  }
+}
+</style>
+
+<div class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-6b2dd3a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="6b2dd3a" data-element_type="container">
+  <div class="e-con-inner">
+<div class="elementor-element elementor-element-8ef83dd e-con-full e-flex e-con e-child"
+					data-id="8ef83dd" data-element_type="container" data-e-type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-204e986 e-con-full e-flex e-con e-child"
+						data-id="204e986" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-cd5e0e0 elementor-align-left elementor-widget elementor-widget-button"
+							data-id="cd5e0e0" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-size-sm" role="button">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">{{ section.settings.badge_text | default: "Cards" }}</span>
+								</span>
+							</a>
+						</div>
+						<div class="elementor-element elementor-element-2b8e30f elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="2b8e30f" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Business Services
+								<span>Cards</span>
+							</h2>
+						</div>
+						<div class="elementor-element elementor-element-a648994 e-con-full e-flex e-con e-child"
+							data-id="a648994" data-element_type="container" data-e-type="container">
+							<div class="elementor-element elementor-element-8d2bd58 elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+								data-id="8d2bd58" data-element_type="widget" data-e-type="widget"
+								data-widget_type="icon-list.default">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Flat-Rate Processing</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">High-Risk Merchant Accounts</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Instant Funding Options</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">FaithBanc™ Capital</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Business Loans</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Auto &amp; Fleet Financing</span>
+									</li>
+								</ul>
+							</div>
+							<div class="elementor-element elementor-element-642569b elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+								data-id="642569b" data-element_type="widget" data-e-type="widget"
+								data-widget_type="icon-list.default">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Mortgage &amp; Real Estate</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Payroll / Tax Support</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Global Payments</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Debit Card / Wallet</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Business Consulting</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+												viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+												</path>
+											</svg> </span>
+										<span class="elementor-icon-list-text">Become a Processor</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c8467d2 elementor-align-left elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button"
+							data-id="c8467d2" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact-us">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-paper-plane"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
+											</path>
+										</svg> </span>
+									<span class="elementor-button-text">{{ section.settings.btn_text | default: "Find More" }}</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-b31b084 e-con-full e-flex e-con e-child"
+						data-id="b31b084" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-082c3f3 elementor-widget elementor-widget-image"
+							data-id="082c3f3" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							{% if section.settings.image != blank %}
+<img src="{{ section.settings.image | image_url: width: 1200 }}" class="attachment-full size-full" alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}" loading="lazy">
+{% else %}
+<img loading="lazy" decoding="async" width="1254" height="1254"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3.webp"
+								class="attachment-full size-full wp-image-8747" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3.webp 1254w, https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3-1024x1024.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/Untitled-design-3-768x768.webp 768w"
+								sizes="(max-width: 1254px) 100vw, 1254px">
+{% endif %}
+						</div>
+					</div>
+				</div>
+  </div>
+</div>
+</div>

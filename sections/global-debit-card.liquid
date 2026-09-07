@@ -1,0 +1,425 @@
+{% schema %}
+{
+  "name": "Global Debit Card",
+  "tag": "section",
+  "class": "section-global-debit-card",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "About FaithBanc\u2122"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The FaithBanc\u2122 Global Debit Card"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A worldwide debit card built on transparency, global accessibility, and immediate merchant revenue settlement."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Join Card Waitlist"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Card Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Global Debit Card"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Global Debit Card Scoped Rules */
+.elementor-8440 .elementor-element.elementor-element-6b2dd3a {
+  --display: flex;
+  --flex-direction: column;
+  --container-widget-width: 100%;
+  --container-widget-height: initial;
+  --container-widget-flex-grow: 0;
+  --container-widget-align-self: initial;
+  --flex-wrap-mobile: wrap;
+  --gap: 50px 50px;
+  --row-gap: 50px;
+  --column-gap: 50px;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+.elementor-8440 .elementor-element.elementor-element-2a22dc5 {
+  --display: flex;
+  --flex-direction: row;
+  --container-widget-width: initial;
+  --container-widget-height: 100%;
+  --container-widget-flex-grow: 1;
+  --container-widget-align-self: stretch;
+  --flex-wrap-mobile: wrap;
+  --gap: 30px 30px;
+  --row-gap: 30px;
+  --column-gap: 30px;
+  --overflow: hidden;
+  border-style: solid;
+  --border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  border-color: #CFCFCF75;
+  --border-color: #CFCFCF75;
+  --border-radius: 12px 12px 12px 12px;
+  --padding-top: 50px;
+  --padding-bottom: 50px;
+  --padding-left: 50px;
+  --padding-right: 50px;
+}
+.elementor-8440 .elementor-element.elementor-element-2a22dc5:not(.elementor-motion-effects-element-type-background),
+.elementor-8440 .elementor-element.elementor-element-2a22dc5>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  background-color: #FFFFFF;
+}
+.elementor-8440 .elementor-element.elementor-element-4e11954 {
+  --display: flex;
+  --justify-content: center;
+}
+.elementor-8440 .elementor-element.elementor-element-3ba40bf .elementor-button {
+  background-color: #FF572230;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  fill: var(--e-global-color-66d3c96);
+  color: var(--e-global-color-66d3c96);
+  border-radius: 45px 45px 45px 45px;
+  padding: 10px 25px 10px 25px;
+}
+.elementor-8440 .elementor-element.elementor-element-0c9b3f3 {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+.elementor-8440 .elementor-element.elementor-element-0c9b3f3 .elementor-heading-title {
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 49px;
+  letter-spacing: -2.7px;
+  color: var(--e-global-color-text);
+}
+.elementor-8440 .elementor-element.elementor-element-ed54d5f {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  color: var(--e-global-color-secondary);
+}
+.elementor-8440 .elementor-element.elementor-element-ed54d5f.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df {
+  width: 100%;
+  max-width: 100%;
+  --e-icon-list-icon-size: 16px;
+  --icon-vertical-align: flex-start;
+  --icon-vertical-offset: 4px;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df.elementor-element {
+  --align-self: center;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
+  padding-block-end: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
+  margin-block-start: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+  margin-inline: calc(5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-items.elementor-inline-items {
+  margin-inline: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
+  inset-inline-end: calc(-5px/2);
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-icon i {
+  color: var(--e-global-color-832bc31);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-icon svg {
+  fill: var(--e-global-color-832bc31);
+  transition: fill 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-item>.elementor-icon-list-text,
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-item>a {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.elementor-8440 .elementor-element.elementor-element-e6d62df .elementor-icon-list-text {
+  color: var(--e-global-color-secondary);
+  transition: color 0.3s;
+}
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button {
+  background-color: transparent;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-image: linear-gradient(148deg, #E42981 0%, #FEA035 100%);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-832bc31);
+  border-radius: 32px 32px 32px 32px;
+  padding: 18px 35px 18px 35px;
+}
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button:hover,
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button:focus {
+  background-color: var(--e-global-color-3d786e9);
+  color: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button-content-wrapper {
+  flex-direction: row;
+}
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button:hover svg,
+.elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button:focus svg {
+  fill: var(--e-global-color-0587ab8);
+}
+.elementor-8440 .elementor-element.elementor-element-9b16fb1 {
+  --display: flex;
+}
+.elementor-8440 .elementor-element.elementor-element-9b16fb1.e-con {
+  --order: -99999
+    /* order start hack */
+  ;
+}
+.elementor-8440 .elementor-element.elementor-element-3ab4673 {
+  margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+}
+
+@media(max-width:1024px) {
+  .elementor-8440 .elementor-element.elementor-element-0c9b3f3 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0c9b3f3 .elementor-heading-title {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ed54d5f {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-e6d62df {
+    width: var(--container-widget-width, 588px);
+    max-width: 588px;
+    --container-widget-width: 588px;
+    --container-widget-flex-grow: 0;
+  }
+  .elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button {
+    font-size: 15px;
+    padding: 16px 35px 16px 35px;
+  }
+}
+
+@media(max-width:767px) {
+  .elementor-8440 .elementor-element.elementor-element-6b2dd3a {
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-2a22dc5 {
+    --gap: 10px 10px;
+    --row-gap: 10px;
+    --column-gap: 10px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-4e11954 {
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-3ba40bf .elementor-button {
+    font-size: 10px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0c9b3f3 {
+    text-align: start;
+  }
+  .elementor-8440 .elementor-element.elementor-element-0c9b3f3 .elementor-heading-title {
+    font-size: 23px;
+    line-height: 1.3em;
+    letter-spacing: -1.5px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-ed54d5f {
+    text-align: start;
+    font-size: 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-fac215f .elementor-button {
+    font-size: 12px;
+    padding: 15px 15px 15px 15px;
+  }
+  .elementor-8440 .elementor-element.elementor-element-3ab4673 {
+    margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+  }
+}
+</style>
+
+<div class="elementor elementor-8440 elementor-kit-9">
+<div class="elementor-element elementor-element-6b2dd3a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="6b2dd3a" data-element_type="container">
+  <div class="e-con-inner">
+<div class="elementor-element elementor-element-2a22dc5 e-con-full e-flex e-con e-child"
+					data-id="2a22dc5" data-element_type="container" data-e-type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-4e11954 e-con-full e-flex e-con e-child"
+						data-id="4e11954" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-3ba40bf elementor-align-left elementor-widget elementor-widget-button"
+							data-id="3ba40bf" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">{{ section.settings.badge_text | default: "About FaithBanc™" }}</span>
+								</span>
+							</a>
+						</div>
+						<div class="elementor-element elementor-element-0c9b3f3 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading"
+							data-id="0c9b3f3" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">The FaithBanc™ <span>Global Debit
+									Card</span></h2>
+						</div>
+						<div class="elementor-element elementor-element-ed54d5f elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor"
+							data-id="ed54d5f" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							The FaithBanc™ Debit Card, powered by Debiti white-label technology and partner
+							infrastructure, is designed to give users access to digital wallet tools, virtual and
+							physical card options, transfers, global spending, and mobile account controls where
+							available. </div>
+						<div class="elementor-element elementor-element-e6d62df elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="e6d62df" data-element_type="widget" data-e-type="widget"
+							data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Virtual and physical card options.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Mobile wallet access.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Global transfer capabilities.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Fiat and digital asset rails where
+										supported.</span>
+								</li>
+								<li class="elementor-icon-list-item">
+									<span class="elementor-icon-list-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg> </span>
+									<span class="elementor-icon-list-text">Business, individual, and church use
+										cases.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="elementor-element elementor-element-fac215f elementor-align-left elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button"
+							data-id="fac215f" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact-us">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-icon">
+										<svg aria-hidden="true" class="e-font-icon-svg e-far-envelope"
+											viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+											</path>
+										</svg> </span>
+									<span class="elementor-button-text">{{ section.settings.btn_text | default: "Join Card Waitlist" }}</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-9b16fb1 e-con-full e-flex e-con e-child"
+						data-id="9b16fb1" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-3ab4673 elementor-widget elementor-widget-image"
+							data-id="3ab4673" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							{% if section.settings.image != blank %}
+<img src="{{ section.settings.image | image_url: width: 1200 }}" class="attachment-full size-full" alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}" loading="lazy">
+{% else %}
+<img loading="lazy" decoding="async" width="1024" height="1024"
+								src="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-31-2026-11_04_25-AM-1.webp"
+								class="attachment-full size-full wp-image-8589" alt=""
+								srcset="https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-31-2026-11_04_25-AM-1.webp 1024w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-31-2026-11_04_25-AM-1-300x300.webp 300w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-31-2026-11_04_25-AM-1-150x150.webp 150w, https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-31-2026-11_04_25-AM-1-768x768.webp 768w"
+								sizes="(max-width: 1024px) 100vw, 1024px">
+{% endif %}
+						</div>
+					</div>
+				</div>
+  </div>
+</div>
+</div>
