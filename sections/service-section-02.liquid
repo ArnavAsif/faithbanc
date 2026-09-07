@@ -1,0 +1,573 @@
+{% schema %}
+{
+  "name": "Service List",
+  "tag": "section",
+  "class": "section-service-list",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "What we offer"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Services for<span> individuals</span> & families."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "service",
+      "name": "Service Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Service Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Service Title",
+          "default": "Service Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Service Description",
+          "default": "Service description text."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Service List",
+      "blocks": [
+        {
+          "type": "service",
+          "settings": {
+            "title": "Faith International / Debit Card",
+            "description": "Virtual and physical card options where available."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Digital Wallet & Mobile Access",
+            "description": "Manage your account, balances, and payments on iOS/Android."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Domestic & International Transfers",
+            "description": "ACH, domestic wires, international wires, and internal transfers."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Check Cashing & Direct Deposit",
+            "description": "Social Security, retirement, payroll, tax refunds, and recurring deposits."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Credit Repair & Financial Literacy",
+            "description": "Credit builder education and resources to strengthen your profile."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Tax Preparation",
+            "description": "Personal and family tax preparation services."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Mortgages & Refinance",
+            "description": "Home financing and refinance support through applicable partners."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "FaithSurance Term Life",
+            "description": "Simple-application term life insurance pathway."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Service Section 02 Scoped Rules */
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,
+.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+  display: flex;
+}
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper {
+  flex-direction: row;
+  text-align: start;
+  align-items: center;
+}
+.elementor-8769 .elementor-element.elementor-element-61873ba {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 80px 20px;
+  box-sizing: border-box;
+}
+.elementor-8769 .elementor-element.elementor-element-a0216f8 {
+  width: 100%;
+  padding: 0;
+}
+.elementor-8769 .elementor-element.elementor-element-a0216f8 > .e-con-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.elementor-8769 .elementor-widget-image-box {
+  width: calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  flex: 1 1 calc(50% - 10px);
+  background: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(242, 41, 91, 0.16);
+  border-radius: 12px;
+  padding: 22px 24px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.elementor-8769 .elementor-widget-image-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 41, 91, 0.08);
+}
+.elementor-8769 .elementor-widget-image-box .elementor-image-box-img {
+  width: 64px;
+  min-width: 64px;
+  margin-right: 18px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elementor-8769 .elementor-widget-image-box .elementor-image-box-img img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+.elementor-8769 .elementor-widget-image-box .elementor-image-box-content {
+  flex: 1;
+  min-width: 0;
+}
+.elementor-8769 .elementor-widget-image-box .elementor-image-box-title {
+  font-family: "Poppins", "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #F2295B;
+  line-height: 1.3;
+  margin: 0 0 6px 0;
+}
+.elementor-8769 .elementor-widget-image-box .elementor-image-box-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .elementor-8769 .elementor-element.elementor-element-61873ba {
+    padding: 40px 15px 50px 15px;
+  }
+  .elementor-8769 .elementor-widget-image-box {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 18px 16px;
+  }
+  .elementor-8769 .elementor-widget-image-box .elementor-image-box-img {
+    width: 50px;
+    min-width: 50px;
+    margin-right: 14px;
+  }
+  .elementor-8769 .elementor-widget-image-box .elementor-image-box-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .elementor-8769 .elementor-widget-image-box .elementor-image-box-title {
+    font-size: 16px;
+  }
+  .elementor-8769 .elementor-widget-image-box .elementor-image-box-description {
+    font-size: 13.5px;
+    line-height: 21px;
+  }
+}
+.elementor-8769 .elementor-element.elementor-element-61873ba{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8769 .elementor-element.elementor-element-61873ba{--justify-content:flex-start;--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-f9f6120 .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-66d3c96 );color:var( --e-global-color-66d3c96 );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-8769 .elementor-element.elementor-element-f9f6120 .elementor-button{font-size:10px;}
+.elementor-8769 .elementor-element.elementor-element-eec02b7{width:100%;max-width:100%;text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-eec02b7 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:46px;font-weight:700;text-transform:capitalize;line-height:55px;letter-spacing:-2px;color:var( --e-global-color-text );}
+.elementor-8769 .elementor-element.elementor-element-eec02b7{width:100%;max-width:100%;}
+.elementor-8769 .elementor-element.elementor-element-eec02b7 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+.elementor-8769 .elementor-element.elementor-element-eec02b7{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-eec02b7 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+/* End custom CSS */
+/* Start custom CSS for heading, class: .elementor-element-eec02b7 */.gradient-text span{
+    background: linear-gradient(135deg,#FF5722 0%,#FF3366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.elementor-8769 .elementor-element.elementor-element-a0216f8{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--flex-wrap:wrap;--padding-top:20px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-9f58126:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-9f58126:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-eabab62:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-eabab62:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-33d9642:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-33d9642:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-aaed22c:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-c823d02:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-c823d02:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-1a167a0:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-1a4ad93:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4{width:var( --container-widget-width, 45% );max-width:45%;padding:20px 20px 20px 20px;--container-widget-width:45%;--container-widget-flex-grow:0;border-style:solid;border-width:1px 1px 1px 1px;border-color:#F2295B29;border-radius:8px 8px 8px 8px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-element{--flex-grow:1;--flex-shrink:0;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-right .elementor-image-box-img{margin-left:15px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-left .elementor-image-box-img{margin-right:15px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-top .elementor-image-box-img{margin-bottom:15px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-title{margin-bottom:7px;font-family:"Poppins", Sans-serif;font-size:18px;font-weight:600;color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper .elementor-image-box-img{width:100px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-img img{transition-duration:0.3s;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4:has(:hover) .elementor-image-box-title,
+					 .elementor-8769 .elementor-element.elementor-element-286dbc4:has(:focus) .elementor-image-box-title{color:var( --e-global-color-66d3c96 );}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-description{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4{width:100%;max-width:100%;padding:25px 25px 25px 25px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper{text-align:start;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-right .elementor-image-box-img{margin-left:10px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-left .elementor-image-box-img{margin-right:10px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-title{margin-bottom:18px;}
+.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}
+
+@media(max-width:1024px){.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-8769 .elementor-element.elementor-element-2075437{width:100%;max-width:100%;}.elementor-8769 .elementor-element.elementor-element-2075437 .elementor-heading-title{font-size:32px;line-height:1.3em;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-8769 .elementor-element.elementor-element-f13fe21{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}.elementor-8769 .elementor-element.elementor-element-b8bfd49 .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-8769 .elementor-element.elementor-element-eec02b7{width:100%;max-width:100%;}.elementor-8769 .elementor-element.elementor-element-eec02b7 .elementor-heading-title{font-size:32px;line-height:1.3em;}.elementor-widget-image-box .elementor-image-box-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-widget-image-box .elementor-image-box-description{font-size:var( --e-global-typography-text-font-size );}}
+@media(max-width:767px){.elementor-8769 .elementor-element.elementor-element-add3eef{--padding-top:120px;--padding-bottom:80px;--padding-left:15px;--padding-right:15px;}.elementor-8769 .elementor-element.elementor-element-80edc09{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );}.elementor-8769 .elementor-element.elementor-element-67a306d.elementor-element{--align-self:center;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-8769 .elementor-element.elementor-element-2075437{text-align:center;}.elementor-8769 .elementor-element.elementor-element-2075437 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );}.elementor-8769 .elementor-element.elementor-element-f13fe21{text-align:center;font-size:15px;}.elementor-8769 .elementor-element.elementor-element-00a9e76{--justify-content:center;--gap:5px 5px;--row-gap:5px;--column-gap:5px;}.elementor-8769 .elementor-element.elementor-element-b8bfd49 .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}.elementor-8769 .elementor-element.elementor-element-3d109ce.e-con{--order:-99999 /* order start hack */;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );}.elementor-8769 .elementor-element.elementor-element-45db5b7{margin:-54px 0px calc(var(--kit-widget-spacing, 0px) + -24px) 0px;}.elementor-8769 .elementor-element.elementor-element-45db5b7 img{max-width:100%;}.elementor-8769 .elementor-element.elementor-element-61873ba{--justify-content:flex-start;--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-8769 .elementor-element.elementor-element-f9f6120 .elementor-button{font-size:10px;}.elementor-8769 .elementor-element.elementor-element-eec02b7{text-align:start;}.elementor-8769 .elementor-element.elementor-element-eec02b7 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-widget-image-box .elementor-image-box-title{font-size:var( --e-global-typography-primary-font-size );}.elementor-widget-image-box .elementor-image-box-description{font-size:var( --e-global-typography-text-font-size );}.elementor-8769 .elementor-element.elementor-element-9f58126{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-9f58126.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-9f58126 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-eabab62{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-eabab62.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-eabab62 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-33d9642{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-33d9642.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-33d9642 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-aaed22c{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-aaed22c.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-aaed22c .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-c823d02{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-c823d02.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-c823d02 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-1a167a0{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-1a167a0.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-1a167a0 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-1a4ad93 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}.elementor-8769 .elementor-element.elementor-element-286dbc4{width:100%;max-width:100%;padding:25px 25px 25px 25px;}.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper{text-align:start;}.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-right .elementor-image-box-img{margin-left:10px;}.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-left .elementor-image-box-img{margin-right:10px;}.elementor-8769 .elementor-element.elementor-element-286dbc4.elementor-position-top .elementor-image-box-img{margin-bottom:10px;}.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-title{margin-bottom:18px;}.elementor-8769 .elementor-element.elementor-element-286dbc4 .elementor-image-box-wrapper .elementor-image-box-img{width:63px;}}
+</style>
+
+<div class="elementor elementor-8769">
+  <div class="elementor-element elementor-element-61873ba e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="61873ba" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      {% if section.settings.badge_text != blank %}
+        <div class="elementor-element elementor-element-f9f6120 elementor-align-left elementor-widget elementor-widget-button animated fadeInUp" data-id="f9f6120" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="button.default">
+          <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+            </span>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <div class="elementor-element elementor-element-eec02b7 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading animated fadeInUp" data-id="eec02b7" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+      {% endif %}
+
+      <div class="elementor-element elementor-element-a0216f8 e-flex e-con-boxed e-con e-child" data-id="a0216f8" data-element_type="container" data-e-type="container">
+        <div class="e-con-inner">
+          {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+              {% assign idx = forloop.index0 %}
+              {% case idx %}
+                {% when 0 %}
+                  {% assign box_id = "9f58126" %}
+                  {% assign default_icon = "service-icon-1.webp" %}
+                {% when 1 %}
+                  {% assign box_id = "eabab62" %}
+                  {% assign default_icon = "service-icon-2.webp" %}
+                {% when 2 %}
+                  {% assign box_id = "33d9642" %}
+                  {% assign default_icon = "service-icon-3.webp" %}
+                {% when 3 %}
+                  {% assign box_id = "aaed22c" %}
+                  {% assign default_icon = "service-icon-4.webp" %}
+                {% when 4 %}
+                  {% assign box_id = "c823d02" %}
+                  {% assign default_icon = "service-icon-5.webp" %}
+                {% when 5 %}
+                  {% assign box_id = "1a167a0" %}
+                  {% assign default_icon = "service-icon-6.webp" %}
+                {% when 6 %}
+                  {% assign box_id = "1a4ad93" %}
+                  {% assign default_icon = "service-icon-7.webp" %}
+                {% when 7 %}
+                  {% assign box_id = "286dbc4" %}
+                  {% assign default_icon = "service-icon-8.webp" %}
+                {% else %}
+                  {% assign box_id = "service-box-" | append: forloop.index %}
+                  {% assign default_icon = "service-icon-1.webp" %}
+              {% endcase %}
+
+              <div class="elementor-element elementor-element-{{ box_id }} elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="{{ box_id }}" data-element_type="widget" data-widget_type="image-box.default" {{ block.shopify_attributes }}>
+                <div class="elementor-image-box-wrapper">
+                  <figure class="elementor-image-box-img">
+                    {% if block.settings.icon != blank %}
+                      <img decoding="async" width="1254" height="1254" src="{{ block.settings.icon | image_url: width: 200 }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+                    {% else %}
+                      <img decoding="async" width="1254" height="1254" src="{{ default_icon | asset_url }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+                    {% endif %}
+                  </figure>
+                  <div class="elementor-image-box-content">
+                    <h3 class="elementor-image-box-title">{{ block.settings.title }}</h3>
+                    <p class="elementor-image-box-description">{{ block.settings.description }}</p>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="elementor-element elementor-element-9f58126 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="9f58126" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-1.webp' | asset_url }}" class="attachment-full size-full" alt="Faith International / Debit Card" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Faith International / Debit Card</h3>
+                  <p class="elementor-image-box-description">Virtual and physical card options where available.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-eabab62 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="eabab62" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-2.webp' | asset_url }}" class="attachment-full size-full" alt="Digital Wallet &amp; Mobile Access" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Digital Wallet &amp; Mobile Access</h3>
+                  <p class="elementor-image-box-description">Manage your account, balances, and payments on iOS/Android.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-33d9642 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="33d9642" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-3.webp' | asset_url }}" class="attachment-full size-full" alt="Domestic &amp; International Transfers" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Domestic &amp; International Transfers</h3>
+                  <p class="elementor-image-box-description">ACH, domestic wires, international wires, and internal transfers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-aaed22c elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="aaed22c" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-4.webp' | asset_url }}" class="attachment-full size-full" alt="Check Cashing &amp; Direct Deposit" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Check Cashing &amp; Direct Deposit</h3>
+                  <p class="elementor-image-box-description">Social Security, retirement, payroll, tax refunds, and recurring deposits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-c823d02 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="c823d02" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-5.webp' | asset_url }}" class="attachment-full size-full" alt="Credit Repair &amp; Financial Literacy" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Credit Repair &amp; Financial Literacy</h3>
+                  <p class="elementor-image-box-description">Credit builder education and resources to strengthen your profile.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-1a167a0 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="1a167a0" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-6.webp' | asset_url }}" class="attachment-full size-full" alt="Tax Preparation" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Tax Preparation</h3>
+                  <p class="elementor-image-box-description">Personal and family tax preparation services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-1a4ad93 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="1a4ad93" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-7.webp' | asset_url }}" class="attachment-full size-full" alt="Mortgages &amp; Refinance" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Mortgages &amp; Refinance</h3>
+                  <p class="elementor-image-box-description">Home financing and refinance support through applicable partners.</p>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-286dbc4 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="286dbc4" data-element_type="widget" data-widget_type="image-box.default">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img decoding="async" width="1254" height="1254" src="{{ 'service-icon-8.webp' | asset_url }}" class="attachment-full size-full" alt="FaithSurance Term Life" loading="lazy">
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">FaithSurance Term Life</h3>
+                  <p class="elementor-image-box-description">Simple-application term life insurance pathway.</p>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

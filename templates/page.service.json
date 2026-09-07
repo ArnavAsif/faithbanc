@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "service_section_01": {
+      "type": "service-section-01",
+      "settings": {}
+    },
+    "service_section_02": {
+      "type": "service-section-02",
+      "blocks": {
+        "service_1": {
+          "type": "service",
+          "settings": {
+            "title": "Faith International / Debit Card",
+            "description": "Virtual and physical card options where available."
+          }
+        },
+        "service_2": {
+          "type": "service",
+          "settings": {
+            "title": "Digital Wallet & Mobile Access",
+            "description": "Manage your account, balances, and payments on iOS/Android."
+          }
+        },
+        "service_3": {
+          "type": "service",
+          "settings": {
+            "title": "Domestic & International Transfers",
+            "description": "ACH, domestic wires, international wires, and internal transfers."
+          }
+        },
+        "service_4": {
+          "type": "service",
+          "settings": {
+            "title": "Check Cashing & Direct Deposit",
+            "description": "Social Security, retirement, payroll, tax refunds, and recurring deposits."
+          }
+        },
+        "service_5": {
+          "type": "service",
+          "settings": {
+            "title": "Credit Repair & Financial Literacy",
+            "description": "Credit builder education and resources to strengthen your profile."
+          }
+        },
+        "service_6": {
+          "type": "service",
+          "settings": {
+            "title": "Tax Preparation",
+            "description": "Personal and family tax preparation services."
+          }
+        },
+        "service_7": {
+          "type": "service",
+          "settings": {
+            "title": "Mortgages & Refinance",
+            "description": "Home financing and refinance support through applicable partners."
+          }
+        },
+        "service_8": {
+          "type": "service",
+          "settings": {
+            "title": "FaithSurance Term Life",
+            "description": "Simple-application term life insurance pathway."
+          }
+        }
+      },
+      "block_order": [
+        "service_1",
+        "service_2",
+        "service_3",
+        "service_4",
+        "service_5",
+        "service_6",
+        "service_7",
+        "service_8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "service_section_01",
+    "service_section_02"
+  ]
+}
