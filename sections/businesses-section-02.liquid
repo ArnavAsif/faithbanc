@@ -1,0 +1,239 @@
+{% schema %}
+{
+  "name": "Businesses Toolkit",
+  "tag": "section",
+  "class": "section-businesses-toolkit",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "What's Included"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A full merchant <span>toolkit.</span>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit_item",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Benefit Text",
+          "default": "Merchant processing with flat-fee and custom pricing options."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Businesses Toolkit",
+      "blocks": [
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Merchant processing with flat-fee and custom pricing options."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "High-risk merchant account support for restaurants, bars, nightclubs, pawnshops, casinos/online gaming, and cannabis-related businesses where lawful and supported."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Free equipment options \u2014 terminals, mobile readers, kiosks, and handheld devices where approved."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Rewards points on every transaction \u2014 redeemable for travel, gift cards, electronics, and luxury goods where program-supported."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Business consulting for growth, operations, profitability, compliance readiness, and financial infrastructure."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Capital review for receivable loans, short-term credit lines, and strategic funding pathways."
+          }
+        },
+        {
+          "type": "benefit_item",
+          "settings": {
+            "text": "Business tax preparation and compliance support referrals."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Scoped Rules */
+.elementor-8708 .elementor-element.elementor-element-189dcf0{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-8708 .elementor-element.elementor-element-f9dc3d7 .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-66d3c96 );color:var( --e-global-color-66d3c96 );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-8708 .elementor-element.elementor-element-55c0227{width:100%;max-width:100%;text-align:start;}
+.elementor-8708 .elementor-element.elementor-element-55c0227 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:46px;font-weight:700;text-transform:capitalize;line-height:55px;letter-spacing:-2px;color:var( --e-global-color-text );}
+.elementor-8708 .elementor-element.elementor-element-6e86e63{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:center;--gap:50px 50px;--row-gap:50px;--column-gap:50px;--padding-top:20px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad{width:var( --container-widget-width, 50% );max-width:50%;--container-widget-width:50%;--container-widget-flex-grow:0;--e-icon-list-icon-size:17px;--icon-vertical-align:flex-start;--icon-vertical-offset:5px;}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-10px/2);}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-10px/2);}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-icon i{color:var( --e-global-color-66d3c96 );transition:color 0.3s;}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-icon svg{fill:var( --e-global-color-66d3c96 );transition:fill 0.3s;}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-item > a{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-text{transition:color 0.3s;}
+.elementor-8708 .elementor-element.elementor-element-869b3d6{width:var( --container-widget-width, 50% );max-width:50%;--container-widget-width:50%;--container-widget-flex-grow:0;--e-icon-list-icon-size:17px;--icon-vertical-align:flex-start;--icon-vertical-offset:5px;}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(10px/2);}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-10px/2);}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-10px/2);}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-icon i{color:var( --e-global-color-66d3c96 );transition:color 0.3s;}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-icon svg{fill:var( --e-global-color-66d3c96 );transition:fill 0.3s;}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-item > a{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:26px;}
+.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-text{transition:color 0.3s;}
+@media(min-width:768px){.elementor-8708 .elementor-element.elementor-element-6e86e63{--width:100%;}}
+@media(max-width:1024px){.elementor-8708 .elementor-element.elementor-element-55c0227{width:100%;max-width:100%;}.elementor-8708 .elementor-element.elementor-element-55c0227 .elementor-heading-title{font-size:32px;line-height:1.3em;}}
+@media(max-width:767px){.elementor-8708 .elementor-element.elementor-element-189dcf0{--justify-content:flex-start;--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-8708 .elementor-element.elementor-element-f9dc3d7 .elementor-button{font-size:10px;}.elementor-8708 .elementor-element.elementor-element-55c0227{text-align:start;}.elementor-8708 .elementor-element.elementor-element-55c0227 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-8708 .elementor-element.elementor-element-6e86e63{--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-8708 .elementor-element.elementor-element-3e8e8ad{width:100%;max-width:100%;}.elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8708 .elementor-element.elementor-element-3e8e8ad .elementor-icon-list-item > a{font-size:14px;}.elementor-8708 .elementor-element.elementor-element-869b3d6{width:100%;max-width:100%;}.elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8708 .elementor-element.elementor-element-869b3d6 .elementor-icon-list-item > a{font-size:14px;}}
+
+.gradient-text span{
+    background: linear-gradient(135deg,#FF5722 0%,#FF3366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+</style>
+
+<div class="elementor elementor-8708">
+  <div class="elementor-element elementor-element-189dcf0 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="189dcf0" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      {% if section.settings.badge_text != blank %}
+        <div class="elementor-element elementor-element-f9dc3d7 elementor-align-left elementor-widget elementor-widget-button elementor-invisible" data-id="f9dc3d7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+          <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+            </span>
+          </a>
+        </div>
+      {% endif %}
+
+      <div class="elementor-element elementor-element-55c0227 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading elementor-invisible" data-id="55c0227" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+        <h2 class="elementor-heading-title elementor-size-default">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+
+      <div class="elementor-element elementor-element-6e86e63 e-con-full e-flex e-con e-child" data-id="6e86e63" data-element_type="container" data-e-type="container">
+        {% if section.blocks.size > 0 %}
+          {% assign total_blocks = section.blocks.size %}
+          {% assign half = total_blocks | divided_by: 2.0 | ceil %}
+
+          <div class="elementor-element elementor-element-3e8e8ad elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list elementor-invisible" data-id="3e8e8ad" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <ul class="elementor-icon-list-items">
+              {% for block in section.blocks limit: half %}
+                <li class="elementor-icon-list-item" {{ block.shopify_attributes }}>
+                  <span class="elementor-icon-list-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
+                    </svg>
+                  </span>
+                  <span class="elementor-icon-list-text">{{ block.settings.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <div class="elementor-element elementor-element-869b3d6 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list elementor-invisible" data-id="869b3d6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <ul class="elementor-icon-list-items">
+              {% for block in section.blocks offset: half %}
+                <li class="elementor-icon-list-item" {{ block.shopify_attributes }}>
+                  <span class="elementor-icon-list-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
+                    </svg>
+                  </span>
+                  <span class="elementor-icon-list-text">{{ block.settings.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% else %}
+          <div class="elementor-element elementor-element-3e8e8ad elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list elementor-invisible" data-id="3e8e8ad" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <ul class="elementor-icon-list-items">
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Merchant processing with flat-fee and custom pricing options.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">High-risk merchant account support for restaurants, bars, nightclubs, pawnshops, casinos/online gaming, and cannabis-related businesses where lawful and supported.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Free equipment options — terminals, mobile readers, kiosks, and handheld devices where approved.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="elementor-element elementor-element-869b3d6 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list elementor-invisible" data-id="869b3d6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-list.default">
+            <ul class="elementor-icon-list-items">
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Rewards points on every transaction — redeemable for travel, gift cards, electronics, and luxury goods where program-supported.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Business consulting for growth, operations, profitability, compliance readiness, and financial infrastructure.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Capital review for receivable loans, short-term credit lines, and strategic funding pathways.</span>
+              </li>
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                </span>
+                <span class="elementor-icon-list-text">Business tax preparation and compliance support referrals.</span>
+              </li>
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

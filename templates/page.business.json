@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "businesses_section_01": {
+      "type": "businesses-section-01",
+      "settings": {}
+    },
+    "businesses_section_02": {
+      "type": "businesses-section-02",
+      "settings": {}
+    },
+    "businesses_section_03": {
+      "type": "businesses-section-03",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "businesses_section_01",
+    "businesses_section_02",
+    "businesses_section_03"
+  ]
+}
