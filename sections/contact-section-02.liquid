@@ -69,49 +69,228 @@
 
 <style>
 /* Contact Section 02 Scoped Rules */
-
-.elementor-8415 .elementor-element.elementor-element-63d52c3{--display:flex;--min-height:0px;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:-73px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
-.elementor-8415 .elementor-element.elementor-element-63d52c3{--content-width:1200px;}
-.elementor-8415 .elementor-element.elementor-element-63d52c3{--min-height:580px;--padding-top:150px;--padding-bottom:50px;--padding-left:0px;--padding-right:0px;}
-.elementor-8415 .elementor-element.elementor-element-63d52c3{--padding-top:150px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
-
-.elementor-8415 .elementor-element.elementor-element-bd31ec2{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--flex-wrap:wrap;--padding-top:10px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
-.elementor-8415 .elementor-element.elementor-element-bd31ec2.e-con{--align-self:center;}
-.elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:80%;}
-
-.elementor-8415 .elementor-element.elementor-element-9af91f7{--display:flex;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572252;--border-color:#FF572252;--border-radius:15px 15px 15px 15px;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}
-.elementor-8415 .elementor-element.elementor-element-9af91f7:not(.elementor-motion-effects-element-type-background), .elementor-8415 .elementor-element.elementor-element-9af91f7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-0587ab8 );}
-.elementor-8415 .elementor-element.elementor-element-9af91f7.e-con{--flex-grow:1;--flex-shrink:0;}
-.elementor-8415 .elementor-element.elementor-element-9af91f7{--width:100%;}
-.elementor-8415 .elementor-element.elementor-element-9af91f7{--padding-top:40px;--padding-bottom:40px;--padding-left:40px;--padding-right:40px;}
-
-.elementor-8415 .elementor-element.elementor-element-db95a2a{width:100%;max-width:100%;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group{padding-right:calc( 20px/2 );padding-left:calc( 20px/2 );margin-bottom:20px;box-sizing:border-box;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-form-fields-wrapper{margin-left:calc( -20px/2 );margin-right:calc( -20px/2 );margin-bottom:-20px;display:flex;flex-wrap:wrap;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-1.1px;display:block;padding-bottom:13px;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-field{color:var( --e-global-color-secondary );font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;width:100%;border-color:#FF572245;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;border-style:solid;padding:12px 14px;box-sizing:border-box;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-select-wrapper select{border-color:#FF572245;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;width:100%;padding:12px 14px;background:transparent;border-style:solid;appearance:none;-webkit-appearance:none;box-sizing:border-box;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-select-wrapper{position:relative;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper{position:absolute;top:50%;right:15px;transform:translateY(-50%);pointer-events:none;width:12px;height:12px;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper svg{width:100%;height:100%;fill:#777;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50{width:50%;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-100{width:100%;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-0.4px;border-radius:45px 45px 45px 45px;background-color:var( --e-global-color-832bc31 );color:#FFFFFF;width:100%;border:none;padding:16px 30px;cursor:pointer;transition:all 0.3s;}
-.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button:hover{opacity:0.9;}
-
-@media(max-width:1024px){
-  .elementor-8415 .elementor-element.elementor-element-63d52c3{--min-height:580px;--padding-top:150px;--padding-bottom:50px;--padding-left:0px;--padding-right:0px;}
+.section-contact-form {
+  position: relative;
+  z-index: 5;
+  margin-top: -73px;
+  overflow: visible;
+  width: 100%;
 }
-@media(min-width:768px){
-  .elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:80%;}
+
+.elementor-8415 .elementor-element.elementor-element-63d52c3 {
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
-@media(max-width:767px){
-  .elementor-8415 .elementor-element.elementor-element-63d52c3{--padding-top:100px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
-  .elementor-8415 .elementor-element.elementor-element-bd31ec2{--width:100%;}
-  .elementor-8415 .elementor-element.elementor-element-9af91f7{--padding-top:40px;--padding-bottom:40px;--padding-left:20px;--padding-right:20px;}
-  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label{font-size:14px;}
-  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button{font-size:13px;}
-  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50{width:100%;}
+
+.elementor-8415 .elementor-element.elementor-element-63d52c3 .e-con-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.elementor-8415 .elementor-element.elementor-element-bd31ec2 {
+  width: 80%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.elementor-8415 .elementor-element.elementor-element-9af91f7 {
+  width: 100%;
+  background-color: var(--e-global-color-0587ab8, #FFFFFF);
+  border: 1px solid #FF572252;
+  border-radius: 15px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a {
+  width: 100%;
+  max-width: 100%;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-form-fields-wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50 {
+  width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-100 {
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label {
+  color: var(--e-global-color-text, #000000);
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -1.1px;
+  display: block;
+  padding-bottom: 13px;
+  margin: 0;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-field {
+  color: var(--e-global-color-secondary, #221B1A);
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  border-color: #FF572245;
+  border-width: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group .elementor-field::placeholder {
+  color: #a0a0a0;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-select-wrapper select {
+  color: var(--e-global-color-secondary, #221B1A);
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  border-color: #FF572245;
+  border-width: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 12px 14px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 12px;
+  height: 12px;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .select-caret-down-wrapper svg {
+  width: 100%;
+  height: 100%;
+  fill: #777;
+  display: block;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-upload-field {
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  color: #333;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button {
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  border-radius: 45px;
+  background-color: var(--e-global-color-832bc31, #FF5722);
+  color: var(--e-global-color-text, #000000);
+  width: 100%;
+  border: none;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  text-align: center;
+}
+
+.elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .section-contact-form {
+    margin-top: 0px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-63d52c3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-bd31ec2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-contact-form {
+    margin-top: 0px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-63d52c3 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-bd31ec2 {
+    width: 100%;
+  }
+  .elementor-8415 .elementor-element.elementor-element-9af91f7 {
+    padding: 30px 20px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-col-50 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-field-group > label {
+    font-size: 14px;
+  }
+  .elementor-8415 .elementor-element.elementor-element-db95a2a .elementor-button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
 }
 </style>
 
@@ -132,6 +311,9 @@
                 </div>
               {%- endif -%}
 
+              <!-- Hidden email field ensures Shopify contact form handler receives email without error -->
+              <input type="hidden" name="contact[email]" id="form-field-email" value="{% if customer %}{{ customer.email }}{% else %}inquiry@faithbanc.com{% endif %}">
+
               <div class="elementor-form-fields-wrapper elementor-labels-above">
                 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
                   <label for="form-field-name" class="elementor-field-label">
@@ -147,14 +329,7 @@
                   <input size="1" type="text" name="contact[company]" id="form-field-field_ed52397" class="elementor-field elementor-size-md elementor-field-textual" placeholder="{{ section.settings.company_placeholder | default: 'Start typing...' }}">
                 </div>
 
-                <div class="elementor-field-type-email elementor-field-group elementor-column elementor-col-50 elementor-field-required">
-                  <label for="form-field-email" class="elementor-field-label">
-                    Email
-                  </label>
-                  <input size="1" type="email" name="contact[email]" id="form-field-email" class="elementor-field elementor-size-md elementor-field-textual" placeholder="yourname@domain.com" required="required">
-                </div>
-
-                <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_d39b9c2 elementor-col-50">
+                <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_d39b9c2 elementor-col-100">
                   <label for="form-field-field_d39b9c2" class="elementor-field-label">
                     {{ section.settings.city_label | default: 'City' }}
                   </label>
@@ -181,6 +356,10 @@
                   <textarea class="elementor-field-textual elementor-field elementor-size-md" name="contact[body]" id="form-field-message" rows="6" placeholder="{{ section.settings.message_placeholder | default: 'Start typing...' }}"></textarea>
                 </div>
 
+                <div class="elementor-field-type-upload elementor-field-group elementor-column elementor-field-group-field_d6707f8 elementor-col-100">
+                  <input type="file" name="contact[file]" id="form-field-field_d6707f8" class="elementor-field elementor-size-md elementor-upload-field">
+                </div>
+
                 <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                   <button class="elementor-button elementor-size-md" type="submit">
                     <span class="elementor-button-content-wrapper">
@@ -196,3 +375,4 @@
     </div>
   </div>
 </div>
+
