@@ -1,0 +1,209 @@
+{% schema %}
+{
+  "name": "Debit Card Waitlist",
+  "tag": "section",
+  "class": "section-debit-card-waitlist",
+  "settings": [
+    {
+      "type": "text",
+      "id": "form_btn_text",
+      "label": "Form Button Text",
+      "default": "Join Waitlist"
+    },
+    {
+      "type": "header",
+      "content": "Compliance Note"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "compliance_heading",
+      "label": "Compliance Heading",
+      "default": "Compliance Note"
+    },
+    {
+      "type": "textarea",
+      "id": "compliance_text",
+      "label": "Compliance Text",
+      "default": "The FaithBanc\u2122 Global Debit Card is offered through partner banking and payment infrastructure where required. Availability of features such as crypto/stablecoin funding, wires, and currency support is subject to jurisdiction, partner approval, KYC/AML review, and applicable law."
+    },
+    {
+      "type": "image_picker",
+      "id": "compliance_bg",
+      "label": "Compliance Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Debit Card Waitlist"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Section Scoped Rules */
+.elementor-8734 .elementor-element.elementor-element-fe05b7b{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:40px 40px;--row-gap:40px;--column-gap:40px;--padding-top:80px;--padding-bottom:30px;--padding-left:0px;--padding-right:0px;}
+.elementor-8734 .elementor-element.elementor-element-6965454{--display:flex;--justify-content:center;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#FF572259;--border-color:#FF572259;--border-radius:12px 12px 12px 12px;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}
+.elementor-8734 .elementor-element.elementor-element-6965454:not(.elementor-motion-effects-element-type-background), .elementor-8734 .elementor-element.elementor-element-6965454 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(180deg, #FF572212 0%, #F2295B0A 100%);}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3{width:100%;max-width:100%;--e-form-steps-indicators-spacing:20px;--e-form-steps-indicator-padding:30px;--e-form-steps-indicator-inactive-secondary-color:#ffffff;--e-form-steps-indicator-active-secondary-color:#ffffff;--e-form-steps-indicator-completed-secondary-color:#ffffff;--e-form-steps-divider-width:1px;--e-form-steps-divider-gap:10px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group{padding-right:calc( 20px/2 );padding-left:calc( 20px/2 );margin-bottom:20px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-form-fields-wrapper{margin-left:calc( -20px/2 );margin-right:calc( -20px/2 );margin-bottom:-20px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group.recaptcha_v3-bottomleft, .elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group.recaptcha_v3-bottomright{margin-bottom:0;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-labels-inline .elementor-field-group > label{padding-left:13px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-labels-inline .elementor-field-group > label{padding-right:13px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-labels-above .elementor-field-group > label{padding-bottom:13px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group > label, .elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-subgroup label{color:var( --e-global-color-text );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group > label{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-1.1px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-type-html{padding-bottom:0px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group .elementor-field{color:var( --e-global-color-91f3e4c );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group .elementor-field, .elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-subgroup label{font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group .elementor-field:not(.elementor-select-wrapper){border-color:#F2295B2B;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group .elementor-select-wrapper select{border-color:#F2295B2B;border-width:1px 1px 1px 1px;border-radius:2px 2px 2px 2px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group .elementor-select-wrapper::before{color:#F2295B2B;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button{font-family:"Poppins", Sans-serif;font-size:16px;font-weight:600;letter-spacing:-0.4px;border-radius:45px 45px 45px 45px;}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .e-form__buttons__wrapper__button-next{background-color:var( --e-global-color-66d3c96 );color:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button[type="submit"]{background-color:var( --e-global-color-66d3c96 );color:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button[type="submit"] svg *{fill:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .e-form__buttons__wrapper__button-previous{background-color:var( --e-global-color-3d786e9 );color:var( --e-global-color-text );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .e-form__buttons__wrapper__button-next:hover{color:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button[type="submit"]:hover{color:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button[type="submit"]:hover svg *{fill:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .e-form__buttons__wrapper__button-previous:hover{color:#ffffff;}
+.elementor-8734 .elementor-element.elementor-element-aa8a396{--display:flex;--min-height:417px;--justify-content:flex-end;--overlay-opacity:0.5;--border-radius:12px 12px 12px 12px;--padding-top:40px;--padding-bottom:40px;--padding-left:40px;--padding-right:40px;}
+.elementor-8734 .elementor-element.elementor-element-aa8a396:not(.elementor-motion-effects-element-type-background), .elementor-8734 .elementor-element.elementor-element-aa8a396 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-66d3c96 );background-image:url("https://faithbanc.com/wp-content/uploads/2026/05/ChatGPT-Image-May-19-2026-04_40_25-PM-2.webp");background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.elementor-8734 .elementor-element.elementor-element-aa8a396::before, .elementor-8734 .elementor-element.elementor-element-aa8a396 > .elementor-background-video-container::before, .elementor-8734 .elementor-element.elementor-element-aa8a396 > .e-con-inner > .elementor-background-video-container::before, .elementor-8734 .elementor-element.elementor-element-aa8a396 > .elementor-background-slideshow::before, .elementor-8734 .elementor-element.elementor-element-aa8a396 > .e-con-inner > .elementor-background-slideshow::before, .elementor-8734 .elementor-element.elementor-element-aa8a396 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{background-color:transparent;--background-overlay:'';background-image:linear-gradient(180deg, var( --e-global-color-832bc31 ) 0%, #F2295B00 100%);}
+.elementor-8734 .elementor-element.elementor-element-241027b{--spacer-size:50px;}
+.elementor-8734 .elementor-element.elementor-element-25a2f33{width:100%;max-width:100%;text-align:start;}
+.elementor-8734 .elementor-element.elementor-element-25a2f33 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:32px;font-weight:600;text-transform:capitalize;line-height:40px;letter-spacing:-2.7px;color:var( --e-global-color-0587ab8 );}
+.elementor-8734 .elementor-element.elementor-element-a168e93{width:var( --container-widget-width, 75% );max-width:75%;--container-widget-width:75%;--container-widget-flex-grow:0;--e-icon-list-icon-size:14px;--icon-vertical-align:flex-start;--icon-vertical-offset:4px;}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(12px/2);}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(12px/2);}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(12px/2);}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-12px/2);}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-12px/2);}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-icon i{color:var( --e-global-color-832bc31 );transition:color 0.3s;}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-icon svg{fill:var( --e-global-color-832bc31 );transition:fill 0.3s;}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-item > a{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:28px;}
+.elementor-8734 .elementor-element.elementor-element-a168e93 .elementor-icon-list-text{color:var( --e-global-color-0587ab8 );transition:color 0.3s;}
+.elementor-8734 .elementor-element.elementor-element-eab88a0{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}
+.elementor-8734 .elementor-element.elementor-element-aa0b244{--spacer-size:50px;}
+@media(min-width:768px){.elementor-8734 .elementor-element.elementor-element-6965454{--width:100%;}.elementor-8734 .elementor-element.elementor-element-aa8a396{--width:1200px;}}
+@media(max-width:1024px){.elementor-8734 .elementor-element.elementor-element-25a2f33{width:100%;max-width:100%;}.elementor-8734 .elementor-element.elementor-element-25a2f33 .elementor-heading-title{font-size:32px;line-height:1.3em;}}
+@media(max-width:767px){.elementor-8734 .elementor-element.elementor-element-fe05b7b{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}.elementor-8734 .elementor-element.elementor-element-6965454{--padding-top:40px;--padding-bottom:40px;--padding-left:20px;--padding-right:20px;}.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-field-group > label{font-size:14px;}.elementor-8734 .elementor-element.elementor-element-4a5c7b3 .elementor-button{font-size:13px;}.elementor-8734 .elementor-element.elementor-element-aa8a396{--width:95%;--padding-top:20px;--padding-bottom:20px;--padding-left:20px;--padding-right:20px;}.elementor-8734 .elementor-element.elementor-element-241027b{--spacer-size:30px;}.elementor-8734 .elementor-element.elementor-element-25a2f33{text-align:start;}.elementor-8734 .elementor-element.elementor-element-25a2f33 .elementor-heading-title{font-size:24px;line-height:1.3em;letter-spacing:-1.5px;}.elementor-8734 .elementor-element.elementor-element-a168e93{--container-widget-width:530px;--container-widget-flex-grow:0;width:var( --container-widget-width, 530px );max-width:530px;}}
+
+.gradient-text span{
+    background: linear-gradient(135deg,#FF5722 0%,#FF3366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+{% if section.settings.compliance_bg != blank %}
+  .elementor-8734 .elementor-element.elementor-element-aa8a396:not(.elementor-motion-effects-element-type-background) {
+    background-image: url("{{ section.settings.compliance_bg | image_url: width: 2000 }}") !important;
+  }
+{% else %}
+  .elementor-8734 .elementor-element.elementor-element-aa8a396:not(.elementor-motion-effects-element-type-background) {
+    background-image: url("{{ 'debit-card-compliance-bg.webp' | asset_url }}") !important;
+  }
+{% endif %}
+</style>
+
+<div class="elementor elementor-8734">
+  <div class="elementor-element elementor-element-fe05b7b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="fe05b7b" data-element_type="container" data-e-type="container" style="padding-top: 0; padding-bottom: 0;">
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-6965454 e-con-full e-flex e-con e-child" data-id="6965454" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}" id="debit-card-waitlist">
+        <div class="elementor-element elementor-element-4a5c7b3 elementor-widget__width-inherit elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="4a5c7b3" data-element_type="widget" data-e-type="widget" data-widget_type="form.default">
+          {% form 'contact', class: 'elementor-form', id: 'waitlist-form' %}
+            {% if form.posted_successfully? %}
+              <div class="elementor-message elementor-message-success" role="alert" style="color: #46b450; padding: 15px; margin-bottom: 20px; border: 1px solid #46b450; border-radius: 8px; width: 100%;">
+                Thank you! You have been successfully added to the card waitlist.
+              </div>
+            {% elsif form.errors %}
+              <div class="elementor-message elementor-message-danger" role="alert" style="color: #dc3232; padding: 15px; margin-bottom: 20px; border: 1px solid #dc3232; border-radius: 8px; width: 100%;">
+                {{ form.errors | default_errors }}
+              </div>
+            {% endif %}
+
+            <div class="elementor-form-fields-wrapper elementor-labels-above">
+              <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
+                <label for="waitlist-form-name" class="elementor-field-label">Full Name</label>
+                <input size="1" type="text" name="contact[name]" id="waitlist-form-name" class="elementor-field elementor-size-md elementor-field-textual" placeholder="Start typing..." required="required">
+              </div>
+
+              <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_ed52397 elementor-col-50">
+                <label for="waitlist-form-company" class="elementor-field-label">Company Name</label>
+                <input size="1" type="text" name="contact[company]" id="waitlist-form-company" class="elementor-field elementor-size-md elementor-field-textual" placeholder="Start typing...">
+              </div>
+
+              <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_d39b9c2 elementor-col-100">
+                <label for="waitlist-form-city" class="elementor-field-label">City</label>
+                <div class="elementor-field elementor-select-wrapper remove-before">
+                  <div class="select-caret-down-wrapper">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-eicon-caret-down" viewBox="0 0 571.4 571.4" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path>
+                    </svg>
+                  </div>
+                  <select name="contact[city]" id="waitlist-form-city" class="elementor-field-textual elementor-size-md">
+                    <option value="New York">New York</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Houston">Houston</option>
+                    <option value="Phoenix">Phoenix</option>
+                    <option value="Philadelphia">Philadelphia</option>
+                    <option value="San Antonio">San Antonio</option>
+                    <option value="San Diego">San Diego</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="San Jose">San Jose</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+                <label for="waitlist-form-message" class="elementor-field-label">Additional Information</label>
+                <textarea class="elementor-field-textual elementor-field elementor-size-md" name="contact[body]" id="waitlist-form-message" rows="6" placeholder="Start typing..."></textarea>
+              </div>
+
+              <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                <button class="elementor-button elementor-size-md" type="submit">
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">{{ section.settings.form_btn_text }}</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          {% endform %}
+        </div>
+      </div>
+
+      <div class="elementor-element elementor-element-aa8a396 e-con-full e-flex e-con e-child" data-id="aa8a396" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-element elementor-element-241027b elementor-widget elementor-widget-spacer" data-id="241027b" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+          <div class="elementor-spacer">
+            <div class="elementor-spacer-inner"></div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-25a2f33 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="25a2f33" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">
+            {{ section.settings.compliance_heading }}
+          </h2>
+        </div>
+        <div class="elementor-element elementor-element-a168e93 elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a168e93" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+          <ul class="elementor-icon-list-items">
+            <li class="elementor-icon-list-item">
+              <span class="elementor-icon-list-text">{{ section.settings.compliance_text }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="elementor-element elementor-element-eab88a0 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="eab88a0" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-aa0b244 elementor-widget elementor-widget-spacer" data-id="aa0b244" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+        <div class="elementor-spacer">
+          <div class="elementor-spacer-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

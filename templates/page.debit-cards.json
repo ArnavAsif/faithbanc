@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "debit_card_section_01": {
+      "type": "debit-card-section-01",
+      "settings": {}
+    },
+    "debit_card_section_02": {
+      "type": "debit-card-section-02",
+      "settings": {}
+    },
+    "debit_card_section_03": {
+      "type": "debit-card-section-03",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "debit_card_section_01",
+    "debit_card_section_02",
+    "debit_card_section_03"
+  ]
+}
