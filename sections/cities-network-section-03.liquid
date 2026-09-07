@@ -1,0 +1,143 @@
+{% schema %}
+{
+  "name": "Cities Network CTA",
+  "tag": "section",
+  "class": "section-cities-network-cta",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FAITHBANC"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Empowering Our Community. Elevating Our Future."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Sign Up Now"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cities Network CTA"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Cities Network Section 03 Scoped Rules */
+
+.elementor-42 .elementor-element.elementor-element-7c672aa{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:30px 30px;--row-gap:30px;--column-gap:30px;padding-top:40px;padding-bottom:20px;}
+
+.elementor-42 .elementor-element.elementor-element-b35a05b{--display:flex;--justify-content:flex-end;--overlay-opacity:0.5;--border-radius:12px 12px 12px 12px;--padding-top:40px;--padding-bottom:40px;--padding-left:40px;--padding-right:40px;}
+.elementor-42 .elementor-element.elementor-element-b35a05b:not(.elementor-motion-effects-element-type-background), .elementor-42 .elementor-element.elementor-element-b35a05b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-66d3c96 );background-image:url("{{ 'cities-network-disclaimer-bg.webp' | asset_url }}");background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.elementor-42 .elementor-element.elementor-element-b35a05b::before, .elementor-42 .elementor-element.elementor-element-b35a05b > .elementor-background-video-container::before, .elementor-42 .elementor-element.elementor-element-b35a05b > .e-con-inner > .elementor-background-video-container::before, .elementor-42 .elementor-element.elementor-element-b35a05b > .elementor-background-slideshow::before, .elementor-42 .elementor-element.elementor-element-b35a05b > .e-con-inner > .elementor-background-slideshow::before, .elementor-42 .elementor-element.elementor-element-b35a05b > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{background-color:transparent;--background-overlay:'';background-image:linear-gradient(180deg, var( --e-global-color-66d3c96 ) 0%, #F2295B00 100%);}
+.elementor-42 .elementor-element.elementor-element-b35a05b{--width:100%;}
+.elementor-42 .elementor-element.elementor-element-b35a05b{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+
+.elementor-42 .elementor-element.elementor-element-d7402d4{--spacer-size:50px;}
+.elementor-42 .elementor-element.elementor-element-d7402d4{--spacer-size:43px;}
+
+.elementor-42 .elementor-element.elementor-element-6b1d958{width:100%;max-width:100%;text-align:start;}
+.elementor-42 .elementor-element.elementor-element-6b1d958 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:32px;font-weight:600;text-transform:capitalize;line-height:40px;letter-spacing:-2.7px;color:var( --e-global-color-0587ab8 );}
+.elementor-42 .elementor-element.elementor-element-6b1d958{width:100%;max-width:100%;}
+.elementor-42 .elementor-element.elementor-element-6b1d958 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+.elementor-42 .elementor-element.elementor-element-6b1d958{text-align:start;}
+.elementor-42 .elementor-element.elementor-element-6b1d958 .elementor-heading-title{font-size:24px;line-height:1.3em;letter-spacing:-1.5px;}
+
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(12px/2);}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(12px/2);}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(12px/2);}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-12px/2);}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-12px/2);}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-icon i{color:var( --e-global-color-832bc31 );transition:color 0.3s;}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-icon svg{fill:var( --e-global-color-832bc31 );transition:fill 0.3s;}
+.elementor-42 .elementor-element.elementor-element-f4ed474{--e-icon-list-icon-size:14px;--icon-vertical-align:flex-start;--icon-vertical-offset:4px;}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-item > a{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:400;line-height:28px;}
+.elementor-42 .elementor-element.elementor-element-f4ed474 .elementor-icon-list-text{color:var( --e-global-color-0587ab8 );transition:color 0.3s;}
+
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button{background-color:var( --e-global-color-0587ab8 );font-family:"Poppins", Sans-serif;font-size:14px;font-weight:300;text-transform:uppercase;font-style:normal;line-height:14px;letter-spacing:-0.2px;fill:var( --e-global-color-66d3c96 );color:var( --e-global-color-66d3c96 );border-style:solid;border-width:1px 1px 1px 1px;border-color:var( --e-global-color-66d3c96 );border-radius:32px 32px 32px 32px;padding:16px 35px 16px 35px;}
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button:hover, .elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button:focus{background-color:var( --e-global-color-0587ab8 );color:var( --e-global-color-66d3c96 );}
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button-content-wrapper{flex-direction:row;}
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button:hover svg, .elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button:focus svg{fill:var( --e-global-color-66d3c96 );}
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}
+.elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}
+
+@media(max-width:1024px){
+  .elementor-42 .elementor-element.elementor-element-6b1d958{width:100%;max-width:100%;}
+  .elementor-42 .elementor-element.elementor-element-6b1d958 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button{font-size:15px;padding:16px 35px 16px 35px;}
+}
+@media(min-width:768px){
+  .elementor-42 .elementor-element.elementor-element-b35a05b{--width:100%;}
+}
+@media(max-width:767px){
+  .elementor-42 .elementor-element.elementor-element-b35a05b{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-42 .elementor-element.elementor-element-d7402d4{--spacer-size:43px;}
+  .elementor-42 .elementor-element.elementor-element-6b1d958{text-align:start;}
+  .elementor-42 .elementor-element.elementor-element-6b1d958 .elementor-heading-title{font-size:24px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-42 .elementor-element.elementor-element-f77cfcd .elementor-button{font-size:12px;padding:15px 15px 15px 15px;}
+}
+</style>
+
+<div class="elementor elementor-42">
+  <div class="elementor-element elementor-element-7c672aa e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="7c672aa" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-b35a05b e-con-full e-flex e-con e-child" data-id="b35a05b" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}' {% if section.settings.bg_image != blank %}style="background-image: url('{{ section.settings.bg_image | image_url: width: 1672 }}');"{% endif %}>
+        <div class="elementor-element elementor-element-d7402d4 elementor-widget elementor-widget-spacer" data-id="d7402d4" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+          <div class="elementor-spacer">
+            <div class="elementor-spacer-inner"></div>
+          </div>
+        </div>
+
+        {% if section.settings.heading != blank %}
+          <div class="elementor-element elementor-element-6b1d958 elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="6b1d958" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h2 class="elementor-heading-title elementor-size-default">
+              {{ section.settings.heading }}
+            </h2>
+          </div>
+        {% endif %}
+
+        {% if section.settings.subheading != blank %}
+          <div class="elementor-element elementor-element-f4ed474 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f4ed474" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+            <ul class="elementor-icon-list-items">
+              <li class="elementor-icon-list-item">
+                <span class="elementor-icon-list-text">{{ section.settings.subheading }}</span>
+              </li>
+            </ul>
+          </div>
+        {% endif %}
+
+        {% if section.settings.btn_text != blank %}
+          <div class="elementor-element elementor-element-f77cfcd elementor-align-left elementor-tablet-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="f77cfcd" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+            <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.btn_url | default: 'https://fbdplatform.app/dashboard' }}">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-icon">
+                  <svg aria-hidden="true" class="e-font-icon-svg e-fas-paper-plane" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>
+                </span>
+                <span class="elementor-button-text">{{ section.settings.btn_text }}</span>
+              </span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

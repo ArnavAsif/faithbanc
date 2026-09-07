@@ -1,0 +1,157 @@
+{% schema %}
+{
+  "name": "Platform Objectives",
+  "tag": "section",
+  "class": "section-cities-network-objectives",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Platform <span>Objectives</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "text_1",
+      "label": "First Paragraph",
+      "default": "The FaithBanc™ Cities Network is a growing national ecosystem connecting local communities to modern financial tools and faith-based support systems."
+    },
+    {
+      "type": "textarea",
+      "id": "text_2",
+      "label": "Second Paragraph",
+      "default": "Each city operates as a local hub, powered by the FaithBanc™ National Platform, while remaining deeply rooted in neighborhood churches, nonprofits, and community partners.\n\nFaithBanc™ currently operates and expands in strategic cities nationwide, with additional cities launching regularly."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Card Image"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 25
+    }
+  ],
+  "presets": [
+    {
+      "name": "Platform Objectives"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Cities Network Section 04 Scoped Rules */
+
+.cities-sec-04-wrapper{
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+.elementor-42 .elementor-element.elementor-element-2ec080b6{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:50px 50px;--row-gap:50px;--column-gap:50px;--padding-left:0px;--padding-right:0px;}
+.elementor-42 .elementor-element.elementor-element-2ec080b6:not(.elementor-motion-effects-element-type-background), .elementor-42 .elementor-element.elementor-element-2ec080b6 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}
+
+.elementor-42 .elementor-element.elementor-element-28bbf86d{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--overflow:hidden;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:#CFCFCF75;--border-color:#CFCFCF75;border-radius:12px 12px 12px 12px;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}
+.elementor-42 .elementor-element.elementor-element-28bbf86d:not(.elementor-motion-effects-element-type-background), .elementor-42 .elementor-element.elementor-element-28bbf86d > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FAFAFA;}
+
+.elementor-42 .elementor-element.elementor-element-4af53470{--display:flex;--border-radius:15px 15px 15px 15px;}
+.elementor-42 .elementor-element.elementor-element-4af53470{--min-height:208px;}
+.elementor-42 .elementor-element.elementor-element-4af53470.e-con{--order:-99999 /* order start hack */;}
+
+.elementor-42 .elementor-element.elementor-element-0dcaca4{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;}
+.elementor-42 .elementor-element.elementor-element-0dcaca4 img{width:76%;}
+
+.elementor-42 .elementor-element.elementor-element-5a788220{--display:flex;--justify-content:center;}
+.elementor-42 .elementor-element.elementor-element-5a788220.e-con{--order:-99999 /* order start hack */;}
+
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f{width:var( --container-widget-width, 92% );max-width:92%;--container-widget-width:92%;--container-widget-flex-grow:0;text-align:start;}
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:42px;font-weight:700;text-transform:capitalize;line-height:55px;letter-spacing:-2.7px;color:var( --e-global-color-text );}
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f{width:100%;max-width:100%;}
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f .elementor-heading-title{font-size:32px;line-height:1.3em;}
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f{text-align:start;}
+.elementor-42 .elementor-element.elementor-element-5dcc1f9f .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+
+.elementor-42 .elementor-element.elementor-element-21b6dbf1{width:100%;max-width:100%;text-align:start;font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:29px;letter-spacing:-0.5px;color:var( --e-global-color-secondary );}
+.elementor-42 .elementor-element.elementor-element-21b6dbf1.elementor-element{--align-self:center;}
+.elementor-42 .elementor-element.elementor-element-21b6dbf1{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+.elementor-42 .elementor-element.elementor-element-21b6dbf1{text-align:start;font-size:15px;}
+
+.elementor-42 .elementor-element.elementor-element-43d6a110{width:100%;max-width:100%;text-align:start;font-family:"Poppins", Sans-serif;font-size:16px;font-weight:400;line-height:29px;letter-spacing:-0.5px;color:var( --e-global-color-secondary );white-space:pre-line;}
+.elementor-42 .elementor-element.elementor-element-43d6a110.elementor-element{--align-self:center;}
+.elementor-42 .elementor-element.elementor-element-43d6a110{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+.elementor-42 .elementor-element.elementor-element-43d6a110{text-align:start;font-size:15px;}
+
+@media(max-width:1024px){
+  .elementor-42 .elementor-element.elementor-element-5dcc1f9f{width:100%;max-width:100%;}
+  .elementor-42 .elementor-element.elementor-element-5dcc1f9f .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-42 .elementor-element.elementor-element-21b6dbf1{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+  .elementor-42 .elementor-element.elementor-element-43d6a110{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+}
+@media(max-width:767px){
+  .cities-sec-04-wrapper{padding-left:15px;padding-right:15px;}
+  .elementor-42 .elementor-element.elementor-element-28bbf86d{--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:15px;--padding-bottom:15px;--padding-left:15px;--padding-right:15px;}
+  .elementor-42 .elementor-element.elementor-element-4af53470{--min-height:208px;}
+  .elementor-42 .elementor-element.elementor-element-4af53470.e-con{--order:-99999 /* order start hack */;}
+  .elementor-42 .elementor-element.elementor-element-0dcaca4{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;}
+  .elementor-42 .elementor-element.elementor-element-5dcc1f9f{text-align:start;}
+  .elementor-42 .elementor-element.elementor-element-5dcc1f9f .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-42 .elementor-element.elementor-element-21b6dbf1{text-align:start;font-size:15px;}
+  .elementor-42 .elementor-element.elementor-element-43d6a110{text-align:start;font-size:15px;}
+}
+</style>
+
+<div class="elementor elementor-42 cities-sec-04-wrapper">
+  <div class="elementor-element elementor-element-2ec080b6 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="2ec080b6" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
+    <div class="e-con-inner">
+      <div class="elementor-element elementor-element-28bbf86d e-con-full e-flex e-con e-child animated fadeInUp" data-id="28bbf86d" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic","_animation":"fadeInUp"}'>
+        <div class="elementor-element elementor-element-4af53470 e-con-full e-flex e-con e-child" data-id="4af53470" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
+          <div class="elementor-element elementor-element-0dcaca4 elementor-widget elementor-widget-image" data-id="0dcaca4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+            {% if section.settings.image != blank %}
+              <img decoding="async" width="1254" height="1254" src="{{ section.settings.image | image_url: width: 1254 }}" class="attachment-full size-full" alt="{{ section.settings.heading | escape }}" loading="lazy">
+            {% else %}
+              <img decoding="async" width="1254" height="1254" src="{{ 'cities-network-cta.webp' | asset_url }}" class="attachment-full size-full wp-image-8747" alt="{{ section.settings.heading | escape }}" loading="lazy">
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-5a788220 e-con-full e-flex e-con e-child" data-id="5a788220" data-element_type="container" data-e-type="container">
+          {% if section.settings.heading != blank %}
+            <div class="elementor-element elementor-element-5dcc1f9f elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-id="5dcc1f9f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+              <h2 class="elementor-heading-title elementor-size-default">
+                {{ section.settings.heading }}
+              </h2>
+            </div>
+          {% endif %}
+
+          {% if section.settings.text_1 != blank %}
+            <div class="elementor-element elementor-element-21b6dbf1 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor" data-id="21b6dbf1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              {{ section.settings.text_1 }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.text_2 != blank %}
+            <div class="elementor-element elementor-element-43d6a110 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor" data-id="43d6a110" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+              {{ section.settings.text_2 }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

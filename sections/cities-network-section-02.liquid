@@ -1,0 +1,226 @@
+{% schema %}
+{
+  "name": "Cities Network Solutions",
+  "tag": "section",
+  "class": "section-cities-network-solutions",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "OUR SOLUTIONS"
+    },
+    {
+      "type": "url",
+      "id": "badge_url",
+      "label": "Badge URL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Build wealth. build legacy. build <span>chicago.</span>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "solution_card",
+      "name": "Solution Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "text",
+          "id": "fallback_asset",
+          "label": "Fallback Asset Name",
+          "default": "cities-network-sol-1.webp"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "BECOME A<br><br>PROCESSOR<br><br>PROGRAM"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Partner with FaithBanc™ and offer payment processing solutions to businesses in your community."
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features (one per line)",
+          "default": "Earn Residual Income\nLow Start-Up Cost\nSimple & Transparent\nDedicated Support"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cities Network Solutions",
+      "blocks": [
+        {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-1.webp",
+            "title": "BECOME A<br><br>PROCESSOR<br><br>PROGRAM",
+            "description": "Partner with FaithBanc™ and offer payment processing solutions to businesses in your community.",
+            "features": "Earn Residual Income\nLow Start-Up Cost\nSimple & Transparent\nDedicated Support"
+          }
+        },
+        {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-2.webp",
+            "title": "FAITHBANC<br><br>CHECKING ACCOUNT",
+            "description": "Bank with purpose.\n\nBank with power.",
+            "features": "No Monthly Fees\nMobile Banking\nDirect Deposit\nOverdraft Protection\nFDIC Insured*"
+          }
+        },
+        {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-3.webp",
+            "title": "FAITHBANC<br><br>DIGITAL WALLET",
+            "description": "Bank anytime, anywhere.\n\nYour money. Your way.",
+            "features": "Send & Receive Money\nPay Bills Instantly\nSecure & Encrypted\nTrack Spending\nApple Pay® | Google Pay™ Compatible"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Cities Network Section 02 Scoped Rules */
+
+.elementor-42 .elementor-element.elementor-element-7cc3829{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}
+.elementor-42 .elementor-element.elementor-element-7cc3829{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+
+.elementor-42 .elementor-element.elementor-element-1f3d266 .elementor-button{background-color:#FF572230;font-family:"Poppins", Sans-serif;font-size:13px;font-weight:400;text-transform:uppercase;fill:var( --e-global-color-secondary );color:var( --e-global-color-secondary );border-radius:45px 45px 45px 45px;padding:10px 25px 10px 25px;}
+.elementor-42 .elementor-element.elementor-element-1f3d266 .elementor-button{font-size:10px;}
+
+.elementor-42 .elementor-element.elementor-element-3f97724{width:var( --container-widget-width, 49% );max-width:49%;--container-widget-width:49%;--container-widget-flex-grow:0;text-align:center;}
+.elementor-42 .elementor-element.elementor-element-3f97724.elementor-element{--align-self:center;}
+.elementor-42 .elementor-element.elementor-element-3f97724 .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:45px;font-weight:700;text-transform:capitalize;line-height:52px;letter-spacing:-1.8px;color:var( --e-global-color-text );}
+.elementor-42 .elementor-element.elementor-element-3f97724{width:100%;max-width:100%;}
+.elementor-42 .elementor-element.elementor-element-3f97724 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+.elementor-42 .elementor-element.elementor-element-3f97724{text-align:center;}
+.elementor-42 .elementor-element.elementor-element-3f97724 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+
+.elementor-42 .elementor-element.elementor-element-c0f7a4c{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--flex-wrap:wrap;--padding-top:10px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}
+
+.elementor-42 .cities-card-item{--display:flex;--gap:15px 15px;--row-gap:15px;--column-gap:15px;border-style:solid;--border-style:solid;border-width:1px 1px 1px 1px;--border-top-width:1px;--border-right-width:1px;--border-bottom-width:1px;--border-left-width:1px;border-color:var( --e-global-color-dfbe82c );--border-color:var( --e-global-color-dfbe82c );--border-radius:15px 15px 15px 15px;box-shadow:4px 4px 9px 0px rgba(0, 0, 0, 0.12);--padding-top:30px;--padding-bottom:30px;--padding-left:30px;--padding-right:30px;background-color:var( --e-global-color-0587ab8 );--width:30%;flex-grow:1;flex-shrink:0;}
+
+.elementor-42 .cities-card-img{text-align:start;}
+.elementor-42 .cities-card-img img{width:65px;height:auto;}
+
+.elementor-42 .cities-card-title{width:100%;max-width:100%;text-align:start;}
+.elementor-42 .cities-card-title .elementor-heading-title{font-family:"Plus Jakarta Sans", Sans-serif;font-size:20px;font-weight:700;text-transform:capitalize;line-height:26px;letter-spacing:-0.4px;color:var( --e-global-color-text );}
+
+.elementor-42 .cities-card-desc{width:var( --container-widget-width, 98% );max-width:98%;--container-widget-width:98%;--container-widget-flex-grow:0;text-align:start;font-family:"Poppins", Sans-serif;font-size:15px;font-weight:400;line-height:25px;letter-spacing:-0.5px;color:var( --e-global-color-91f3e4c );white-space:pre-line;}
+
+.elementor-42 .cities-card-list{width:100%;max-width:100%;--e-icon-list-icon-size:16px;--icon-vertical-align:flex-start;--icon-vertical-offset:4px;}
+.elementor-42 .cities-card-list.elementor-element{--align-self:center;}
+.elementor-42 .cities-card-list .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(5px/2);}
+.elementor-42 .cities-card-list .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(5px/2);}
+.elementor-42 .cities-card-list .elementor-icon-list-item > .elementor-icon-list-text{font-size:15px;font-weight:400;letter-spacing:-0.6px;color:var( --e-global-color-secondary );transition:color 0.3s;}
+
+@media(max-width:1024px){
+  .elementor-42 .elementor-element.elementor-element-3f97724{width:100%;max-width:100%;}
+  .elementor-42 .elementor-element.elementor-element-3f97724 .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-42 .cities-card-title{width:100%;max-width:100%;}
+  .elementor-42 .cities-card-title .elementor-heading-title{font-size:32px;line-height:1.3em;}
+  .elementor-42 .cities-card-list{width:var( --container-widget-width, 588px );max-width:588px;--container-widget-width:588px;--container-widget-flex-grow:0;}
+}
+@media(min-width:768px){
+  .elementor-42 .cities-card-item{--width:30%;}
+}
+@media(max-width:767px){
+  .elementor-42 .elementor-element.elementor-element-7cc3829{--padding-top:50px;--padding-bottom:50px;--padding-left:15px;--padding-right:15px;}
+  .elementor-42 .elementor-element.elementor-element-1f3d266 .elementor-button{font-size:10px;}
+  .elementor-42 .elementor-element.elementor-element-3f97724{text-align:center;}
+  .elementor-42 .elementor-element.elementor-element-3f97724 .elementor-heading-title{font-size:26px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-42 .cities-card-img img{width:44px;}
+  .elementor-42 .cities-card-title{text-align:start;}
+  .elementor-42 .cities-card-title .elementor-heading-title{font-size:20px;line-height:1.3em;letter-spacing:-1.5px;}
+  .elementor-42 .cities-card-item{--width:100%;width:100%;}
+}
+</style>
+
+<div class="elementor elementor-42">
+  <div class="elementor-element elementor-element-7cc3829 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="7cc3829" data-element_type="container" data-e-type="container">
+    <div class="e-con-inner">
+      {% if section.settings.badge_text != blank %}
+        <div class="elementor-element elementor-element-1f3d266 elementor-align-center elementor-widget elementor-widget-button" data-id="1f3d266" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+          <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ section.settings.badge_url | default: '#' }}">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">{{ section.settings.badge_text }}</span>
+            </span>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <div class="elementor-element elementor-element-3f97724 elementor-widget__width-initial elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading animated fadeInUp" data-id="3f97724" data-element_type="widget" data-e-type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+          <h2 class="elementor-heading-title elementor-size-default">
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+      {% endif %}
+
+      <div class="elementor-element elementor-element-c0f7a4c e-con-full e-flex e-con e-child" data-id="c0f7a4c" data-element_type="container" data-e-type="container">
+        {% for block in section.blocks %}
+          {% assign anim = 'fadeInRight' %}
+          {% if forloop.first %}
+            {% assign anim = 'fadeInLeft' %}
+          {% endif %}
+          <div class="elementor-element cities-card-item e-con-full e-flex e-con e-child animated {{ anim }}" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic","animation":"{{ anim }}"}' {{ block.shopify_attributes }}>
+            <div class="elementor-element cities-card-img elementor-widget elementor-widget-image" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+              {% if block.settings.image != blank %}
+                <img decoding="async" width="1254" height="1254" src="{{ block.settings.image | image_url: width: 200 }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% elsif block.settings.fallback_asset != blank %}
+                <img decoding="async" width="1254" height="1254" src="{{ block.settings.fallback_asset | asset_url }}" class="attachment-full size-full" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% endif %}
+            </div>
+
+            {% if block.settings.title != blank %}
+              <div class="elementor-element cities-card-title elementor-widget__width-inherit elementor-widget-tablet__width-inherit gradient-text elementor-widget elementor-widget-heading" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+                <h3 class="elementor-heading-title elementor-size-default">
+                  {{ block.settings.title }}
+                </h3>
+              </div>
+            {% endif %}
+
+            {% if block.settings.description != blank %}
+              <div class="elementor-element cities-card-desc elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+                {{ block.settings.description }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.features != blank %}
+              {% assign feature_items = block.settings.features | newline_to_br | split: '<br />' %}
+              <div class="elementor-element cities-card-list elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+                <ul class="elementor-icon-list-items">
+                  {% for item in feature_items %}
+                    {% assign clean_item = item | strip %}
+                    {% if clean_item != blank %}
+                      <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-text">{{ clean_item }}</span>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

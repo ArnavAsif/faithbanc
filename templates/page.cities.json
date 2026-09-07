@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "cities_network_section_01": {
+      "type": "cities-network-section-01",
+      "settings": {}
+    },
+    "cities_network_section_02": {
+      "type": "cities-network-section-02",
+      "blocks": {
+        "solution_1": {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-1.webp",
+            "title": "BECOME A<br><br>PROCESSOR<br><br>PROGRAM",
+            "description": "Partner with FaithBanc™ and offer payment processing solutions to businesses in your community.",
+            "features": "Earn Residual Income\nLow Start-Up Cost\nSimple & Transparent\nDedicated Support"
+          }
+        },
+        "solution_2": {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-2.webp",
+            "title": "FAITHBANC<br><br>CHECKING ACCOUNT",
+            "description": "Bank with purpose.\n\nBank with power.",
+            "features": "No Monthly Fees\nMobile Banking\nDirect Deposit\nOverdraft Protection\nFDIC Insured*"
+          }
+        },
+        "solution_3": {
+          "type": "solution_card",
+          "settings": {
+            "fallback_asset": "cities-network-sol-3.webp",
+            "title": "FAITHBANC<br><br>DIGITAL WALLET",
+            "description": "Bank anytime, anywhere.\n\nYour money. Your way.",
+            "features": "Send & Receive Money\nPay Bills Instantly\nSecure & Encrypted\nTrack Spending\nApple Pay® | Google Pay™ Compatible"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3"
+      ],
+      "settings": {}
+    },
+    "cities_network_section_03": {
+      "type": "cities-network-section-03",
+      "settings": {}
+    },
+    "cities_network_section_04": {
+      "type": "cities-network-section-04",
+      "settings": {}
+    },
+    "cities_network_section_05": {
+      "type": "cities-network-section-05",
+      "blocks": {
+        "item_1": { "type": "service_item", "settings": { "text": "Financial Services" } },
+        "item_2": { "type": "service_item", "settings": { "text": "Faith Wallet (Spend • Save • Give)" } },
+        "item_3": { "type": "service_item", "settings": { "text": "Faith Debit Card (Physical + Virtual)" } },
+        "item_4": { "type": "service_item", "settings": { "text": "Faith Dollar Digital Credits" } },
+        "item_5": { "type": "service_item", "settings": { "text": "Faith Token & Blockchain Wallet" } },
+        "item_6": { "type": "service_item", "settings": { "text": "Apple Pay / Google Pay" } },
+        "item_7": { "type": "service_item", "settings": { "text": "FDIC-backed partner banking" } },
+        "item_8": { "type": "service_item", "settings": { "text": "Family & Youth Banking" } },
+        "item_9": { "type": "service_item", "settings": { "text": "Teen accounts with parental controls" } },
+        "item_10": { "type": "service_item", "settings": { "text": "Allowance automation" } },
+        "item_11": { "type": "service_item", "settings": { "text": "Financial education & stewardship tools" } },
+        "item_12": { "type": "service_item", "settings": { "text": "Community & Economic Support" } },
+        "item_13": { "type": "service_item", "settings": { "text": "Workforce training & certifications" } },
+        "item_14": { "type": "service_item", "settings": { "text": "Food assistance networks" } },
+        "item_15": { "type": "service_item", "settings": { "text": "Homeless outreach support" } },
+        "item_16": { "type": "service_item", "settings": { "text": "FaithCredits silver-backed bartering marketplace" } },
+        "item_17": { "type": "service_item", "settings": { "text": "Church-led programs & grants" } }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "item_6",
+        "item_7",
+        "item_8",
+        "item_9",
+        "item_10",
+        "item_11",
+        "item_12",
+        "item_13",
+        "item_14",
+        "item_15",
+        "item_16",
+        "item_17"
+      ],
+      "settings": {}
+    },
+    "cities_network_section_06": {
+      "type": "cities-network-section-06",
+      "blocks": {
+        "city_1": { "type": "city_item", "settings": { "text": "FaithBanc™ City Hubs:" } },
+        "city_2": { "type": "city_item", "settings": { "text": "FaithBanc™ Chicago" } },
+        "city_3": { "type": "city_item", "settings": { "text": "FaithBanc™ Atlanta" } },
+        "city_4": { "type": "city_item", "settings": { "text": "FaithBanc™ Orlando" } },
+        "city_5": { "type": "city_item", "settings": { "text": "FaithBanc™ Dallas" } },
+        "city_6": { "type": "city_item", "settings": { "text": "FaithBanc™ Los Angeles" } },
+        "city_7": { "type": "city_item", "settings": { "text": "FaithBanc™ New York" } }
+      },
+      "block_order": [
+        "city_1",
+        "city_2",
+        "city_3",
+        "city_4",
+        "city_5",
+        "city_6",
+        "city_7"
+      ],
+      "settings": {}
+    },
+    "cities_network_section_07": {
+      "type": "cities-network-section-07",
+      "blocks": {
+        "partner_1": { "type": "partner_item", "settings": { "text": "Local churches" } },
+        "partner_2": { "type": "partner_item", "settings": { "text": "Nonprofit organizations" } },
+        "partner_3": { "type": "partner_item", "settings": { "text": "Workforce training partners" } },
+        "partner_4": { "type": "partner_item", "settings": { "text": "Food banks & distributors" } },
+        "partner_5": { "type": "partner_item", "settings": { "text": "Community leaders" } },
+        "partner_6": { "type": "partner_item", "settings": { "text": "Together, these partners form localized FaithBanc™ hubs that deliver real impact at the neighborhood level." } }
+      },
+      "block_order": [
+        "partner_1",
+        "partner_2",
+        "partner_3",
+        "partner_4",
+        "partner_5",
+        "partner_6"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "cities_network_section_01",
+    "cities_network_section_02",
+    "cities_network_section_03",
+    "cities_network_section_04",
+    "cities_network_section_05",
+    "cities_network_section_06",
+    "cities_network_section_07"
+  ]
+}
